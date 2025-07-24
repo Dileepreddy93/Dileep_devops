@@ -4,28 +4,34 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building the application...'
-                // For a static site, you might archive the files.
-                // For other apps, this is where you'd run 'mvn install', 'npm install', etc.
+                echo 'Building artifact...'
+                // Clean up any old zip files
+                sh 'rm -f website.zip'
+                // Zip the HTML files into an artifact
+                sh 'zip website.zip *.html *.md'
+                // Stash the artifact to use it in later stages
+                stash name: 'website-artifact', includes: 'website.zip'
+                // Archive the artifact to save it with the build record in Jenkins
+                archiveArtifacts artifacts: 'website.zip'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing the application...'
-                // This is where you would run unit tests, linting, etc.
+                echo 'Running basic tests...'
+                // A simple test: check if the main index.html file is present in the workspace
+                sh 'ls -l index.html'
+                echo 'Basic validation passed.'
             }
         }
-        stage('Deploy') {
+        stage('Deploy to Web Server') {
             steps {
-                echo 'Deploying the application...'
-                // This stage would contain steps to deploy your code to a server.
-            }
-        }
-    }
+                // Get the artifact from the 'Build' stage
+                unstash 'website-artifact'
+                
+                // --- IMPORTANT: CHOOSE ONE DEPLOYMENT OPTION ---
 
-    post {
-        always {
-            echo 'Pipeline finished.'
-        }
-    }
-}
+                // Option 1: Deploy to a local directory on the Jenkins server
+                // The Jenkins user will need write permissions to this directory.
+                // Replace '/var/www/html/my-static-site' with your actual path.
+                echo 'Deploying to local web server directory...'
+                sh 'unzip -o website.zip -d /var/www

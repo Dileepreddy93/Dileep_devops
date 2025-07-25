@@ -1,3 +1,4 @@
+cat <<'EOF' > Jenkinsfile
 pipeline {
     agent any
 
@@ -5,33 +6,36 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building artifact...'
-                // Clean up any old zip files
+                // Clean up any old zip file to prevent including it in the new one
                 sh 'rm -f website.zip'
-                // Zip the HTML files into an artifact
-                sh 'zip website.zip *.html *.md'
-                // Stash the artifact to use it in later stages
-                stash name: 'website-artifact', includes: 'website.zip'
-                // Archive the artifact to save it with the build record in Jenkins
+                // Zip the contents of the html directory
+                sh 'zip -r website.zip html/'
+                // Archive the zip file for later stages
                 archiveArtifacts artifacts: 'website.zip'
             }
         }
         stage('Test') {
             steps {
                 echo 'Running basic tests...'
-                // A simple test: check if the main index.html file is present in the workspace
-                sh 'ls -l index.html'
+                // A simple test: check if the main index.html file exists in the workspace
+                sh 'ls -l html/index.html'
                 echo 'Basic validation passed.'
             }
         }
         stage('Deploy to Web Server') {
             steps {
+                echo 'Deploying artifact...'
                 // Get the artifact from the 'Build' stage
-                unstash 'website-artifact'
-                
-                // --- IMPORTANT: CHOOSE ONE DEPLOYMENT OPTION ---
-
-                // Option 1: Deploy to a local directory on the Jenkins server
-                // The Jenkins user will need write permissions to this directory.
-                // Replace '/var/www/html/my-static-site' with your actual path.
-                echo 'Deploying to local web server directory...'
-                sh 'unzip -o website.zip -d /var/www
+                unstage name: 'website-artifact'
+                // Unzip the artifact to a temporary directory, overwriting if it exists
+                sh 'unzip -o website.zip -d /tmp/website_deploy'
+                // Deploy the files to the web server's document root
+                // IMPORTANT: Replace 'user@your_web_server_ip' with your actual credentials
+                sh 'echo "Simulating deployment. In a real scenario, this would be:"'
+                sh 'echo "scp -r /tmp/website_deploy/* user@your_web_server_ip:/var/www/html/"'
+                echo 'Deployment complete.'
+            }
+        }
+    }
+}
+EOF

@@ -12,7 +12,7 @@ pipeline {
                 // Stash the artifact to use it in later stages
                 stash name: 'website-artifact', includes: 'website.zip'
                 // Archive the artifact to save it with the build record in Jenkins
-                archiveArtifacts artifacts: 'website.rar'
+                archiveArtifacts artifacts: 'website.zip'
             }
         }
         stage('Test') {

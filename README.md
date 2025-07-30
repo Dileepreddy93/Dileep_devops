@@ -1,28 +1,46 @@
-# Static Website with Jenkins CI/CD
+# Simple DevOps Project: Static Website with Jenkins CI/CD
 
-![Build Status](YOUR_JENKINS_URL/job/YOUR_PROJECT_NAME/badge/icon)
+This repository contains a simple static website built with HTML and CSS. The primary goal of this project is to demonstrate a complete Continuous Integration (CI) pipeline using Jenkins.
 
-## Overview
+## 📜 About The Project
 
-This project is a template for setting up a continuous integration and continuous deployment (CI/CD) pipeline using Jenkins. It automatically deploys a simple static HTML website to a remote server whenever changes are pushed to the repository's `main` branch.
+This is a learning project designed to showcase the fundamentals of DevOps practices. It includes:
+- A basic two-page static website (Home and About).
+- A `Jenkinsfile` that defines the CI pipeline.
+- Version control managed with Git and hosted on GitHub.
 
-## Prerequisites
+The pipeline is automatically triggered when new code is pushed to the main branch.
 
-Before you begin, ensure you have the following:
+## 🛠️ Technology Stack
 
-* A running **Jenkins** instance.
-* **Git** installed on your local machine and on the Jenkins server.
-* **SSH access** to a remote web server where the website will be deployed.
-* SSH credentials (e.g., private key) configured in Jenkins.
+* **Frontend:**
+    * HTML5
+    * CSS3
+* **CI/CD:**
+    * Jenkins
+* **Version Control:**
+    * Git & GitHub
 
-## Getting Started
+## 🚀 CI/CD Pipeline
 
-To use this project for your own website, follow these steps.
+The `Jenkinsfile` in this repository defines the pipeline stages. It is configured to run on a Jenkins server whenever changes are pushed to this repository.
 
-### 1. Fork & Clone the Repository
+### Pipeline Stages
 
-First, fork this repository to your own GitHub account and then clone it to your local machine:
+1.  **Checkout**: Clones the source code from the GitHub repository.
+2.  **Build**: (Placeholder) In a more complex project, this stage would involve compiling code, installing dependencies, or building a container image.
+3.  **Test**: (Future Goal) This stage will be added later to run automated tests against the website.
+4.  **Deploy**: (Future Goal) This stage will eventually deploy the website automatically to a web server like Nginx.
+
+## 💻 How to View Locally
+
+To view the website on your local machine, simply clone this repository and open the `index.html` file in your favorite web browser.
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
-cd YOUR_REPOSITORY
+# Clone the repository
+git clone <your-repository-url>
+
+# Navigate into the directory
+cd dileep_devops
+
+# Open index.html in a browser

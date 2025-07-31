@@ -38,7 +38,7 @@ To view the website on your local machine, simply clone this repository and open
 
 ```bash
 # Clone the repository
-git clone <your-repository-url>
+git clone <https://github.com/Dileepreddy93/Dileep_devops.git>
 
 # Navigate into the directory
 cd dileep_devops

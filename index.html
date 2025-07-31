@@ -3,19 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Dileep_devops</title>
+    <title>Dileep DevOps - CI/CD Pipeline Demo</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>Dileep DevOps</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <main>
-        <h1>Welcome to the DevOps Project! 🚀</h1>
-        <p>This is the main page of your demonstration website.</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Welcome to DevOps Pipeline Demo 🚀
+                </h1>
+                <p class="hero-subtitle">
+                    Demonstrating Continuous Integration & Continuous Deployment with Jenkins
+                </p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Learn More
+                    </a>
+                    <a href="https://github.com/Dileepreddy93/Dileep_devops" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="pipeline-visual">
+                    <div class="pipeline-step">
+                        <i class="fas fa-code"></i>
+                        <span>Code</span>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <i class="fas fa-hammer"></i>
+                        <span>Build</span>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <i class="fas fa-vial"></i>
+                        <span>Test</span>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <i class="fas fa-rocket"></i>
+                        <span>Deploy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">CI/CD Pipeline Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Version Control</h3>
+                        <p>Automated triggers from Git repository changes with proper branching strategy.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Automated Build</h3>
+                        <p>Consistent build process with artifact generation and dependency management.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Quality Assurance</h3>
+                        <p>Comprehensive testing including validation, security scans, and health checks.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Multi-Environment Deploy</h3>
+                        <p>Seamless deployment to staging and production with approval workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pipeline Status Section -->
+        <section class="pipeline-status">
+            <div class="container">
+                <h2 class="section-title">Pipeline Status</h2>
+                <div class="status-grid">
+                    <div class="status-card">
+                        <div class="status-header">
+                            <i class="fas fa-check-circle status-success"></i>
+                            <h3>Last Build</h3>
+                        </div>
+                        <div class="status-info">
+                            <span class="status-label">Status:</span>
+                            <span class="status-value success">Success</span>
+                        </div>
+                        <div class="status-info">
+                            <span class="status-label">Duration:</span>
+                            <span class="status-value">2m 34s</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-header">
+                            <i class="fas fa-play-circle status-info"></i>
+                            <h3>Deployment</h3>
+                        </div>
+                        <div class="status-info">
+                            <span class="status-label">Environment:</span>
+                            <span class="status-value">Staging</span>
+                        </div>
+                        <div class="status-info">
+                            <span class="status-label">Version:</span>
+                            <span class="status-value">v1.0.0</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-header">
+                            <i class="fas fa-chart-line status-warning"></i>
+                            <h3>Metrics</h3>
+                        </div>
+                        <div class="status-info">
+                            <span class="status-label">Success Rate:</span>
+                            <span class="status-value">98%</span>
+                        </div>
+                        <div class="status-info">
+                            <span class="status-label">Deployments:</span>
+                            <span class="status-value">47</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack Section -->
+        <section class="tech-stack">
+            <div class="container">
+                <h2 class="section-title">Technology Stack</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="fab fa-jenkins tech-icon"></i>
+                        <span>Jenkins</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-git-alt tech-icon"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-github tech-icon"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-html5 tech-icon"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-css3-alt tech-icon"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-server tech-icon"></i>
+                        <span>Linux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3><i class="fas fa-rocket"></i> Dileep DevOps</h3>
+                    <p>Demonstrating modern CI/CD practices with Jenkins pipeline automation.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://github.com/Dileepreddy93" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/dileepreddy93" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dileep DevOps Demo. Built with ❤️ for learning.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards and status cards
+        document.querySelectorAll('.feature-card, .status-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
 </body>
 </html>

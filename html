@@ -1,3 +1,334 @@
-<html>
-<H1>welcome to devops coding</H1>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevOps Pipeline Demo - Modern CI/CD practices with Jenkins automation">
+    <meta name="keywords" content="DevOps, Jenkins, CI/CD, Pipeline, Automation, GitHub">
+    <meta name="author" content="Dileep Reddy">
+    <title>DevOps Pipeline Demo - Welcome</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>DevOps Demo</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about.html" class="nav-link">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="html" class="nav-link active">
+                            <i class="fas fa-code"></i> Demo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero demo-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <i class="fas fa-code"></i>
+                    Welcome to DevOps Coding! 🚀
+                </h1>
+                <p class="hero-subtitle">
+                    Experience modern CI/CD practices with Jenkins pipeline automation
+                </p>
+                <div class="demo-badges">
+                    <span class="badge badge-success">
+                        <i class="fas fa-check-circle"></i> Pipeline Active
+                    </span>
+                    <span class="badge badge-info">
+                        <i class="fas fa-clock"></i> Auto-Deploy
+                    </span>
+                    <span class="badge badge-warning">
+                        <i class="fas fa-shield-alt"></i> Security Scanned
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Features -->
+        <section class="demo-features">
+            <div class="container">
+                <h2 class="section-title">DevOps Demonstration</h2>
+                <div class="demo-grid">
+                    <div class="demo-card">
+                        <div class="demo-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Version Control</h3>
+                        <p>This page was deployed automatically from Git repository using Jenkins pipeline</p>
+                        <div class="demo-metrics">
+                            <span class="metric">
+                                <i class="fas fa-git-alt"></i>
+                                Latest Commit
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Automated Build</h3>
+                        <p>Continuous integration with automated testing and validation</p>
+                        <div class="demo-metrics">
+                            <span class="metric">
+                                <i class="fas fa-check"></i>
+                                Build Success
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Live Deployment</h3>
+                        <p>Real-time deployment to staging and production environments</p>
+                        <div class="demo-metrics">
+                            <span class="metric">
+                                <i class="fas fa-server"></i>
+                                Environment: Live
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Pipeline Status -->
+        <section class="pipeline-demo">
+            <div class="container">
+                <h2 class="section-title">Live Pipeline Status</h2>
+                <div class="pipeline-flow">
+                    <div class="pipeline-step completed">
+                        <div class="step-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>Checkout</h4>
+                            <p>Source code retrieved</p>
+                            <span class="step-status success">✓ Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+                    <div class="pipeline-step completed">
+                        <div class="step-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>Build</h4>
+                            <p>Assets compiled</p>
+                            <span class="step-status success">✓ Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+                    <div class="pipeline-step completed">
+                        <div class="step-icon">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>Test</h4>
+                            <p>Quality checks passed</p>
+                            <span class="step-status success">✓ Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+                    <div class="pipeline-step active">
+                        <div class="step-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>Deploy</h4>
+                            <p>Currently live</p>
+                            <span class="step-status active">🟢 Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Demo Section -->
+        <section class="code-demo">
+            <div class="container">
+                <h2 class="section-title">Modern DevOps Practices</h2>
+                <div class="code-showcase">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-title">
+                                <i class="fab fa-jenkins"></i>
+                                Jenkinsfile
+                            </span>
+                            <span class="code-language">Groovy</span>
+                        </div>
+                        <pre><code>pipeline {
+    agent any
+    
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building application...'
+                sh 'zip -r website.zip .'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                sh 'ls -l index.html'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying to server...'
+                archiveArtifacts 'website.zip'
+            }
+        }
+    }
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Explore More?</h2>
+                    <p>Discover the complete DevOps pipeline and learn about modern CI/CD practices</p>
+                    <div class="cta-buttons">
+                        <a href="../index.html" class="btn btn-primary">
+                            <i class="fas fa-home"></i> Back to Home
+                        </a>
+                        <a href="../about.html" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i> Learn More
+                        </a>
+                        <a href="https://github.com/Dileepreddy93/Dileep_devops" class="btn btn-outline" target="_blank">
+                            <i class="fab fa-github"></i> View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3><i class="fas fa-rocket"></i> DevOps Demo</h3>
+                    <p>Showcasing modern CI/CD practices with Jenkins automation and professional web development.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://github.com/Dileepreddy93" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/dileepreddy93" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DevOps Demo. Built with modern web technologies and Jenkins CI/CD.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animate pipeline steps
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.pipeline-step').forEach(step => {
+            observer.observe(step);
+        });
+
+        // Add typing effect to code block
+        function typeCode() {
+            const codeElement = document.querySelector('.code-block code');
+            if (codeElement) {
+                const originalText = codeElement.textContent;
+                codeElement.textContent = '';
+                let i = 0;
+                
+                const typeInterval = setInterval(() => {
+                    if (i < originalText.length) {
+                        codeElement.textContent += originalText.charAt(i);
+                        i++;
+                    } else {
+                        clearInterval(typeInterval);
+                    }
+                }, 20);
+            }
+        }
+
+        // Trigger typing effect when code section is visible
+        const codeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(typeCode, 500);
+                    codeObserver.disconnect();
+                }
+            });
+        }, { threshold: 0.3 });
+
+        const codeSection = document.querySelector('.code-demo');
+        if (codeSection) {
+            codeObserver.observe(codeSection);
+        }
+    </script>
+</body>
+</html>

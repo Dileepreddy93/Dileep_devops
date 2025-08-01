@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="modern" itemscope itemtype="https://schema.org/AboutPage">
+<html lang="en" data-theme="dark" itemscope itemtype="https://schema.org/AboutPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="About Dileep Reddy - Senior DevOps Engineer specializing in enterprise CI/CD, cloud-native architectures, and modern automation practices. Learn about cutting-edge DevOps implementations.">
+    <meta name="description" content="About Dileep Reddy - Senior DevOps Engineer specializing in enterprise CI/CD, cloud-native architectures, and ultra-modern automation practices. Experience the future of DevOps.">
     <meta name="keywords" content="Dileep Reddy, Senior DevOps Engineer, Enterprise CI/CD, Cloud Native, Kubernetes, Docker, Jenkins, Terraform, AWS, Azure, DevOps Automation, Infrastructure as Code, Site Reliability Engineering">
     <meta name="author" content="Dileep Reddy">
     <meta name="robots" content="index, follow">
@@ -12,16 +12,16 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="Dileep Reddy - Senior DevOps Engineer | Enterprise CI/CD Specialist">
-    <meta property="og:description" content="Explore my journey in DevOps excellence, from traditional infrastructure to cloud-native architectures">
+    <meta property="og:title" content="Dileep Reddy - Senior DevOps Engineer | Ultra-Modern Enterprise CI/CD Specialist">
+    <meta property="og:description" content="Explore my journey in next-generation DevOps excellence, from traditional infrastructure to cloud-native architectures">
     <meta property="og:url" content="https://dileepreddy93.github.io/Dileep_devops/about.html">
     <meta property="og:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=DevOps+Excellence">
-    <meta property="og:site_name" content="Dileep DevOps Portfolio">
+    <meta property="og:site_name" content="Dileep DevOps Enterprise Portfolio">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dileep Reddy - Senior DevOps Engineer">
-    <meta name="twitter:description" content="Enterprise DevOps solutions and cloud-native expertise">
+    <meta name="twitter:description" content="Ultra-modern enterprise DevOps solutions and cloud-native expertise">
     <meta name="twitter:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=DevOps+Excellence">
     
     <!-- Structured Data -->
@@ -30,18 +30,18 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Dileep Reddy",
-        "jobTitle": "Senior DevOps Engineer",
-        "description": "Expert in enterprise CI/CD, cloud-native architectures, and DevOps automation",
+        "jobTitle": "Senior DevOps Engineer & Platform Architect",
+        "description": "Expert in ultra-modern enterprise CI/CD, cloud-native architectures, and next-generation DevOps automation",
         "url": "https://dileepreddy93.github.io/Dileep_devops/",
         "sameAs": [
             "https://github.com/Dileepreddy93",
             "https://linkedin.com/in/dileepreddy93"
         ],
-        "knowsAbout": ["DevOps", "Kubernetes", "Docker", "Jenkins", "Terraform", "AWS", "Azure", "CI/CD"]
+        "knowsAbout": ["DevOps", "Kubernetes", "Docker", "Jenkins", "Terraform", "AWS", "Azure", "CI/CD", "Enterprise Architecture", "Cloud Native"]
     }
     </script>
     
-    <title>About Dileep Reddy | Senior DevOps Engineer - Enterprise CI/CD Specialist</title>
+    <title>🚀 About Dileep Reddy | Senior DevOps Engineer - Ultra-Modern Enterprise CI/CD Specialist</title>
     
     <!-- Preload critical resources -->
     <link rel="preload" href="style.css" as="style">

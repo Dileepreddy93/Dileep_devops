@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" itemscope itemtype="https://schema.org/AboutPage">
+<html lang="en" data-theme="quantum" itemscope itemtype="https://schema.org/AboutPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="About Dileep Reddy - Senior DevOps Engineer specializing in enterprise CI/CD, cloud-native architectures, and ultra-modern automation practices. Experience the future of DevOps.">
-    <meta name="keywords" content="Dileep Reddy, Senior DevOps Engineer, Enterprise CI/CD, Cloud Native, Kubernetes, Docker, Jenkins, Terraform, AWS, Azure, DevOps Automation, Infrastructure as Code, Site Reliability Engineering">
+    <meta name="description" content="About Dileep Reddy - Quantum DevOps Architect specializing in revolutionary CI/CD, holographic cloud architectures, and ultra-modern quantum automation practices. Experience the future of DevOps.">
+    <meta name="keywords" content="Dileep Reddy, Quantum DevOps Architect, Revolutionary CI/CD, Holographic Cloud, Quantum Kubernetes, Ultra Docker, Quantum Jenkins, Neo Terraform, Quantum AWS, Azure Evolution, Quantum DevOps Automation, Infrastructure as Quantum Code, Quantum Site Reliability Engineering">
     <meta name="author" content="Dileep Reddy">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#667eea">
-    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#000014">
+    <meta name="color-scheme" content="dark quantum">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="Dileep Reddy - Senior DevOps Engineer | Ultra-Modern Enterprise CI/CD Specialist">
-    <meta property="og:description" content="Explore my journey in next-generation DevOps excellence, from traditional infrastructure to cloud-native architectures">
+    <meta property="og:title" content="Dileep Reddy - Quantum DevOps Architect | Ultra-Modern Revolutionary CI/CD Specialist">
+    <meta property="og:description" content="Explore my journey in quantum DevOps excellence, from traditional infrastructure to holographic cloud architectures">
     <meta property="og:url" content="https://dileepreddy93.github.io/Dileep_devops/about.html">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=DevOps+Excellence">
-    <meta property="og:site_name" content="Dileep DevOps Enterprise Portfolio">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/000014/00ffff?text=Quantum+DevOps+Excellence">
+    <meta property="og:site_name" content="Dileep Quantum DevOps Portfolio">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dileep Reddy - Senior DevOps Engineer">
-    <meta name="twitter:description" content="Ultra-modern enterprise DevOps solutions and cloud-native expertise">
-    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=DevOps+Excellence">
+    <meta name="twitter:title" content="Dileep Reddy - Quantum DevOps Architect">
+    <meta name="twitter:description" content="Revolutionary quantum DevOps solutions and holographic cloud expertise">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/000014/00ffff?text=Quantum+DevOps+Excellence">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -1721,16 +1721,19 @@
             if ('performance' in window) {
                 const perfData = performance.getEntriesByType('navigation')[0];
                 if (perfData) {
-                    console.log(`Professional about page loaded in ${perfData.loadEventEnd - perfData.loadEventStart}ms`);
+                    console.log(`Quantum professional page loaded in ${perfData.loadEventEnd - perfData.loadEventStart}ms`);
                 }
             }
         });
 
         // Advanced error handling
         window.addEventListener('error', (e) => {
-            console.error('Professional page error:', e.error);
+            console.error('Quantum professional page error:', e.error);
             // In production, send to monitoring service
         });
     </script>
+    
+    <!-- Quantum JavaScript Framework -->
+    <script src="quantum.js"></script>
 </body>
 </html>

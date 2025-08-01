@@ -1,1929 +1,638 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="quantum">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="format-detection" content="telephone=no">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Quantum DevOps">
-    <meta name="msapplication-TileColor" content="#000014">
-    <meta name="msapplication-config" content="browserconfig.xml">
-    <title>🌌 Quantum DevOps Platform | Ultra-Modern CI/CD Revolution</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="DevOps Platform">
+    <meta name="msapplication-TileColor" content="#007ACC">
+    
+    <title>🚀 Enterprise DevOps Platform | Professional CI/CD Automation</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Experience the future of DevOps with our quantum-powered platform. Revolutionary CI/CD pipelines, holographic cloud orchestration, and next-generation automation solutions.">
-    <meta name="keywords" content="Quantum DevOps, Revolutionary CI/CD, Holographic Cloud, Next-Gen Automation, Ultra-Modern Docker, Kubernetes Evolution, Quantum Jenkins, Future Pipeline">
-    <meta name="author" content="Dileep Reddy - Quantum DevOps Architect">
+    <meta name="description" content="Professional enterprise DevOps platform with advanced CI/CD pipelines, cloud orchestration, and modern automation solutions.">
+    <meta name="keywords" content="DevOps, CI/CD, Jenkins, Docker, Kubernetes, Automation, Cloud, Enterprise">
+    <meta name="author" content="Dileep Reddy - DevOps Engineer">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Quantum DevOps Platform - Revolutionary CI/CD Automation">
-    <meta property="og:description" content="Experience quantum-powered DevOps practices through an ultra-modern holographic platform">
+    <meta property="og:title" content="Enterprise DevOps Platform - Professional CI/CD Automation">
+    <meta property="og:description" content="Professional DevOps platform showcasing enterprise CI/CD practices">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dileepreddy93.github.io/Dileep_devops/">
     
     <!-- Icons and Fonts -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Audiowide&family=JetBrains+Mono:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#000014">
-    
     <!-- Preload Critical Resources -->
     <link rel="preload" href="style.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Dileep DevOps Pipeline Demo",
-        "description": "Enterprise-grade CI/CD pipeline demonstration with Jenkins automation",
-        "url": "https://dileepreddy93.github.io/Dileep_devops/",
-        "author": {
-            "@type": "Person",
-            "name": "Dileep Reddy",
-            "jobTitle": "Senior DevOps Engineer",
-            "sameAs": [
-                "https://github.com/Dileepreddy93",
-                "https://linkedin.com/in/dileepreddy93"
-            ]
-        },
-        "applicationCategory": "DevOps Tool",
-        "operatingSystem": "Cross-platform"
-    }
-    </script>
-    
-    <title>Dileep DevOps - Enterprise CI/CD Pipeline Demo | Advanced DevOps Automation</title>
 </head>
 <body>
-    <!-- Enhanced Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-container">
-            <div class="loading-logo">
-                <i class="fas fa-atom"></i>
-            </div>
-            <div class="loading-text">Quantum DevOps Platform</div>
-            <div class="loading-progress">
-                <div class="loading-bar"></div>
-            </div>
-            <div class="loading-subtext">
-                Initializing Quantum CI/CD Systems...
-            </div>
-        </div>
-    </div>
-
-    <!-- Quantum Particle Background -->
-    <canvas class="particle-canvas" id="particleCanvas"></canvas>
-
-    <!-- Enhanced Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">
-                <i class="fas fa-atom"></i>
-                <span>Quantum Platform</span>
-            </a>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active" data-section="home">
-                    <i class="fas fa-home"></i>Home
-                </a></li>
-                <li><a href="#pipeline" class="nav-link" data-section="pipeline">
-                    <i class="fas fa-project-diagram"></i>Pipeline
-                </a></li>
-                <li><a href="#features" class="nav-link" data-section="features">
-                    <i class="fas fa-star"></i>Features
-                </a></li>
-                <li><a href="#metrics" class="nav-link" data-section="metrics">
-                    <i class="fas fa-chart-line"></i>Metrics
-                </a></li>
-                <li><a href="about html" class="nav-link">
-                    <i class="fas fa-user"></i>About
-                </a></li>
-            </ul>
-            
-            <div class="nav-controls">
-                <button class="theme-toggle" id="themeToggle" title="Toggle quantum theme">
-                    <i class="fas fa-atom"></i>
-                </button>
-                <button class="nav-toggle" id="navToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
-                            <i class="fas fa-project-diagram" aria-hidden="true"></i> 
-                            <span>Pipeline</span>
-                        </a>
-                    </li>
-                    <li class="nav-item" role="none">
-                        <a href="#metrics" class="nav-link" role="menuitem">
-                            <i class="fas fa-chart-line" aria-hidden="true"></i> 
-                            <span>Metrics</span>
-                        </a>
-                    </li>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-rocket"></i>
+                    <span>DevOps Platform</span>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#overview" class="nav-link">Overview</a></li>
+                    <li><a href="#pipeline" class="nav-link">Pipeline</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#metrics" class="nav-link">Metrics</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
                 </ul>
+                
                 <div class="nav-controls">
-                    <button class="theme-toggle" aria-label="Toggle dark/light theme" title="Switch theme">
-                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
                     </button>
-                    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                        <span class="hamburger"></span>
-                        <span class="hamburger"></span>
-                        <span class="hamburger"></span>
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </button>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-
-    <!-- Enhanced Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-left">
-                <div class="hero-badge">
-                    <i class="fas fa-atom"></i>
-                    <span>Quantum Grade • Holographic Security • Next-Gen Cloud</span>
-                </div>
-                
-                <h1 class="hero-title">
-                    Revolutionary
-                    <span class="quantum-text">Quantum DevOps</span>
-                    for Future Excellence
-                </h1>
-                
-                <p class="hero-subtitle">
-                    Experience quantum-powered DevOps automation with revolutionary CI/CD pipelines, 
-                    holographic cloud architecture, and quantum-grade security. Built for infinite scale, 
-                    designed for quantum performance, optimized for tomorrow's teams.
-                </p>
-                
-                <div class="hero-stats">
-                    <div class="stat-item animate-quantum">
-                        <span class="stat-number">99.99%</span>
-                        <span class="stat-label">Quantum Uptime</span>
-                    </div>
-                    <div class="stat-item animate-quantum" style="animation-delay: 0.5s;">
-                        <span class="stat-number">∞</span>
-                        <span class="stat-label">Integrations</span>
-                    </div>
-                    <div class="stat-item animate-quantum" style="animation-delay: 1s;">
-                        <span class="stat-number">0.1s</span>
-                        <span class="stat-label">Quantum Build</span>
-                    </div>
-                    <div class="stat-item animate-quantum" style="animation-delay: 1.5s;">
-                        <span class="stat-number">SSS</span>
-                        <span class="stat-label">Security</span>
-                    </div>
-                </div>
-                
-                <div class="hero-buttons">
-                    <a href="#pipeline" class="btn btn-primary btn-quantum">
-                        <i class="fas fa-play"></i>
-                        Launch Quantum Pipeline
-                    </a>
-                    <a href="#features" class="btn btn-outline">
-                        <i class="fas fa-atom"></i>
-                        Explore Quantum Features
-                    </a>
-                    <a href="https://github.com/Dileepreddy93/Dileep_devops" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-github"></i>
-                        View Quantum Source
-                    </a>
-                </div>
-            </div>
-            
-            <div class="hero-right">
-                <div class="pipeline-container animate-float">
-                    <div class="pipeline-header">
-                        <h3>Live CI/CD Pipeline</h3>
-                        <div class="pipeline-status">
-                            <div class="status-indicator"></div>
-                            <span>Running</span>
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Enterprise Grade • Professional • Secure</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            Enterprise DevOps Platform
+                            <span class="highlight">CI/CD Excellence</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            Professional enterprise platform showcasing advanced DevOps practices, 
+                            automated CI/CD pipelines, cloud-native architecture, and modern 
+                            development workflows. Built for scalability, designed for reliability.
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Integrations</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2.5s</span>
+                                <span class="stat-label">Deploy Time</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">AAA</span>
+                                <span class="stat-label">Security</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#pipeline" class="btn btn-primary">
+                                <i class="fas fa-play"></i>
+                                View Pipeline
+                            </a>
+                            <a href="#features" class="btn btn-outline">
+                                <i class="fas fa-star"></i>
+                                Explore Features
+                            </a>
+                            <a href="https://github.com/Dileepreddy93/Dileep_devops" class="btn btn-secondary" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
                         </div>
                     </div>
                     
-                    <div class="pipeline-flow" id="pipelineFlow">
-                        <div class="pipeline-stage active" data-stage="checkout">
-                            <div class="stage-icon">
-                                <i class="fas fa-code-branch"></i>
+                    <div class="hero-visual">
+                        <div class="hero-image">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                    <span class="code-title">pipeline.yml</span>
+                                </div>
+                                <div class="code-content">
+                                    <div class="code-line"><span class="code-keyword">stages:</span></div>
+                                    <div class="code-line">  <span class="code-property">- checkout</span></div>
+                                    <div class="code-line">  <span class="code-property">- build</span></div>
+                                    <div class="code-line">  <span class="code-property">- test</span></div>
+                                    <div class="code-line">  <span class="code-property">- deploy</span></div>
+                                    <div class="code-line"><span class="code-keyword">success:</span> <span class="code-value">✅</span></div>
+                                </div>
                             </div>
-                            <div class="stage-info">
-                                <h4>Checkout</h4>
-                                <span>Source code retrieval</span>
-                            </div>
-                            <div class="stage-progress">
-                                <div class="progress-bar" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="pipeline-connector">
-                            <div class="connector-line">
-                                <div class="connector-pulse"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="pipeline-stage active" data-stage="validate">
-                            <div class="stage-icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <div class="stage-info">
-                                <h4>Validate</h4>
-                                <span>Project validation</span>
-                            </div>
-                            <div class="stage-progress">
-                                <div class="progress-bar" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="pipeline-connector">
-                            <div class="connector-line">
-                                <div class="connector-pulse" style="animation-delay: 0.5s;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="pipeline-stage active" data-stage="build">
-                            <div class="stage-icon">
-                                <i class="fas fa-hammer"></i>
-                            </div>
-                            <div class="stage-info">
-                                <h4>Build</h4>
-                                <span>Asset compilation</span>
-                            </div>
-                            <div class="stage-progress">
-                                <div class="progress-bar" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="pipeline-connector">
-                            <div class="connector-line">
-                                <div class="connector-pulse" style="animation-delay: 1s;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="pipeline-stage" data-stage="test">
-                            <div class="stage-icon">
-                                <i class="fas fa-vial"></i>
-                            </div>
-                            <div class="stage-info">
-                                <h4>Test</h4>
-                                <span>Quality assurance</span>
-                            </div>
-                            <div class="stage-progress">
-                                <div class="progress-bar" style="width: 60%;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="pipeline-connector">
-                            <div class="connector-line">
-                                <div class="connector-pulse" style="animation-delay: 1.5s;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="pipeline-stage" data-stage="security">
-                            <div class="stage-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="stage-info">
-                                <h4>Security Scan</h4>
-                                <span>Vulnerability analysis</span>
-                            </div>
-                            <div class="stage-progress">
-                                <div class="progress-bar" style="width: 0%;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="pipeline-connector">
-                            <div class="connector-line">
-                                <div class="connector-pulse" style="animation-delay: 2s;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="pipeline-stage" data-stage="deploy">
-                            <div class="stage-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <div class="stage-info">
-                                <h4>Deploy</h4>
-                                <span>Production release</span>
-                            </div>
-                            <div class="stage-progress">
-                                <div class="progress-bar" style="width: 0%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Enhanced Features Section -->
-    <section class="features" id="features">
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-header">
-                    <div class="feature-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <div class="feature-badge">Enterprise</div>
-                </div>
-                <h3>Advanced CI/CD Pipeline</h3>
-                <p>Multi-stage automated workflow with parallel execution, blue-green deployments, and comprehensive security scanning.</p>
-                <div class="feature-tags">
-                    <span class="tag">Jenkins</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">Kubernetes</span>
-                </div>
-                <div class="feature-metrics">
-                    <i class="fas fa-chart-line"></i>
-                    <span>85% faster builds</span>
-                </div>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-header">
-                    <div class="feature-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <div class="feature-badge">Multi-Cloud</div>
-                </div>
-                <h3>Cloud-Native Architecture</h3>
-                <p>Scalable infrastructure with auto-scaling, service mesh integration, and multi-cloud deployment support.</p>
-                <div class="feature-tags">
-                    <span class="tag">AWS</span>
-                    <span class="tag">Azure</span>
-                    <span class="tag">GCP</span>
-                </div>
-                <div class="feature-metrics">
-                    <i class="fas fa-server"></i>
-                    <span>99.9% uptime SLA</span>
-                </div>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-header">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="feature-badge">Security First</div>
-                </div>
-                <h3>Enterprise Security</h3>
-                <p>Zero-trust security model with OWASP compliance, automated vulnerability scanning, and security-first design.</p>
-                <div class="feature-tags">
-                    <span class="tag">SAST</span>
-                    <span class="tag">DAST</span>
-                    <span class="tag">SCA</span>
-                </div>
-                <div class="feature-metrics">
-                    <i class="fas fa-lock"></i>
-                    <span>AAA security rating</span>
-                </div>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-header">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="feature-badge">Real-time</div>
-                </div>
-                <h3>Advanced Monitoring</h3>
-                <p>Real-time metrics with Prometheus, distributed tracing, and intelligent alerting for proactive issue resolution.</p>
-                <div class="feature-tags">
-                    <span class="tag">Prometheus</span>
-                    <span class="tag">Grafana</span>
-                    <span class="tag">Jaeger</span>
-                </div>
-                <div class="feature-metrics">
-                    <i class="fas fa-eye"></i>
-                    <span>360° observability</span>
-                </div>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-header">
-                    <div class="feature-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="feature-badge">AI-Powered</div>
-                </div>
-                <h3>Intelligent Automation</h3>
-                <p>AI-powered optimization with predictive analytics, intelligent caching, and automated decision making.</p>
-                <div class="feature-tags">
-                    <span class="tag">ML/AI</span>
-                    <span class="tag">Automation</span>
-                    <span class="tag">Analytics</span>
-                </div>
-                <div class="feature-metrics">
-                    <i class="fas fa-brain"></i>
-                    <span>95% automation rate</span>
-                </div>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-header">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="feature-badge">Team-First</div>
-                </div>
-                <h3>Developer Experience</h3>
-                <p>Modern UI/UX with GitOps workflow, automated reviews, and comprehensive documentation for seamless collaboration.</p>
-                <div class="feature-tags">
-                    <span class="tag">GitOps</span>
-                    <span class="tag">Collaboration</span>
-                    <span class="tag">DevEx</span>
-                </div>
-                <div class="feature-metrics">
-                    <i class="fas fa-heart"></i>
-                    <span>100+ team members</span>
-                </div>
-            </div>
-        </div>
-    </section>
-                                <h4>Source Control</h4>
-                                <span>Git + Webhooks</span>
-                            </div>
-                            <div class="stage-progress">
-                                <div class="progress-bar" data-progress="100"></div>
-                            </div>
-                        </div>
-                        <div class="pipeline-connector">
-                            <div class="connector-line"></div>
-                            <div class="connector-pulse"></div>
-                        </div>
-                        <div class="pipeline-stage" data-stage="build">
-                            <div class="stage-icon">
-                                <i class="fas fa-hammer" aria-hidden="true"></i>
-                            </div>
-                            <div class="stage-info">
-                                <h4>Build & Test</h4>
-                                <span>Jenkins + Docker</span>
-                            </div>
-                            <div class="stage-progress">
-                                <div class="progress-bar" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="pipeline-connector">
-                            <div class="connector-line"></div>
-                            <div class="connector-pulse"></div>
-                        </div>
-                        <div class="pipeline-stage" data-stage="quality">
-                            <div class="stage-icon">
-                                <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                            </div>
-                            <div class="stage-info">
-                                <h4>Quality Gates</h4>
-                                <span>SonarQube + Tests</span>
-                            </div>
-                            <div class="stage-progress">
-                                <div class="progress-bar" data-progress="92"></div>
-                            </div>
-                        </div>
-                        <div class="pipeline-connector">
-                            <div class="connector-line"></div>
-                            <div class="connector-pulse"></div>
-                        </div>
-                        <div class="pipeline-stage" data-stage="deploy">
-                            <div class="stage-icon">
-                                <i class="fas fa-rocket" aria-hidden="true"></i>
-                            </div>
-                            <div class="stage-info">
-                                <h4>Deploy</h4>
-                                <span>Kubernetes + AWS</span>
-                            </div>
-                            <div class="stage-progress">
-                                <div class="progress-bar" data-progress="78"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pipeline-metrics">
-                        <div class="metric">
-                            <i class="fas fa-clock" aria-hidden="true"></i>
-                            <span>Last Deploy: 2m 34s</span>
-                        </div>
-                        <div class="metric">
-                            <i class="fas fa-check-circle" aria-hidden="true"></i>
-                            <span>Success Rate: 98.7%</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Enterprise Features Section -->
-        <section class="features" id="features">
+        
+        <!-- Platform Overview Section -->
+        <section class="overview-section" id="overview">
             <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <div class="section-badge">
-                        <i class="fas fa-cogs" aria-hidden="true"></i>
-                        <span>Platform Features</span>
-                    </div>
-                    <h2 class="section-title">Enterprise DevOps Capabilities</h2>
-                    <p class="section-subtitle">
-                        Comprehensive automation platform built for scale, reliability, and enterprise security requirements
+                <div class="section-header">
+                    <h2 class="section-title">Platform Overview</h2>
+                    <p class="section-description">
+                        Comprehensive DevOps automation platform built for enterprise-scale operations
                     </p>
                 </div>
+                
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="card-title">Enterprise Architecture</h3>
+                        <p class="card-description">
+                            Multi-tier application design with cloud-native patterns, 
+                            scalable infrastructure, and high availability features.
+                        </p>
+                        <ul class="card-features">
+                            <li>Microservices architecture</li>
+                            <li>Auto-scaling capabilities</li>
+                            <li>99.9% uptime SLA</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="card-title">Advanced CI/CD Pipeline</h3>
+                        <p class="card-description">
+                            Multi-stage automated workflow with parallel execution, 
+                            comprehensive testing, and security scanning.
+                        </p>
+                        <ul class="card-features">
+                            <li>Blue-green deployments</li>
+                            <li>Automated rollbacks</li>
+                            <li>Security scanning (SAST/DAST)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="card-title">Security & Compliance</h3>
+                        <p class="card-description">
+                            Zero-trust security model with comprehensive vulnerability 
+                            assessments and automated compliance monitoring.
+                        </p>
+                        <ul class="card-features">
+                            <li>OWASP Top 10 protection</li>
+                            <li>SSL/TLS encryption</li>
+                            <li>SOC2 compliance ready</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Monitoring & Observability</h3>
+                        <p class="card-description">
+                            Real-time metrics collection with custom dashboards, 
+                            alerting systems, and performance analytics.
+                        </p>
+                        <ul class="card-features">
+                            <li>Prometheus & Grafana</li>
+                            <li>Distributed tracing</li>
+                            <li>Custom alerts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CI/CD Pipeline Section -->
+        <section class="pipeline-section" id="pipeline">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">CI/CD Pipeline</h2>
+                    <p class="section-description">
+                        Automated deployment pipeline with comprehensive testing and security validation
+                    </p>
+                </div>
+                
+                <div class="pipeline-container">
+                    <div class="pipeline-flow">
+                        <div class="pipeline-stage active">
+                            <div class="stage-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="stage-content">
+                                <h3 class="stage-title">Checkout</h3>
+                                <p class="stage-description">Source code retrieval and Git metadata</p>
+                                <div class="stage-status">
+                                    <span class="status-indicator success"></span>
+                                    <span class="status-text">Completed (30s)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pipeline-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="pipeline-stage active">
+                            <div class="stage-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stage-content">
+                                <h3 class="stage-title">Validate</h3>
+                                <p class="stage-description">Project structure and file validation</p>
+                                <div class="stage-status">
+                                    <span class="status-indicator success"></span>
+                                    <span class="status-text">Completed (15s)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pipeline-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="pipeline-stage active">
+                            <div class="stage-icon">
+                                <i class="fas fa-hammer"></i>
+                            </div>
+                            <div class="stage-content">
+                                <h3 class="stage-title">Build</h3>
+                                <p class="stage-description">Asset compilation and artifact creation</p>
+                                <div class="stage-status">
+                                    <span class="status-indicator success"></span>
+                                    <span class="status-text">Completed (45s)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pipeline-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="pipeline-stage running">
+                            <div class="stage-icon">
+                                <i class="fas fa-vial"></i>
+                            </div>
+                            <div class="stage-content">
+                                <h3 class="stage-title">Test</h3>
+                                <p class="stage-description">Comprehensive testing suite execution</p>
+                                <div class="stage-status">
+                                    <span class="status-indicator running"></span>
+                                    <span class="status-text">Running (35s)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pipeline-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="pipeline-stage pending">
+                            <div class="stage-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="stage-content">
+                                <h3 class="stage-title">Deploy</h3>
+                                <p class="stage-description">Production deployment and health checks</p>
+                                <div class="stage-status">
+                                    <span class="status-indicator pending"></span>
+                                    <span class="status-text">Pending</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pipeline-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-info">
+                            <span class="stat-value">2m 45s</span>
+                            <span class="stat-label">Average Build Time</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-double"></i>
+                        <div class="stat-info">
+                            <span class="stat-value">99.7%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-day"></i>
+                        <div class="stat-info">
+                            <span class="stat-value">15/week</span>
+                            <span class="stat-label">Deployments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Platform Features</h2>
+                    <p class="section-description">
+                        Comprehensive DevOps tools and capabilities for modern development teams
+                    </p>
+                </div>
+                
                 <div class="features-grid">
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="feature-header">
-                            <div class="feature-icon">
-                                <i class="fab fa-git-alt" aria-hidden="true"></i>
-                            </div>
-                            <div class="feature-badge">Core</div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fab fa-docker"></i>
                         </div>
-                        <h3>Advanced Source Control</h3>
-                        <p>GitOps workflows with automated branching strategies, pull request automation, and intelligent merge conflict resolution.</p>
+                        <h3 class="feature-title">Container Orchestration</h3>
+                        <p class="feature-description">
+                            Docker and Kubernetes integration for scalable container management 
+                            with automated orchestration and service mesh capabilities.
+                        </p>
                         <div class="feature-tags">
-                            <span class="tag">Git Hooks</span>
-                            <span class="tag">Branch Protection</span>
-                            <span class="tag">Code Reviews</span>
-                        </div>
-                        <div class="feature-metrics">
-                            <span><i class="fas fa-code-branch" aria-hidden="true"></i> 500+ Commits/Month</span>
-                        </div>
-                    </div>
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="feature-header">
-                            <div class="feature-icon">
-                                <i class="fas fa-robot" aria-hidden="true"></i>
-                            </div>
-                            <div class="feature-badge">AI-Powered</div>
-                        </div>
-                        <h3>Intelligent Build System</h3>
-                        <p>ML-optimized build processes with predictive caching, parallel execution, and automatic dependency resolution.</p>
-                        <div class="feature-tags">
-                            <span class="tag">Smart Caching</span>
-                            <span class="tag">Parallel Builds</span>
-                            <span class="tag">Auto-scaling</span>
-                        </div>
-                        <div class="feature-metrics">
-                            <span><i class="fas fa-bolt" aria-hidden="true"></i> 85% Faster Builds</span>
-                        </div>
-                    </div>
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="feature-header">
-                            <div class="feature-icon">
-                                <i class="fas fa-shield-virus" aria-hidden="true"></i>
-                            </div>
-                            <div class="feature-badge">Security</div>
-                        </div>
-                        <h3>Zero-Trust Security</h3>
-                        <p>Comprehensive security scanning with SAST, DAST, container vulnerability assessment, and compliance automation.</p>
-                        <div class="feature-tags">
-                            <span class="tag">SAST/DAST</span>
-                            <span class="tag">CVE Scanning</span>
-                            <span class="tag">Compliance</span>
-                        </div>
-                        <div class="feature-metrics">
-                            <span><i class="fas fa-shield-alt" aria-hidden="true"></i> 99.9% Security Score</span>
-                        </div>
-                    </div>
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="feature-header">
-                            <div class="feature-icon">
-                                <i class="fas fa-cloud" aria-hidden="true"></i>
-                            </div>
-                            <div class="feature-badge">Cloud-Native</div>
-                        </div>
-                        <h3>Multi-Cloud Deployment</h3>
-                        <p>Kubernetes-native deployments across AWS, Azure, and GCP with blue-green strategies and automated rollbacks.</p>
-                        <div class="feature-tags">
+                            <span class="tag">Docker</span>
                             <span class="tag">Kubernetes</span>
-                            <span class="tag">Blue-Green</span>
-                            <span class="tag">Auto-rollback</span>
-                        </div>
-                        <div class="feature-metrics">
-                            <span><i class="fas fa-globe" aria-hidden="true"></i> 3 Cloud Providers</span>
+                            <span class="tag">Helm</span>
                         </div>
                     </div>
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                        <div class="feature-header">
-                            <div class="feature-icon">
-                                <i class="fas fa-chart-line" aria-hidden="true"></i>
-                            </div>
-                            <div class="feature-badge">Analytics</div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
                         </div>
-                        <h3>Advanced Monitoring</h3>
-                        <p>Real-time observability with Prometheus, Grafana, distributed tracing, and predictive alerting systems.</p>
+                        <h3 class="feature-title">Multi-Cloud Support</h3>
+                        <p class="feature-description">
+                            Deploy across AWS, Azure, and GCP with unified management, 
+                            cost optimization, and automated failover capabilities.
+                        </p>
                         <div class="feature-tags">
-                            <span class="tag">Prometheus</span>
-                            <span class="tag">Grafana</span>
-                            <span class="tag">Tracing</span>
-                        </div>
-                        <div class="feature-metrics">
-                            <span><i class="fas fa-eye" aria-hidden="true"></i> 360° Visibility</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">GCP</span>
                         </div>
                     </div>
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
-                        <div class="feature-header">
-                            <div class="feature-icon">
-                                <i class="fas fa-infinity" aria-hidden="true"></i>
-                            </div>
-                            <div class="feature-badge">Enterprise</div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <h3>Infrastructure as Code</h3>
-                        <p>Terraform and Ansible automation for immutable infrastructure, configuration drift detection, and compliance.</p>
+                        <h3 class="feature-title">Infrastructure as Code</h3>
+                        <p class="feature-description">
+                            Terraform and Ansible automation for consistent infrastructure 
+                            provisioning, configuration management, and compliance.
+                        </p>
                         <div class="feature-tags">
                             <span class="tag">Terraform</span>
                             <span class="tag">Ansible</span>
                             <span class="tag">GitOps</span>
                         </div>
-                        <div class="feature-metrics">
-                            <span><i class="fas fa-server" aria-hidden="true"></i> 1000+ Resources</span>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="feature-title">Advanced Monitoring</h3>
+                        <p class="feature-description">
+                            Comprehensive observability with Prometheus, Grafana, and ELK stack 
+                            for real-time insights and proactive alerting.
+                        </p>
+                        <div class="feature-tags">
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">Grafana</span>
+                            <span class="tag">ELK</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 class="feature-title">Security Automation</h3>
+                        <p class="feature-description">
+                            Automated security scanning, vulnerability assessments, and 
+                            compliance monitoring with industry-standard practices.
+                        </p>
+                        <div class="feature-tags">
+                            <span class="tag">SAST</span>
+                            <span class="tag">DAST</span>
+                            <span class="tag">SonarQube</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="feature-title">AI-Powered Insights</h3>
+                        <p class="feature-description">
+                            Machine learning algorithms for predictive analytics, intelligent 
+                            caching, and automated optimization recommendations.
+                        </p>
+                        <div class="feature-tags">
+                            <span class="tag">ML</span>
+                            <span class="tag">Analytics</span>
+                            <span class="tag">Optimization</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Real-time Pipeline Status Section -->
-        <section class="pipeline-status" id="pipeline">
+        
+        <!-- Metrics Section -->
+        <section class="metrics-section" id="metrics">
             <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <div class="section-badge">
-                        <i class="fas fa-heartbeat" aria-hidden="true"></i>
-                        <span>Live Status</span>
-                    </div>
-                    <h2 class="section-title">Pipeline Dashboard</h2>
-                    <p class="section-subtitle">Real-time monitoring and metrics from our enterprise CI/CD pipeline</p>
-                </div>
-                <div class="status-dashboard">
-                    <div class="dashboard-header" data-aos="fade-up" data-aos-delay="100">
-                        <div class="pipeline-health">
-                            <div class="health-indicator healthy">
-                                <div class="pulse"></div>
-                            </div>
-                            <div class="health-status">
-                                <h3>System Healthy</h3>
-                                <span>All services operational</span>
-                            </div>
-                        </div>
-                        <div class="real-time-badge">
-                            <i class="fas fa-circle" aria-hidden="true"></i>
-                            <span>Live</span>
-                        </div>
-                    </div>
-                    <div class="status-grid">
-                        <div class="status-card primary" data-aos="fade-up" data-aos-delay="200">
-                            <div class="status-header">
-                                <div class="status-icon">
-                                    <i class="fas fa-rocket" aria-hidden="true"></i>
-                                </div>
-                                <div class="status-badge success">
-                                    <i class="fas fa-check" aria-hidden="true"></i>
-                                    <span>Success</span>
-                                </div>
-                            </div>
-                            <div class="status-content">
-                                <h3>Latest Deployment</h3>
-                                <div class="status-metrics">
-                                    <div class="metric-row">
-                                        <span class="metric-label">Build Time:</span>
-                                        <span class="metric-value">2m 34s</span>
-                                        <span class="metric-trend positive">-15%</span>
-                                    </div>
-                                    <div class="metric-row">
-                                        <span class="metric-label">Environment:</span>
-                                        <span class="metric-value">Production</span>
-                                    </div>
-                                    <div class="metric-row">
-                                        <span class="metric-label">Version:</span>
-                                        <span class="metric-value">v2.1.3</span>
-                                    </div>
-                                </div>
-                                <div class="deployment-timeline">
-                                    <div class="timeline-item completed">
-                                        <i class="fas fa-code" aria-hidden="true"></i>
-                                        <span>Source</span>
-                                    </div>
-                                    <div class="timeline-item completed">
-                                        <i class="fas fa-hammer" aria-hidden="true"></i>
-                                        <span>Build</span>
-                                    </div>
-                                    <div class="timeline-item completed">
-                                        <i class="fas fa-vial" aria-hidden="true"></i>
-                                        <span>Test</span>
-                                    </div>
-                                    <div class="timeline-item completed">
-                                        <i class="fas fa-rocket" aria-hidden="true"></i>
-                                        <span>Deploy</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="status-card" data-aos="fade-up" data-aos-delay="300">
-                            <div class="status-header">
-                                <div class="status-icon">
-                                    <i class="fas fa-chart-bar" aria-hidden="true"></i>
-                                </div>
-                                <h3>Performance Metrics</h3>
-                            </div>
-                            <div class="status-content">
-                                <div class="performance-stats">
-                                    <div class="stat-circle">
-                                        <div class="circle-progress" data-percentage="98">
-                                            <span class="percentage">98%</span>
-                                        </div>
-                                        <span class="stat-label">Success Rate</span>
-                                    </div>
-                                    <div class="stat-list">
-                                        <div class="stat-item">
-                                            <i class="fas fa-clock" aria-hidden="true"></i>
-                                            <span>Avg Deploy: 3.2min</span>
-                                        </div>
-                                        <div class="stat-item">
-                                            <i class="fas fa-sync" aria-hidden="true"></i>
-                                            <span>Rollbacks: 0.3%</span>
-                                        </div>
-                                        <div class="stat-item">
-                                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                                            <span>Security: AAA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="status-card" data-aos="fade-up" data-aos-delay="400">
-                            <div class="status-header">
-                                <div class="status-icon">
-                                    <i class="fas fa-globe" aria-hidden="true"></i>
-                                </div>
-                                <h3>Infrastructure Status</h3>
-                            </div>
-                            <div class="status-content">
-                                <div class="infrastructure-grid">
-                                    <div class="infra-item">
-                                        <div class="infra-icon aws">
-                                            <i class="fab fa-aws" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="infra-details">
-                                            <span class="infra-name">AWS</span>
-                                            <span class="infra-status healthy">Healthy</span>
-                                        </div>
-                                    </div>
-                                    <div class="infra-item">
-                                        <div class="infra-icon k8s">
-                                            <i class="fas fa-dharmachakra" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="infra-details">
-                                            <span class="infra-name">Kubernetes</span>
-                                            <span class="infra-status healthy">24 Pods</span>
-                                        </div>
-                                    </div>
-                                    <div class="infra-item">
-                                        <div class="infra-icon docker">
-                                            <i class="fab fa-docker" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="infra-details">
-                                            <span class="infra-name">Docker</span>
-                                            <span class="infra-status healthy">12 Containers</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Enterprise Technology Stack Section -->
-        <section class="tech-stack" id="tech-stack">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <div class="section-badge">
-                        <i class="fas fa-layer-group" aria-hidden="true"></i>
-                        <span>Technology Stack</span>
-                    </div>
-                    <h2 class="section-title">Enterprise-Grade Technologies</h2>
-                    <p class="section-subtitle">
-                        Modern cloud-native stack powering scalable, secure, and reliable DevOps automation
+                <div class="section-header">
+                    <h2 class="section-title">Performance Metrics</h2>
+                    <p class="section-description">
+                        Real-time platform performance indicators and DevOps maturity metrics
                     </p>
                 </div>
-                <div class="tech-categories">
-                    <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-cloud" aria-hidden="true"></i>
+                
+                <div class="metrics-grid">
+                    <div class="metrics-category">
+                        <h3 class="category-title">Platform KPIs</h3>
+                        <div class="metrics-list">
+                            <div class="metric-item">
+                                <div class="metric-header">
+                                    <span class="metric-name">Build Success Rate</span>
+                                    <span class="metric-value success">99.7%</span>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="metric-progress" style="width: 99.7%"></div>
+                                </div>
+                                <span class="metric-trend up">↗️ +0.2%</span>
                             </div>
-                            <h3>Cloud Platforms</h3>
-                            <span class="category-count">4 Providers</span>
-                        </div>
-                        <div class="tech-grid">
-                            <div class="tech-item aws">
-                                <div class="tech-logo">
-                                    <i class="fab fa-aws" aria-hidden="true"></i>
+                            
+                            <div class="metric-item">
+                                <div class="metric-header">
+                                    <span class="metric-name">Average Build Time</span>
+                                    <span class="metric-value">2m 34s</span>
                                 </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">Amazon Web Services</span>
-                                    <span class="tech-level">Expert</span>
+                                <div class="metric-bar">
+                                    <div class="metric-progress" style="width: 85%"></div>
                                 </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="95"></div>
-                                </div>
+                                <span class="metric-trend down">↘️ -15%</span>
                             </div>
-                            <div class="tech-item azure">
-                                <div class="tech-logo">
-                                    <i class="fab fa-microsoft" aria-hidden="true"></i>
+                            
+                            <div class="metric-item">
+                                <div class="metric-header">
+                                    <span class="metric-name">System Uptime</span>
+                                    <span class="metric-value success">99.9%</span>
                                 </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">Microsoft Azure</span>
-                                    <span class="tech-level">Advanced</span>
+                                <div class="metric-bar">
+                                    <div class="metric-progress" style="width: 99.9%"></div>
                                 </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="88"></div>
-                                </div>
+                                <span class="metric-trend stable">→ Stable</span>
                             </div>
-                            <div class="tech-item gcp">
-                                <div class="tech-logo">
-                                    <i class="fab fa-google" aria-hidden="true"></i>
+                            
+                            <div class="metric-item">
+                                <div class="metric-header">
+                                    <span class="metric-name">Security Score</span>
+                                    <span class="metric-value success">98.7%</span>
                                 </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">Google Cloud Platform</span>
-                                    <span class="tech-level">Advanced</span>
+                                <div class="metric-bar">
+                                    <div class="metric-progress" style="width: 98.7%"></div>
                                 </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="82"></div>
-                                </div>
-                            </div>
-                            <div class="tech-item digital-ocean">
-                                <div class="tech-logo">
-                                    <i class="fab fa-digital-ocean" aria-hidden="true"></i>
-                                </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">DigitalOcean</span>
-                                    <span class="tech-level">Intermediate</span>
-                                </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="75"></div>
-                                </div>
+                                <span class="metric-trend up">↗️ +2.1%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-tools" aria-hidden="true"></i>
+                    
+                    <div class="metrics-category">
+                        <h3 class="category-title">DevOps Maturity</h3>
+                        <div class="maturity-grid">
+                            <div class="maturity-item">
+                                <div class="maturity-score">95%</div>
+                                <div class="maturity-label">CI/CD Automation</div>
+                                <div class="maturity-level elite">Elite</div>
                             </div>
-                            <h3>DevOps Tools</h3>
-                            <span class="category-count">8 Tools</span>
-                        </div>
-                        <div class="tech-grid">
-                            <div class="tech-item jenkins">
-                                <div class="tech-logo">
-                                    <i class="fab fa-jenkins" aria-hidden="true"></i>
-                                </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">Jenkins</span>
-                                    <span class="tech-level">Expert</span>
-                                </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="98"></div>
-                                </div>
+                            <div class="maturity-item">
+                                <div class="maturity-score">92%</div>
+                                <div class="maturity-label">Cloud Native</div>
+                                <div class="maturity-level advanced">Advanced</div>
                             </div>
-                            <div class="tech-item docker">
-                                <div class="tech-logo">
-                                    <i class="fab fa-docker" aria-hidden="true"></i>
-                                </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">Docker</span>
-                                    <span class="tech-level">Expert</span>
-                                </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="94"></div>
-                                </div>
+                            <div class="maturity-item">
+                                <div class="maturity-score">94%</div>
+                                <div class="maturity-label">Security</div>
+                                <div class="maturity-level elite">Elite</div>
                             </div>
-                            <div class="tech-item kubernetes">
-                                <div class="tech-logo">
-                                    <i class="fas fa-dharmachakra" aria-hidden="true"></i>
-                                </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">Kubernetes</span>
-                                    <span class="tech-level">Expert</span>
-                                </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="91"></div>
-                                </div>
-                            </div>
-                            <div class="tech-item terraform">
-                                <div class="tech-logo">
-                                    <i class="fas fa-layer-group" aria-hidden="true"></i>
-                                </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">Terraform</span>
-                                    <span class="tech-level">Advanced</span>
-                                </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="89"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tech-category" data-aos="fade-up" data-aos-delay="300">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-chart-line" aria-hidden="true"></i>
-                            </div>
-                            <h3>Monitoring & Security</h3>
-                            <span class="category-count">6 Solutions</span>
-                        </div>
-                        <div class="tech-grid">
-                            <div class="tech-item prometheus">
-                                <div class="tech-logo">
-                                    <i class="fas fa-fire" aria-hidden="true"></i>
-                                </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">Prometheus</span>
-                                    <span class="tech-level">Advanced</span>
-                                </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="86"></div>
-                                </div>
-                            </div>
-                            <div class="tech-item grafana">
-                                <div class="tech-logo">
-                                    <i class="fas fa-chart-bar" aria-hidden="true"></i>
-                                </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">Grafana</span>
-                                    <span class="tech-level">Advanced</span>
-                                </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="84"></div>
-                                </div>
-                            </div>
-                            <div class="tech-item elk">
-                                <div class="tech-logo">
-                                    <i class="fas fa-search" aria-hidden="true"></i>
-                                </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">ELK Stack</span>
-                                    <span class="tech-level">Advanced</span>
-                                </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="81"></div>
-                                </div>
-                            </div>
-                            <div class="tech-item sonarqube">
-                                <div class="tech-logo">
-                                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                                </div>
-                                <div class="tech-info">
-                                    <span class="tech-name">SonarQube</span>
-                                    <span class="tech-level">Intermediate</span>
-                                </div>
-                                <div class="tech-progress">
-                                    <div class="progress-bar" data-progress="78"></div>
-                                </div>
+                            <div class="maturity-item">
+                                <div class="maturity-score">89%</div>
+                                <div class="maturity-label">Monitoring</div>
+                                <div class="maturity-level advanced">Advanced</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tech-stats" data-aos="fade-up" data-aos-delay="400">
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-rocket" aria-hidden="true"></i>
-                        </div>
-                        <div class="stat-content">
-                            <span class="stat-number" data-counter="25">0</span>
-                            <span class="stat-label">Technologies Mastered</span>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-certificate" aria-hidden="true"></i>
-                        </div>
-                        <div class="stat-content">
-                            <span class="stat-number" data-counter="12">0</span>
-                            <span class="stat-label">Professional Certifications</span>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🥇</div>
+                        <div class="achievement-text">
+                            <span class="achievement-title">Zero-Downtime Deployments</span>
+                            <span class="achievement-desc">150+ consecutive successful deployments</span>
                         </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-project-diagram" aria-hidden="true"></i>
-                        </div>
-                        <div class="stat-content">
-                            <span class="stat-number" data-counter="150">0</span>
-                            <span class="stat-label">Successful Deployments</span>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🛡️</div>
+                        <div class="achievement-text">
+                            <span class="achievement-title">Security Excellence</span>
+                            <span class="achievement-desc">No critical vulnerabilities in 6 months</span>
                         </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-users" aria-hidden="true"></i>
-                        </div>
-                        <div class="stat-content">
-                            <span class="stat-number" data-counter="8">0</span>
-                            <span class="stat-label">Team Members Led</span>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">⚡</div>
+                        <div class="achievement-text">
+                            <span class="achievement-title">Performance Leader</span>
+                            <span class="achievement-desc">Top 5% build time optimization</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer>
+    
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-main">
-                    <div class="footer-section">
-                        <div class="footer-logo">
-                            <i class="fas fa-rocket" aria-hidden="true"></i>
-                            <h3>Dileep DevOps</h3>
-                        </div>
-                        <p class="footer-description">
-                            Enterprise-grade DevOps automation platform demonstrating modern CI/CD practices, 
-                            cloud-native architectures, and scalable infrastructure solutions.
-                        </p>
-                        <div class="footer-stats">
-                            <div class="footer-stat">
-                                <span class="stat-number">99.9%</span>
-                                <span class="stat-label">Uptime</span>
-                            </div>
-                            <div class="footer-stat">
-                                <span class="stat-number">150+</span>
-                                <span class="stat-label">Deployments</span>
-                            </div>
-                            <div class="footer-stat">
-                                <span class="stat-number">25</span>
-                                <span class="stat-label">Technologies</span>
-                            </div>
-                        </div>
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-rocket"></i>
+                        <span>DevOps Platform</span>
                     </div>
-                    <div class="footer-section">
-                        <h4>Platform</h4>
-                        <ul class="footer-links">
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#pipeline">Pipeline Status</a></li>
-                            <li><a href="#tech-stack">Technology Stack</a></li>
-                            <li><a href="#metrics">Performance Metrics</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Resources</h4>
-                        <ul class="footer-links">
-                            <li><a href="about html">About Dileep</a></li>
-                            <li><a href="https://github.com/Dileepreddy93/Dileep_devops" target="_blank" rel="noopener noreferrer">Documentation</a></li>
-                            <li><a href="https://github.com/Dileepreddy93" target="_blank" rel="noopener noreferrer">GitHub Portfolio</a></li>
-                            <li><a href="https://linkedin.com/in/dileepreddy93" target="_blank" rel="noopener noreferrer">Professional Profile</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Connect</h4>
-                        <div class="social-links">
-                            <a href="https://github.com/Dileepreddy93" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" aria-label="Visit Dileep's GitHub profile">
-                                <i class="fab fa-github" aria-hidden="true"></i>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://linkedin.com/in/dileepreddy93" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" aria-label="Connect on LinkedIn">
-                                <i class="fab fa-linkedin" aria-hidden="true"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="mailto:dileepreddy93@example.com" class="social-link" title="Email Contact" aria-label="Send email">
-                                <i class="fas fa-envelope" aria-hidden="true"></i>
-                                <span>Email</span>
-                            </a>
-                            <a href="tel:+1234567890" class="social-link" title="Phone Contact" aria-label="Call phone number">
-                                <i class="fas fa-phone" aria-hidden="true"></i>
-                                <span>Phone</span>
-                            </a>
-                        </div>
-                        <div class="newsletter">
-                            <h5>Stay Updated</h5>
-                            <form class="newsletter-form" aria-label="Newsletter subscription">
-                                <input type="email" placeholder="Enter your email" aria-label="Email address" required>
-                                <button type="submit" aria-label="Subscribe to newsletter">
-                                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
-                                </button>
-                            </form>
-                        </div>
+                    <p class="footer-description">
+                        Enterprise-grade DevOps automation platform built for modern development teams.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#pipeline">Pipeline</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#metrics">Metrics</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="https://github.com/Dileepreddy93/Dileep_devops" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/dileepreddy93" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Dileepreddy93" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/dileepreddy93" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 Dileep DevOps Platform. Built with ❤️ for enterprise automation excellence.</p>
-                    <div class="footer-badges">
-                        <span class="badge">AWS Certified</span>
-                        <span class="badge">Kubernetes Expert</span>
-                        <span class="badge">DevOps Professional</span>
-                    </div>
-                </div>
+                <p>&copy; 2025 Dileep Reddy. Enterprise DevOps Platform. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Enterprise DevOps Platform JavaScript -->
-    <script>
-        // Advanced DevOps Platform Application
-        class DevOpsPlatformApp {
-            constructor() {
-                this.init();
-                this.bindEvents();
-                this.startAnimations();
-                this.initRealTimeFeatures();
-            }
-
-            init() {
-                // Remove loading screen with professional transition
-                setTimeout(() => {
-                    const loadingScreen = document.getElementById('loading-screen');
-                    if (loadingScreen) {
-                        loadingScreen.style.opacity = '0';
-                        setTimeout(() => {
-                            loadingScreen.remove();
-                            this.revealContent();
-                        }, 500);
-                    }
-                }, 2000);
-
-                // Initialize AOS (Animate On Scroll) if available
-                if (typeof AOS !== 'undefined') {
-                    AOS.init({
-                        duration: 1000,
-                        easing: 'ease-in-out-cubic',
-                        once: true,
-                        offset: 120,
-                        delay: 100
-                    });
-                }
-
-                // Setup theme system
-                this.initTheme();
-                
-                // Initialize progressive web app features
-                this.setupPWA();
-                
-                // Setup real-time updates
-                this.initRealTimeUpdates();
-            }
-
-            revealContent() {
-                document.body.classList.add('loaded');
-                this.initParticles();
-                this.startCounterAnimations();
-            }
-
-            bindEvents() {
-                // Enhanced smooth scrolling
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        const target = document.querySelector(anchor.getAttribute('href'));
-                        if (target) {
-                            target.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start'
-                            });
-                        }
-                    });
-                });
-
-                // Professional navbar scroll effects
-                let ticking = false;
-                window.addEventListener('scroll', () => {
-                    if (!ticking) {
-                        requestAnimationFrame(() => {
-                            this.handleScroll();
-                            ticking = false;
-                        });
-                        ticking = true;
-                    }
-                });
-
-                // Demo button functionality
-                document.querySelectorAll('.demo-btn').forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        this.startPipelineDemo();
-                    });
-                });
-
-                // Theme toggle
-                this.setupThemeToggle();
-
-                // Mobile navigation
-                this.setupMobileNav();
-
-                // Newsletter form
-                this.setupNewsletterForm();
-
-                // Interactive pipeline stages
-                this.setupPipelineStages();
-
-                // Feature card interactions
-                this.setupFeatureCards();
-            }
-
-            handleScroll() {
-                const navbar = document.querySelector('.navbar');
-                const scrollY = window.scrollY;
-                
-                if (scrollY > 100) {
-                    navbar?.classList.add('scrolled');
-                } else {
-                    navbar?.classList.remove('scrolled');
-                }
-
-                // Professional parallax effects
-                const hero = document.querySelector('.hero');
-                if (hero && scrollY < window.innerHeight) {
-                    const parallaxElements = hero.querySelectorAll('.hero-content, .hero-visual');
-                    parallaxElements.forEach((element, index) => {
-                        const speed = 0.1 + (index * 0.05);
-                        element.style.transform = `translateY(${scrollY * speed}px)`;
-                    });
-                }
-
-                // Update active navigation
-                this.updateActiveNavigation();
-            }
-
-            updateActiveNavigation() {
-                const sections = document.querySelectorAll('section[id]');
-                const navLinks = document.querySelectorAll('.nav-link');
-                
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    if (scrollY >= sectionTop - 200) {
-                        current = section.getAttribute('id');
-                    }
-                });
-
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${current}`) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-
-            startPipelineDemo() {
-                this.showToast('Starting live pipeline demonstration...', 'info');
-                
-                // Simulate pipeline stages
-                const stages = ['source', 'build', 'quality', 'deploy'];
-                let currentStage = 0;
-
-                const runStage = () => {
-                    if (currentStage < stages.length) {
-                        const stage = stages[currentStage];
-                        this.highlightPipelineStage(stage);
-                        
-                        setTimeout(() => {
-                            this.completePipelineStage(stage);
-                            currentStage++;
-                            runStage();
-                        }, 2000 + Math.random() * 1000);
-                    } else {
-                        this.showToast('Pipeline demonstration completed successfully!', 'success');
-                        setTimeout(() => this.resetPipelineDemo(), 3000);
-                    }
-                };
-
-                runStage();
-            }
-
-            highlightPipelineStage(stage) {
-                const stageElement = document.querySelector(`[data-stage="${stage}"]`);
-                if (stageElement) {
-                    stageElement.classList.add('active', 'processing');
-                    const progressBar = stageElement.querySelector('.progress-bar');
-                    if (progressBar) {
-                        progressBar.style.width = '100%';
-                    }
-                }
-            }
-
-            completePipelineStage(stage) {
-                const stageElement = document.querySelector(`[data-stage="${stage}"]`);
-                if (stageElement) {
-                    stageElement.classList.remove('processing');
-                    stageElement.classList.add('completed');
-                }
-            }
-
-            resetPipelineDemo() {
-                document.querySelectorAll('.pipeline-stage').forEach(stage => {
-                    stage.classList.remove('active', 'processing', 'completed');
-                });
-            }
-
-            setupPipelineStages() {
-                const stages = document.querySelectorAll('.pipeline-stage');
-                
-                stages.forEach(stage => {
-                    stage.addEventListener('mouseenter', () => {
-                        this.showStageTooltip(stage);
-                    });
-
-                    stage.addEventListener('mouseleave', () => {
-                        this.hideTooltip();
-                    });
-
-                    stage.addEventListener('click', () => {
-                        this.showStageDetails(stage);
-                    });
-                });
-            }
-
-            setupFeatureCards() {
-                const cards = document.querySelectorAll('.feature-card');
-                
-                cards.forEach(card => {
-                    card.addEventListener('mouseenter', () => {
-                        card.style.transform = 'translateY(-10px) scale(1.02)';
-                    });
-
-                    card.addEventListener('mouseleave', () => {
-                        card.style.transform = 'translateY(0) scale(1)';
-                    });
-                });
-            }
-
-            startCounterAnimations() {
-                const counters = document.querySelectorAll('[data-counter]');
-                
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            this.animateCounter(entry.target);
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.5 });
-
-                counters.forEach(counter => observer.observe(counter));
-            }
-
-            animateCounter(element) {
-                const target = parseFloat(element.dataset.counter);
-                const duration = 2500;
-                const start = performance.now();
-                
-                const animate = (currentTime) => {
-                    const elapsed = currentTime - start;
-                    const progress = Math.min(elapsed / duration, 1);
-                    
-                    const current = target * this.easeOutCubic(progress);
-                    
-                    if (target % 1 === 0) {
-                        element.textContent = Math.floor(current);
-                    } else {
-                        element.textContent = current.toFixed(1);
-                    }
-                    
-                    if (progress < 1) {
-    <!-- Enhanced JavaScript -->
-    <script>
-        // Enhanced Loading Screen
-        document.addEventListener('DOMContentLoaded', function() {
-            const loadingScreen = document.getElementById('loadingScreen');
-            const loadingBar = document.querySelector('.loading-bar');
-            
-            // Simulate loading progress
-            let progress = 0;
-            const loadingInterval = setInterval(() => {
-                progress += Math.random() * 15;
-                if (progress >= 100) {
-                    progress = 100;
-                    clearInterval(loadingInterval);
-                    setTimeout(() => {
-                        loadingScreen.style.opacity = '0';
-                        setTimeout(() => {
-                            loadingScreen.style.display = 'none';
-                        }, 800);
-                    }, 500);
-                }
-                loadingBar.style.width = progress + '%';
-            }, 200);
-        });
-
-        // Enhanced Particle System
-        class ParticleSystem {
-            constructor(canvas) {
-                this.canvas = canvas;
-                this.ctx = canvas.getContext('2d');
-                this.particles = [];
-                this.mousePosition = { x: 0, y: 0 };
-                
-                this.resizeCanvas();
-                this.createParticles();
-                this.bindEvents();
-                this.animate();
-            }
-            
-            resizeCanvas() {
-                this.canvas.width = window.innerWidth;
-                this.canvas.height = window.innerHeight;
-            }
-            
-            createParticles() {
-                const particleCount = Math.min(150, window.innerWidth / 10);
-                for (let i = 0; i < particleCount; i++) {
-                    this.particles.push({
-                        x: Math.random() * this.canvas.width,
-                        y: Math.random() * this.canvas.height,
-                        vx: (Math.random() - 0.5) * 2,
-                        vy: (Math.random() - 0.5) * 2,
-                        size: Math.random() * 3 + 1,
-                        hue: Math.random() * 360,
-                        saturation: 70 + Math.random() * 30,
-                        lightness: 50 + Math.random() * 50,
-                        alpha: Math.random() * 0.8 + 0.2
-                    });
-                }
-            }
-            
-            updateParticles() {
-                this.particles.forEach(particle => {
-                    particle.x += particle.vx;
-                    particle.y += particle.vy;
-                    
-                    // Boundary checking
-                    if (particle.x < 0 || particle.x > this.canvas.width) particle.vx *= -1;
-                    if (particle.y < 0 || particle.y > this.canvas.height) particle.vy *= -1;
-                    
-                    // Mouse interaction
-                    const dx = this.mousePosition.x - particle.x;
-                    const dy = this.mousePosition.y - particle.y;
-                    const distance = Math.sqrt(dx * dx + dy * dy);
-                    
-                    if (distance < 100) {
-                        const force = (100 - distance) / 100;
-                        particle.vx += dx * force * 0.01;
-                        particle.vy += dy * force * 0.01;
-                    }
-                    
-                    // Color animation
-                    particle.hue += 0.5;
-                    if (particle.hue > 360) particle.hue = 0;
-                });
-            }
-            
-            drawParticles() {
-                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-                
-                this.particles.forEach(particle => {
-                    this.ctx.beginPath();
-                    this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-                    this.ctx.fillStyle = `hsla(${particle.hue}, ${particle.saturation}%, ${particle.lightness}%, ${particle.alpha})`;
-                    this.ctx.fill();
-                    
-                    // Add glow effect
-                    this.ctx.shadowBlur = 20;
-                    this.ctx.shadowColor = `hsla(${particle.hue}, ${particle.saturation}%, ${particle.lightness}%, 0.8)`;
-                    this.ctx.fill();
-                    this.ctx.shadowBlur = 0;
-                });
-                
-                // Draw connections
-                this.drawConnections();
-            }
-            
-            drawConnections() {
-                this.particles.forEach((particle, i) => {
-                    this.particles.slice(i + 1).forEach(otherParticle => {
-                        const dx = particle.x - otherParticle.x;
-                        const dy = particle.y - otherParticle.y;
-                        const distance = Math.sqrt(dx * dx + dy * dy);
-                        
-                        if (distance < 120) {
-                            this.ctx.beginPath();
-                            this.ctx.moveTo(particle.x, particle.y);
-                            this.ctx.lineTo(otherParticle.x, otherParticle.y);
-                            const alpha = (120 - distance) / 120 * 0.3;
-                            this.ctx.strokeStyle = `rgba(102, 126, 234, ${alpha})`;
-                            this.ctx.lineWidth = 1;
-                            this.ctx.stroke();
-                        }
-                    });
-                });
-            }
-            
-            bindEvents() {
-                window.addEventListener('resize', () => this.resizeCanvas());
-                window.addEventListener('mousemove', (e) => {
-                    this.mousePosition.x = e.clientX;
-                    this.mousePosition.y = e.clientY;
-                });
-            }
-            
-            animate() {
-                this.updateParticles();
-                this.drawParticles();
-                requestAnimationFrame(() => this.animate());
-            }
-        }
-
-        // Enhanced Navigation
-        class Navigation {
-            constructor() {
-                this.navbar = document.getElementById('navbar');
-                this.navLinks = document.querySelectorAll('.nav-link');
-                this.themeToggle = document.getElementById('themeToggle');
-                
-                this.bindEvents();
-                this.initTheme();
-            }
-            
-            bindEvents() {
-                window.addEventListener('scroll', () => this.handleScroll());
-                this.navLinks.forEach(link => {
-                    link.addEventListener('click', (e) => this.handleNavClick(e));
-                });
-                this.themeToggle.addEventListener('click', () => this.toggleTheme());
-            }
-            
-            handleScroll() {
-                const scrolled = window.scrollY > 50;
-                this.navbar.classList.toggle('scrolled', scrolled);
-            }
-            
-            handleNavClick(e) {
-                e.preventDefault();
-                const targetId = e.currentTarget.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-                
-                // Update active state
-                this.navLinks.forEach(link => link.classList.remove('active'));
-                e.currentTarget.classList.add('active');
-            }
-            
-            initTheme() {
-                const savedTheme = localStorage.getItem('theme') || 'dark';
-                document.documentElement.setAttribute('data-theme', savedTheme);
-                this.updateThemeIcon(savedTheme);
-            }
-            
-            toggleTheme() {
-                const currentTheme = document.documentElement.getAttribute('data-theme');
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                
-                document.documentElement.setAttribute('data-theme', newTheme);
-                localStorage.setItem('theme', newTheme);
-                this.updateThemeIcon(newTheme);
-            }
-            
-            updateThemeIcon(theme) {
-                const icon = this.themeToggle.querySelector('i');
-                icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            }
-        }
-
-        // Enhanced Pipeline Animation
-        class PipelineAnimation {
-            constructor() {
-                this.stages = document.querySelectorAll('.pipeline-stage');
-                this.currentStage = 0;
-                this.interval = null;
-                
-                this.startAnimation();
-            }
-            
-            startAnimation() {
-                this.interval = setInterval(() => {
-                    this.animateNextStage();
-                }, 3000);
-            }
-            
-            animateNextStage() {
-                if (this.currentStage < this.stages.length) {
-                    const stage = this.stages[this.currentStage];
-                    const progressBar = stage.querySelector('.progress-bar');
-                    
-                    stage.classList.add('active');
-                    
-                    // Animate progress bar
-                    setTimeout(() => {
-                        progressBar.style.width = '100%';
-                    }, 500);
-                    
-                    this.currentStage++;
-                } else {
-                    // Reset animation
-                    this.resetAnimation();
-                }
-            }
-            
-            resetAnimation() {
-                this.stages.forEach(stage => {
-                    stage.classList.remove('active');
-                    const progressBar = stage.querySelector('.progress-bar');
-                    progressBar.style.width = '0%';
-                });
-                this.currentStage = 0;
-            }
-        }
-
-        // Initialize components
-        const particleCanvas = document.getElementById('particleCanvas');
-        if (particleCanvas) {
-            new ParticleSystem(particleCanvas);
-        }
-        
-        new Navigation();
-        new PipelineAnimation();
-
-        // Enhanced Feature Cards Interaction
-        document.querySelectorAll('.feature-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-15px) scale(1.02) rotateY(5deg)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1) rotateY(0deg)';
-            });
-        });
-
-        // Performance optimization
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements for scroll animations
-        document.querySelectorAll('.feature-card, .pipeline-stage').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
-        });
-    </script>
-</body>
-</html>
-                        hue: Math.random() * 60 + 200 // Blue spectrum
-                    });
-                }
-
-                const animate = () => {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    
-                    particles.forEach(particle => {
-                        particle.x += particle.vx;
-                        particle.y += particle.vy;
-                        
-                        // Bounce off edges
-                        if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
-                        if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
-                        
-                        // Draw particle
-                        ctx.beginPath();
-                        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-                        ctx.fillStyle = `hsla(${particle.hue}, 70%, 60%, ${particle.opacity})`;
-                        ctx.fill();
-                        
-                        // Draw connections
-                        particles.forEach(other => {
-                            const dx = particle.x - other.x;
-                            const dy = particle.y - other.y;
-                            const distance = Math.sqrt(dx * dx + dy * dy);
-                            
-                            if (distance < 120) {
-                                ctx.beginPath();
-                                ctx.moveTo(particle.x, particle.y);
-                                ctx.lineTo(other.x, other.y);
-                                ctx.strokeStyle = `hsla(${particle.hue}, 70%, 60%, ${0.1 * (1 - distance / 120)})`;
-                                ctx.lineWidth = 0.5;
-                                ctx.stroke();
-                            }
-                        });
-                    });
-                    
-                    requestAnimationFrame(animate);
-                };
-
-                animate();
-
-                // Responsive canvas
-                window.addEventListener('resize', () => {
-                    canvas.width = window.innerWidth;
-                    canvas.height = window.innerHeight;
-                });
-            }
-
-            initRealTimeFeatures() {
-                // Simulate real-time pipeline updates
-                setInterval(() => {
-                    this.updatePipelineMetrics();
-                }, 30000); // Update every 30 seconds
-
-                // Simulate infrastructure status updates
-                setInterval(() => {
-                    this.updateInfrastructureStatus();
-                }, 45000); // Update every 45 seconds
-            }
-
-            updatePipelineMetrics() {
-                const metrics = document.querySelectorAll('.metric-value');
-                metrics.forEach(metric => {
-                    const currentValue = metric.textContent;
-                    // Simulate small changes in metrics
-                    if (currentValue.includes('m') && currentValue.includes('s')) {
-                        const baseTime = 150 + Math.random() * 60;
-                        metric.textContent = `${Math.floor(baseTime / 60)}m ${Math.floor(baseTime % 60)}s`;
-                    }
-                });
-            }
-
-            updateInfrastructureStatus() {
-                const statusElements = document.querySelectorAll('.infra-status');
-                statusElements.forEach(status => {
-                    if (status.textContent.includes('Pods')) {
-                        const podCount = 20 + Math.floor(Math.random() * 10);
-                        status.textContent = `${podCount} Pods`;
-                    }
-                });
-            }
-
-            // Theme and utility methods
-            initTheme() {
-                const savedTheme = localStorage.getItem('devops-theme') || 'light';
-                document.documentElement.setAttribute('data-theme', savedTheme);
-                this.updateThemeIcon(savedTheme);
-            }
-
-            setupThemeToggle() {
-                const themeToggle = document.querySelector('.theme-toggle');
-                if (themeToggle) {
-                    themeToggle.addEventListener('click', () => {
-                        this.toggleTheme();
-                    });
-                }
-            }
-
-            toggleTheme() {
-                const currentTheme = document.documentElement.getAttribute('data-theme');
-                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-                
-                document.documentElement.setAttribute('data-theme', newTheme);
-                localStorage.setItem('devops-theme', newTheme);
-                this.updateThemeIcon(newTheme);
-                
-                this.showToast(`Switched to ${newTheme} theme`, 'success');
-            }
-
-            updateThemeIcon(theme) {
-                const themeIcon = document.querySelector('.theme-toggle i');
-                if (themeIcon) {
-                    themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
-                }
-            }
-
-            setupMobileNav() {
-                const navToggle = document.querySelector('.nav-toggle');
-                const navMenu = document.querySelector('.nav-menu');
-
-                if (navToggle && navMenu) {
-                    navToggle.addEventListener('click', () => {
-                        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-                        
-                        navToggle.setAttribute('aria-expanded', !isExpanded);
-                        navMenu.classList.toggle('active');
-                        document.body.classList.toggle('nav-open');
-                    });
-                }
-            }
-
-            setupNewsletterForm() {
-                const form = document.querySelector('.newsletter-form');
-                if (form) {
-                    form.addEventListener('submit', (e) => {
-                        e.preventDefault();
-                        const email = form.querySelector('input[type="email"]').value;
-                        this.subscribeNewsletter(email);
-                    });
-                }
-            }
-
-            subscribeNewsletter(email) {
-                this.showToast('Thank you for subscribing to DevOps updates!', 'success');
-                // In production, this would send to newsletter service
-            }
-
-            setupPWA() {
-                // Service worker registration
-                if ('serviceWorker' in navigator) {
-                    navigator.serviceWorker.register('/sw.js')
-                        .then(() => console.log('DevOps Platform Service Worker registered'))
-                        .catch(err => console.log('Service Worker registration failed:', err));
-                }
-            }
-
-            showStageTooltip(stage) {
-                const stageName = stage.dataset.stage;
-                const tooltips = {
-                    source: 'Git webhook triggers automated pipeline execution',
-                    build: 'Docker containerization with Jenkins automation',
-                    quality: 'SonarQube analysis and security scanning',
-                    deploy: 'Kubernetes deployment with health checks'
-                };
-
-                this.showTooltip(stage, tooltips[stageName] || 'Pipeline stage information');
-            }
-
-            showTooltip(element, text) {
-                const tooltip = document.createElement('div');
-                tooltip.className = 'enterprise-tooltip';
-                tooltip.textContent = text;
-                document.body.appendChild(tooltip);
-
-                const rect = element.getBoundingClientRect();
-                tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
-                tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
-
-                setTimeout(() => tooltip.classList.add('show'), 10);
-            }
-
-            hideTooltip() {
-                const tooltip = document.querySelector('.enterprise-tooltip');
-                if (tooltip) {
-                    tooltip.classList.remove('show');
-                    setTimeout(() => tooltip.remove(), 200);
-                }
-            }
-
-            showToast(message, type = 'info') {
-                const toast = document.createElement('div');
-                toast.className = `enterprise-toast toast-${type}`;
-                toast.innerHTML = `
-                    <i class="fas fa-${this.getToastIcon(type)}"></i>
-                    <span>${message}</span>
-                `;
-                
-                document.body.appendChild(toast);
-                
-                setTimeout(() => toast.classList.add('show'), 100);
-                setTimeout(() => {
-                    toast.classList.remove('show');
-                    setTimeout(() => toast.remove(), 300);
-                }, 4000);
-            }
-
-            getToastIcon(type) {
-                const icons = {
-                    success: 'check-circle',
-                    error: 'exclamation-circle',
-                    warning: 'exclamation-triangle',
-                    info: 'info-circle'
-                };
-                return icons[type] || 'info-circle';
-            }
-
-            easeOutCubic(t) {
-                return 1 - Math.pow(1 - t, 3);
-            }
-        }
-
-        // Initialize the enterprise DevOps platform
-        document.addEventListener('DOMContentLoaded', () => {
-            new DevOpsPlatformApp();
-        });
-
-        // Performance monitoring
-        window.addEventListener('load', () => {
-            if ('performance' in window) {
-                const perfData = performance.getEntriesByType('navigation')[0];
-                if (perfData) {
-                    console.log(`Quantum DevOps Platform loaded in ${perfData.loadEventEnd - perfData.loadEventStart}ms`);
-                }
-            }
-        });
-
-        // Error handling
-        window.addEventListener('error', (e) => {
-            console.error('Quantum DevOps Platform error:', e.error);
-            // In production, send to monitoring service
-        });
-    </script>
     
-    <!-- Quantum JavaScript Framework -->
+    <!-- JavaScript -->
     <script src="quantum.js"></script>
 </body>
 </html>

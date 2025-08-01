@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Dileep DevOps">
+    <meta name="msapplication-TileColor" content="#000014">
     <meta name="description" content="About Dileep Reddy - Quantum DevOps Architect specializing in revolutionary CI/CD, holographic cloud architectures, and ultra-modern quantum automation practices. Experience the future of DevOps.">
     <meta name="keywords" content="Dileep Reddy, Quantum DevOps Architect, Revolutionary CI/CD, Holographic Cloud, Quantum Kubernetes, Ultra Docker, Quantum Jenkins, Neo Terraform, Quantum AWS, Azure Evolution, Quantum DevOps Automation, Infrastructure as Quantum Code, Quantum Site Reliability Engineering">
     <meta name="author" content="Dileep Reddy">

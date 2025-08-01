@@ -619,6 +619,9 @@ document.addEventListener('DOMContentLoaded', () => {
     new QuantumFeatureCards();
     new QuantumStatsCounter();
     
+    // Initialize responsive enhancements
+    new ResponsiveEnhancements();
+    
     // Add quantum effects to buttons
     document.querySelectorAll('.btn').forEach(btn => {
         btn.addEventListener('click', function(e) {
@@ -649,39 +652,485 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add quantum glow to form inputs
     document.querySelectorAll('input, textarea, select').forEach(input => {
         input.addEventListener('focus', function() {
-            this.style.boxShadow = '0 0 30px rgba(0, 255, 255, 0.5)';
+            this.style.boxShadow = '0 0 25px rgba(0, 255, 255, 0.5)';
+            this.style.borderColor = 'var(--neon-cyber-blue)';
         });
         
         input.addEventListener('blur', function() {
             this.style.boxShadow = '';
+            this.style.borderColor = '';
         });
     });
     
-    console.log('🌌 Quantum DevOps Platform Initialized 🌌');
+    // Add performance monitoring
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => {
+            console.log('🌌 Quantum Platform Initialized Successfully');
+            console.log('⚡ Performance Mode: Optimized');
+            console.log('📱 Responsive Mode: Active');
+        });
+    }
 });
 
-// Add quantum ripple animation
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes quantum-ripple {
-        to {
-            transform: scale(4);
-            opacity: 0;
+// Responsive Enhancement System
+class ResponsiveEnhancements {
+    constructor() {
+        this.init();
+        this.setupViewportDetection();
+        this.setupTouchOptimizations();
+        this.setupPerformanceOptimizations();
+        this.setupAccessibilityEnhancements();
+    }
+    
+    init() {
+        this.viewport = this.getViewportInfo();
+        this.isTouch = 'ontouchstart' in window;
+        this.isMobile = this.viewport.width <= 768;
+        this.isTablet = this.viewport.width > 768 && this.viewport.width <= 1024;
+        this.isDesktop = this.viewport.width > 1024;
+        
+        // Add device classes
+        document.body.classList.add(
+            this.isTouch ? 'touch-device' : 'no-touch',
+            this.isMobile ? 'mobile-device' : 
+            this.isTablet ? 'tablet-device' : 'desktop-device'
+        );
+    }
+    
+    getViewportInfo() {
+        return {
+            width: window.innerWidth,
+            height: window.innerHeight,
+            ratio: window.devicePixelRatio || 1
+        };
+    }
+    
+    setupViewportDetection() {
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                this.handleViewportChange();
+            }, 250);
+        });
+        
+        // Handle orientation change
+        window.addEventListener('orientationchange', () => {
+            setTimeout(() => {
+                this.handleViewportChange();
+            }, 100);
+        });
+    }
+    
+    handleViewportChange() {
+        const oldViewport = this.viewport;
+        this.init();
+        
+        // Trigger custom event for other components
+        window.dispatchEvent(new CustomEvent('viewportChange', {
+            detail: { old: oldViewport, new: this.viewport }
+        }));
+        
+        // Optimize particle count based on screen size
+        this.optimizeParticleSystem();
+    }
+    
+    optimizeParticleSystem() {
+        const canvas = document.getElementById('particleCanvas');
+        if (canvas && window.quantumParticleSystem) {
+            const particleCount = this.isMobile ? 30 : 
+                                this.isTablet ? 50 : 80;
+            window.quantumParticleSystem.adjustParticleCount(particleCount);
         }
     }
-`;
-document.head.appendChild(style);
+    
+    setupTouchOptimizations() {
+        if (!this.isTouch) return;
+        
+        // Add touch-friendly interactions
+        document.querySelectorAll('.feature-card, .btn, .nav-link').forEach(element => {
+            element.style.minHeight = '44px'; // Apple's recommended touch target
+            element.style.cursor = 'pointer';
+        });
+        
+        // Prevent 300ms click delay
+        document.addEventListener('touchstart', () => {}, { passive: true });
+        
+        // Handle touch gestures
+        this.setupSwipeGesture();
+        
+        // Optimize scrolling
+        document.addEventListener('touchmove', (e) => {
+            if (e.target.closest('.no-scroll')) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+    }
+    
+    setupSwipeGesture() {
+        let startX, startY, startTime;
+        
+        document.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+            startTime = Date.now();
+        }, { passive: true });
+        
+        document.addEventListener('touchend', (e) => {
+            if (!startX || !startY) return;
+            
+            const endX = e.changedTouches[0].clientX;
+            const endY = e.changedTouches[0].clientY;
+            const endTime = Date.now();
+            
+            const deltaX = endX - startX;
+            const deltaY = endY - startY;
+            const deltaTime = endTime - startTime;
+            
+            // Check for swipe gesture
+            if (Math.abs(deltaX) > 50 && deltaTime < 300) {
+                const direction = deltaX > 0 ? 'right' : 'left';
+                this.handleSwipe(direction);
+            }
+            
+            startX = startY = null;
+        }, { passive: true });
+    }
+    
+    handleSwipe(direction) {
+        // Handle swipe for mobile navigation
+        const navMenu = document.getElementById('navMenu');
+        if (navMenu && this.isMobile) {
+            if (direction === 'left' && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+            }
+        }
+        
+        // Trigger custom swipe event
+        window.dispatchEvent(new CustomEvent('swipe', {
+            detail: { direction }
+        }));
+    }
+    
+    setupPerformanceOptimizations() {
+        // Reduce animations on low-performance devices
+        if (this.shouldReduceAnimations()) {
+            document.body.classList.add('reduced-motion');
+        }
+        
+        // Lazy load images
+        this.setupLazyLoading();
+        
+        // Optimize expensive operations
+        this.setupIntersectionOptimizations();
+        
+        // Memory management
+        this.setupMemoryOptimizations();
+    }
+    
+    shouldReduceAnimations() {
+        // Check for slow device indicators
+        const slowConnection = navigator.connection && 
+                             (navigator.connection.effectiveType === 'slow-2g' || 
+                              navigator.connection.effectiveType === '2g');
+        
+        const lowMemory = navigator.deviceMemory && navigator.deviceMemory < 4;
+        const reducedMotionPreference = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        
+        return slowConnection || lowMemory || reducedMotionPreference;
+    }
+    
+    setupLazyLoading() {
+        const images = document.querySelectorAll('img[data-src]');
+        
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            images.forEach(img => imageObserver.observe(img));
+        } else {
+            // Fallback for older browsers
+            images.forEach(img => {
+                img.src = img.dataset.src;
+            });
+        }
+    }
+    
+    setupIntersectionOptimizations() {
+        // Pause animations when elements are not visible
+        const expensiveElements = document.querySelectorAll('.animate-quantum, .animate-hologram');
+        
+        if ('IntersectionObserver' in window) {
+            const animationObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    } else {
+                        entry.target.style.animationPlayState = 'paused';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            expensiveElements.forEach(el => animationObserver.observe(el));
+        }
+    }
+    
+    setupMemoryOptimizations() {
+        // Clean up unused resources
+        window.addEventListener('beforeunload', () => {
+            // Cancel any running animations
+            document.querySelectorAll('*').forEach(el => {
+                el.style.animation = 'none';
+            });
+            
+            // Clear intervals and timeouts
+            for (let i = 1; i < 99999; i++) {
+                clearTimeout(i);
+                clearInterval(i);
+            }
+        });
+        
+        // Periodic memory cleanup
+        if (this.isMobile) {
+            setInterval(() => {
+                if (document.hidden) {
+                    // Pause particle system when tab is hidden
+                    const canvas = document.getElementById('particleCanvas');
+                    if (canvas && window.quantumParticleSystem) {
+                        window.quantumParticleSystem.pause();
+                    }
+                }
+            }, 30000);
+        }
+    }
+    
+    setupAccessibilityEnhancements() {
+        // Enhance keyboard navigation
+        this.setupKeyboardNavigation();
+        
+        // Add ARIA labels dynamically
+        this.enhanceARIALabels();
+        
+        // Improve focus management
+        this.setupFocusManagement();
+        
+        // Add screen reader optimizations
+        this.setupScreenReaderOptimizations();
+    }
+    
+    setupKeyboardNavigation() {
+        document.addEventListener('keydown', (e) => {
+            // Escape key closes mobile menu
+            if (e.key === 'Escape') {
+                const navMenu = document.getElementById('navMenu');
+                if (navMenu && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                }
+            }
+            
+            // Enter/Space activates buttons
+            if ((e.key === 'Enter' || e.key === ' ') && 
+                e.target.classList.contains('btn')) {
+                e.preventDefault();
+                e.target.click();
+            }
+        });
+    }
+    
+    enhanceARIALabels() {
+        // Add missing ARIA labels
+        document.querySelectorAll('.nav-toggle').forEach(toggle => {
+            if (!toggle.getAttribute('aria-label')) {
+                toggle.setAttribute('aria-label', 'Toggle navigation menu');
+            }
+        });
+        
+        // Add live regions for dynamic content
+        const liveRegion = document.createElement('div');
+        liveRegion.setAttribute('aria-live', 'polite');
+        liveRegion.setAttribute('aria-atomic', 'true');
+        liveRegion.className = 'sr-only';
+        liveRegion.id = 'live-region';
+        document.body.appendChild(liveRegion);
+    }
+    
+    setupFocusManagement() {
+        // Improve focus visibility
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-navigation');
+            }
+        });
+        
+        document.addEventListener('mousedown', () => {
+            document.body.classList.remove('keyboard-navigation');
+        });
+        
+        // Trap focus in modal dialogs
+        this.setupFocusTrap();
+    }
+    
+    setupFocusTrap() {
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab') {
+                const activeModal = document.querySelector('.modal.active');
+                if (activeModal) {
+                    const focusableElements = activeModal.querySelectorAll(
+                        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                    );
+                    
+                    const firstElement = focusableElements[0];
+                    const lastElement = focusableElements[focusableElements.length - 1];
+                    
+                    if (e.shiftKey) {
+                        if (document.activeElement === firstElement) {
+                            lastElement.focus();
+                            e.preventDefault();
+                        }
+                    } else {
+                        if (document.activeElement === lastElement) {
+                            firstElement.focus();
+                            e.preventDefault();
+                        }
+                    }
+                }
+            }
+        });
+    }
+    
+    setupScreenReaderOptimizations() {
+        // Announce page changes
+        const announcePageChange = (message) => {
+            const liveRegion = document.getElementById('live-region');
+            if (liveRegion) {
+                liveRegion.textContent = message;
+                setTimeout(() => {
+                    liveRegion.textContent = '';
+                }, 1000);
+            }
+        };
+        
+        // Monitor navigation changes
+        window.addEventListener('popstate', () => {
+            announcePageChange('Page content updated');
+        });
+        
+        // Announce dynamic content changes
+        window.addEventListener('contentChange', (e) => {
+            announcePageChange(e.detail.message || 'Content updated');
+        });
+    
+    // Add quantum glow to form inputs
+    document.querySelectorAll('input, textarea, select').forEach(input => {
+        input.addEventListener('focus', function() {
+            this.style.boxShadow = '0 0 25px rgba(0, 255, 255, 0.5)';
+            this.style.borderColor = 'var(--neon-cyber-blue)';
+        });
+        
+        input.addEventListener('blur', function() {
+            this.style.boxShadow = '';
+            this.style.borderColor = '';
+        });
+    });
+    
+    // Add performance monitoring
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => {
+            console.log('🌌 Quantum Platform Initialized Successfully');
+            console.log('⚡ Performance Mode: Optimized');
+            console.log('📱 Responsive Mode: Active');
+        });
+    }
+});
+
+// Add quantum ripple animation keyframes
+if (!document.getElementById('quantum-styles')) {
+    const style = document.createElement('style');
+    style.id = 'quantum-styles';
+    style.textContent = `
+        @keyframes quantum-ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+        
+        .reduced-motion * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+        
+        .keyboard-navigation *:focus {
+            outline: 2px solid var(--neon-cyber-blue) !important;
+            outline-offset: 2px !important;
+        }
+        
+        .sr-only {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
+        
+        .touch-device .btn {
+            min-height: 44px;
+        }
+        
+        .mobile-device .hero-title {
+            font-size: clamp(1.8rem, 6vw, 2.5rem) !important;
+        }
+        
+        @media (max-width: 480px) {
+            .quantum-nav {
+                padding: 0.5rem 1rem;
+            }
+            
+            .hero-section {
+                padding: calc(var(--nav-height, 60px) + 1rem) 0.5rem 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1rem;
+                padding: 0 0.5rem;
+            }
+            
+            .pipeline-container {
+                margin: 0 0.5rem;
+                padding: 1rem;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+}
 
 // Performance monitoring
 if ('performance' in window) {
     window.addEventListener('load', () => {
         setTimeout(() => {
             const perfData = performance.getEntriesByType('navigation')[0];
-            console.log('⚡ Quantum Platform Performance:', {
-                'Load Time': Math.round(perfData.loadEventEnd - perfData.fetchStart) + 'ms',
-                'DOM Ready': Math.round(perfData.domContentLoadedEventEnd - perfData.fetchStart) + 'ms',
-                'First Paint': Math.round(performance.getEntriesByType('paint')[0]?.startTime) + 'ms'
-            });
+            if (perfData) {
+                console.log('⚡ Quantum Platform Performance:', {
+                    'Load Time': Math.round(perfData.loadEventEnd - perfData.fetchStart) + 'ms',
+                    'DOM Ready': Math.round(perfData.domContentLoadedEventEnd - perfData.fetchStart) + 'ms'
+                });
+            }
         }, 1000);
     });
 }

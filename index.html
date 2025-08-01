@@ -37,22 +37,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <!-- Navigation Header -->
+    <!-- Enhanced Navigation Header -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-brand">
-                    <i class="fas fa-rocket"></i>
-                    <span>DevOps Platform</span>
+                    <div class="brand-logo">
+                        <i class="fas fa-rocket"></i>
+                        <div class="logo-glow"></div>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-title">DevOps Platform</span>
+                        <span class="brand-subtitle">Enterprise Edition</span>
+                    </div>
                 </div>
                 
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#overview" class="nav-link">Overview</a></li>
-                    <li><a href="#pipeline" class="nav-link">Pipeline</a></li>
-                    <li><a href="#features" class="nav-link">Features</a></li>
-                    <li><a href="#metrics" class="nav-link">Metrics</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i><span>Home</span></a></li>
+                    <li><a href="#overview" class="nav-link"><i class="fas fa-chart-line"></i><span>Overview</span></a></li>
+                    <li><a href="#pipeline" class="nav-link"><i class="fas fa-cogs"></i><span>Pipeline</span></a></li>
+                    <li><a href="#features" class="nav-link"><i class="fas fa-star"></i><span>Features</span></a></li>
+                    <li><a href="#metrics" class="nav-link"><i class="fas fa-analytics"></i><span>Metrics</span></a></li>
+                    <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i><span>About</span></a></li>
                 </ul>
                 
                 <div class="nav-controls">
@@ -130,18 +136,70 @@
                     
                     <div class="hero-visual">
                         <div class="hero-image">
-                            <div class="code-block">
-                                <div class="code-header">
-                                    <span class="code-dot red"></span>
-                                    <span class="code-dot yellow"></span>
-                                    <span class="code-dot green"></span>
-                                    <span class="code-title">pipeline.yml</span>
+                            <div class="terminal-window">
+                                <div class="terminal-header">
+                                    <div class="terminal-controls">
+                                        <span class="terminal-dot red"></span>
+                                        <span class="terminal-dot yellow"></span>
+                                        <span class="terminal-dot green"></span>
+                                    </div>
+                                    <div class="terminal-title">
+                                        <i class="fas fa-terminal"></i>
+                                        DevOps Pipeline
+                                    </div>
+                                    <div class="terminal-actions">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
                                 </div>
-                                <div class="code-content">
-                                    <div class="code-line"><span class="code-keyword">stages:</span></div>
-                                    <div class="code-line">  <span class="code-property">- checkout</span></div>
-                                    <div class="code-line">  <span class="code-property">- build</span></div>
-                                    <div class="code-line">  <span class="code-property">- test</span></div>
+                                <div class="terminal-content">
+                                    <div class="terminal-line">
+                                        <span class="terminal-prompt">$</span>
+                                        <span class="terminal-command">jenkins pipeline status</span>
+                                        <span class="terminal-cursor"></span>
+                                    </div>
+                                    <div class="terminal-line">
+                                        <span class="terminal-success">✓</span>
+                                        <span class="terminal-text">Checkout completed</span>
+                                        <span class="terminal-time">0.3s</span>
+                                    </div>
+                                    <div class="terminal-line">
+                                        <span class="terminal-success">✓</span>
+                                        <span class="terminal-text">Build successful</span>
+                                        <span class="terminal-time">1.2s</span>
+                                    </div>
+                                    <div class="terminal-line">
+                                        <span class="terminal-success">✓</span>
+                                        <span class="terminal-text">Tests passed</span>
+                                        <span class="terminal-time">0.8s</span>
+                                    </div>
+                                    <div class="terminal-line">
+                                        <span class="terminal-running">⚡</span>
+                                        <span class="terminal-text">Deploying...</span>
+                                        <span class="terminal-loading">...</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-cards">
+                                <div class="float-card card-1">
+                                    <i class="fab fa-docker"></i>
+                                    <span>Docker</span>
+                                </div>
+                                <div class="float-card card-2">
+                                    <i class="fas fa-cube"></i>
+                                    <span>K8s</span>
+                                </div>
+                                <div class="float-card card-3">
+                                    <i class="fab fa-jenkins"></i>
+                                    <span>Jenkins</span>
+                                </div>
+                                <div class="float-card card-4">
+                                    <i class="fab fa-aws"></i>
+                                    <span>AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                                     <div class="code-line">  <span class="code-property">- deploy</span></div>
                                     <div class="code-line"><span class="code-keyword">success:</span> <span class="code-value">✅</span></div>
                                 </div>
@@ -486,7 +544,7 @@
                                     <span class="metric-value success">99.7%</span>
                                 </div>
                                 <div class="metric-bar">
-                                    <div class="metric-progress" style="width: 99.7%"></div>
+                                    <div class="metric-progress metric-99"></div>
                                 </div>
                                 <span class="metric-trend up">↗️ +0.2%</span>
                             </div>
@@ -497,7 +555,7 @@
                                     <span class="metric-value">2m 34s</span>
                                 </div>
                                 <div class="metric-bar">
-                                    <div class="metric-progress" style="width: 85%"></div>
+                                    <div class="metric-progress metric-85"></div>
                                 </div>
                                 <span class="metric-trend down">↘️ -15%</span>
                             </div>
@@ -508,7 +566,7 @@
                                     <span class="metric-value success">99.9%</span>
                                 </div>
                                 <div class="metric-bar">
-                                    <div class="metric-progress" style="width: 99.9%"></div>
+                                    <div class="metric-progress metric-100"></div>
                                 </div>
                                 <span class="metric-trend stable">→ Stable</span>
                             </div>
@@ -519,7 +577,7 @@
                                     <span class="metric-value success">98.7%</span>
                                 </div>
                                 <div class="metric-bar">
-                                    <div class="metric-progress" style="width: 98.7%"></div>
+                                    <div class="metric-progress metric-98"></div>
                                 </div>
                                 <span class="metric-trend up">↗️ +2.1%</span>
                             </div>

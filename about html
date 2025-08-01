@@ -1,430 +1,1735 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="modern" itemscope itemtype="https://schema.org/AboutPage">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About DevOps Pipeline Demo - Learn about CI/CD practices, Jenkins automation, and modern web development">
-    <meta name="keywords" content="DevOps, Jenkins, CI/CD, About, Pipeline, Automation, Development">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="About Dileep Reddy - Senior DevOps Engineer specializing in enterprise CI/CD, cloud-native architectures, and modern automation practices. Learn about cutting-edge DevOps implementations.">
+    <meta name="keywords" content="Dileep Reddy, Senior DevOps Engineer, Enterprise CI/CD, Cloud Native, Kubernetes, Docker, Jenkins, Terraform, AWS, Azure, DevOps Automation, Infrastructure as Code, Site Reliability Engineering">
     <meta name="author" content="Dileep Reddy">
-    <title>About - DevOps Pipeline Demo | CI/CD with Jenkins</title>
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#667eea">
+    <meta name="color-scheme" content="light dark">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Dileep Reddy - Senior DevOps Engineer | Enterprise CI/CD Specialist">
+    <meta property="og:description" content="Explore my journey in DevOps excellence, from traditional infrastructure to cloud-native architectures">
+    <meta property="og:url" content="https://dileepreddy93.github.io/Dileep_devops/about.html">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=DevOps+Excellence">
+    <meta property="og:site_name" content="Dileep DevOps Portfolio">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dileep Reddy - Senior DevOps Engineer">
+    <meta name="twitter:description" content="Enterprise DevOps solutions and cloud-native expertise">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=DevOps+Excellence">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dileep Reddy",
+        "jobTitle": "Senior DevOps Engineer",
+        "description": "Expert in enterprise CI/CD, cloud-native architectures, and DevOps automation",
+        "url": "https://dileepreddy93.github.io/Dileep_devops/",
+        "sameAs": [
+            "https://github.com/Dileepreddy93",
+            "https://linkedin.com/in/dileepreddy93"
+        ],
+        "knowsAbout": ["DevOps", "Kubernetes", "Docker", "Jenkins", "Terraform", "AWS", "Azure", "CI/CD"]
+    }
+    </script>
+    
+    <title>About Dileep Reddy | Senior DevOps Engineer - Enterprise CI/CD Specialist</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Icons and Manifest -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="manifest" href="data:application/json,{%22name%22:%22Dileep%20DevOps%20Portfolio%22,%22short_name%22:%22DevOps%22,%22icons%22:[{%22src%22:%22data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>%22,%22sizes%22:%22any%22,%22type%22:%22image/svg+xml%22}],%22theme_color%22:%22#667eea%22,%22background_color%22:%22#ffffff%22,%22display%22:%22standalone%22}">
+    
+    <!-- Performance Hints -->
+    <link rel="dns-prefetch" href="//github.com">
+    <link rel="dns-prefetch" href="//linkedin.com">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    
+    <!-- Enhanced Loading Screen -->
+    <div id="loading-screen" class="loading-screen" aria-hidden="true">
+        <div class="loading-animation">
+            <div class="loader">
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+            </div>
+            <p class="loading-text">Loading DevOps Excellence...</p>
+        </div>
+    </div>
+
+    <!-- Enhanced Header -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="nav-container">
-                <div class="nav-logo">
-                    <i class="fas fa-rocket"></i>
-                    <span>Dileep DevOps</span>
+                <div class="nav-logo" role="img" aria-label="Dileep DevOps Portfolio Logo">
+                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                    <span>Dileep DevOps Pro</span>
                 </div>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">
-                            <i class="fas fa-home"></i> Home
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" data-nav-toggle>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </button>
+
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="index.html" class="nav-link" role="menuitem" aria-describedby="home-tooltip">
+                            <i class="fas fa-home" aria-hidden="true"></i> 
+                            <span>Home</span>
                         </a>
+                        <div id="home-tooltip" class="tooltip" role="tooltip">Portfolio homepage</div>
                     </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link active">
-                            <i class="fas fa-info-circle"></i> About
+                    <li class="nav-item" role="none">
+                        <a href="about.html" class="nav-link active" role="menuitem" aria-current="page" aria-describedby="about-tooltip">
+                            <i class="fas fa-user" aria-hidden="true"></i> 
+                            <span>About</span>
                         </a>
+                        <div id="about-tooltip" class="tooltip" role="tooltip">Learn about my expertise</div>
                     </li>
-                    <li class="nav-item">
-                        <a href="html" class="nav-link">
-                            <i class="fas fa-code"></i> Demo
+                    <li class="nav-item" role="none">
+                        <a href="html" class="nav-link" role="menuitem" aria-describedby="demo-tooltip">
+                            <i class="fas fa-code" aria-hidden="true"></i> 
+                            <span>Demo</span>
                         </a>
+                        <div id="demo-tooltip" class="tooltip" role="tooltip">Interactive DevOps demo</div>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <button class="nav-link theme-toggle" role="menuitem" aria-label="Toggle dark mode" data-theme-toggle>
+                            <i class="fas fa-moon" aria-hidden="true"></i>
+                            <span class="sr-only">Toggle Theme</span>
+                        </button>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero about-hero">
+    <!-- Main Content with Enhanced Structure -->
+    <main id="main-content" role="main">
+        <!-- Enhanced Hero Section with Personal Branding -->
+        <section class="hero about-hero" role="banner" aria-labelledby="hero-title">
+            <div class="hero-background">
+                <canvas id="particle-canvas" aria-hidden="true"></canvas>
+            </div>
             <div class="hero-content">
-                <h1 class="hero-title">
-                    <i class="fas fa-info-circle"></i>
-                    About This Project
-                </h1>
-                <p class="hero-subtitle">
-                    A comprehensive demonstration of modern DevOps practices using Jenkins CI/CD pipeline automation
-                </p>
-                <div class="project-stats">
-                    <div class="stat-item">
-                        <i class="fas fa-code"></i>
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Automated</span>
+                <div class="profile-section" data-aos="fade-up">
+                    <div class="profile-avatar">
+                        <img src="https://via.placeholder.com/200x200/667eea/ffffff?text=DR" alt="Dileep Reddy Profile" class="avatar-img" loading="lazy">
+                        <div class="avatar-ring"></div>
+                        <div class="status-indicator online" aria-label="Available for opportunities"></div>
                     </div>
-                    <div class="stat-item">
-                        <i class="fas fa-rocket"></i>
-                        <span class="stat-number">8</span>
-                        <span class="stat-label">Pipeline Stages</span>
+                    <div class="profile-info">
+                        <h1 id="hero-title" class="hero-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name-highlight">Dileep Reddy</span>
+                            <span class="role-title">Senior DevOps Engineer</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Architecting enterprise-scale CI/CD pipelines and cloud-native solutions with 
+                            <span class="highlight-text">5+ years</span> of expertise in DevOps automation, 
+                            infrastructure as code, and modern deployment strategies.
+                        </p>
                     </div>
-                    <div class="stat-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span class="stat-number">98%</span>
-                        <span class="stat-label">Success Rate</span>
+                </div>
+                
+                <!-- Advanced Statistics Dashboard -->
+                <div class="project-stats" role="region" aria-label="Professional statistics" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item" data-tooltip="Years of DevOps expertise">
+                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                        <span class="stat-number" data-counter="5">0</span>
+                        <span class="stat-label">Years Experience</span>
+                        <div class="stat-progress">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item" data-tooltip="Enterprise projects delivered">
+                        <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                        <span class="stat-number" data-counter="47">0</span>
+                        <span class="stat-label">Projects Delivered</span>
+                        <div class="stat-progress">
+                            <div class="progress-bar" data-progress="92"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item" data-tooltip="Pipeline deployment success rate">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <span class="stat-number" data-counter="99.7">0</span>
+                        <span class="stat-label">Success Rate %</span>
+                        <div class="stat-progress">
+                            <div class="progress-bar" data-progress="97"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item" data-tooltip="Cloud platforms mastered">
+                        <i class="fas fa-cloud" aria-hidden="true"></i>
+                        <span class="stat-number" data-counter="12">0</span>
+                        <span class="stat-label">Technologies</span>
+                        <div class="stat-progress">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Certifications -->
+                <div class="certifications" data-aos="fade-up" data-aos-delay="600">
+                    <h3 class="cert-title">Certifications & Expertise</h3>
+                    <div class="cert-badges">
+                        <div class="cert-badge">
+                            <i class="fab fa-aws" aria-hidden="true"></i>
+                            <span>AWS Certified</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fab fa-docker" aria-hidden="true"></i>
+                            <span>Docker Expert</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-dharmachakra" aria-hidden="true"></i>
+                            <span>Kubernetes Admin</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fab fa-jenkins" aria-hidden="true"></i>
+                            <span>Jenkins Master</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Project Overview -->
-        <section class="project-overview">
+        <!-- Professional Journey & Experience -->
+        <section class="professional-journey" aria-labelledby="journey-title">
             <div class="container">
-                <div class="overview-grid">
-                    <div class="overview-content">
-                        <h2>Project Overview</h2>
-                        <p>This project showcases enterprise-level DevOps practices through a beautifully designed static website. It demonstrates the complete software development lifecycle from code commit to production deployment using modern CI/CD practices.</p>
+                <h2 id="journey-title" class="section-title" data-aos="fade-up">
+                    Professional Journey
+                    <span class="title-accent">From Infrastructure to Cloud Native</span>
+                </h2>
+                
+                <!-- Interactive Timeline -->
+                <div class="timeline-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline">
+                        <article class="timeline-item" data-year="2024-Present">
+                            <div class="timeline-marker">
+                                <i class="fas fa-rocket" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Senior DevOps Engineer</h3>
+                                <h4>Enterprise Cloud Solutions</h4>
+                                <p>Leading cloud-native transformations, implementing GitOps workflows, and architecting multi-cloud CI/CD pipelines for Fortune 500 companies.</p>
+                                <div class="timeline-skills">
+                                    <span class="skill-tag">Kubernetes</span>
+                                    <span class="skill-tag">ArgoCD</span>
+                                    <span class="skill-tag">Terraform</span>
+                                    <span class="skill-tag">AWS/Azure</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item" data-year="2022-2024">
+                            <div class="timeline-marker">
+                                <i class="fas fa-cogs" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>DevOps Engineer</h3>
+                                <h4>Infrastructure Automation</h4>
+                                <p>Designed and implemented enterprise CI/CD pipelines, reducing deployment time by 80% and achieving 99.9% uptime through automated monitoring.</p>
+                                <div class="timeline-skills">
+                                    <span class="skill-tag">Jenkins</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">Ansible</span>
+                                    <span class="skill-tag">Prometheus</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item" data-year="2020-2022">
+                            <div class="timeline-marker">
+                                <i class="fas fa-server" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>System Administrator</h3>
+                                <h4>Infrastructure Foundation</h4>
+                                <p>Managed traditional infrastructure, started automation journey, and laid the groundwork for modern DevOps practices.</p>
+                                <div class="timeline-skills">
+                                    <span class="skill-tag">Linux</span>
+                                    <span class="skill-tag">Bash</span>
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">Monitoring</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Competencies & Skills -->
+        <section class="core-competencies" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section-title" data-aos="fade-up">
+                    Core Competencies
+                    <span class="title-accent">Technical Excellence</span>
+                </h2>
+                
+                <!-- Interactive Skills Grid -->
+                <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category" data-category="cloud">
+                        <div class="category-header">
+                            <i class="fas fa-cloud" aria-hidden="true"></i>
+                            <h3>Cloud Platforms</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Amazon Web Services</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Microsoft Azure</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Google Cloud Platform</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="containers">
+                        <div class="category-header">
+                            <i class="fab fa-docker" aria-hidden="true"></i>
+                            <h3>Containerization</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker & BuildKit</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="97"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Kubernetes</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Helm & Operators</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="automation">
+                        <div class="category-header">
+                            <i class="fas fa-robot" aria-hidden="true"></i>
+                            <h3>Automation & IaC</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Terraform</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="94"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Ansible</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="87"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Jenkins & GitOps</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="96"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="monitoring">
+                        <div class="category-header">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            <h3>Monitoring & Security</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Prometheus & Grafana</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="91"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">ELK Stack</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="84"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Security Scanning</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="89"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enterprise Projects Showcase -->
+        <section class="enterprise-projects" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section-title" data-aos="fade-up">
+                    Enterprise Projects
+                    <span class="title-accent">Real-World Impact</span>
+                </h2>
+                
+                <!-- Project Filter -->
+                <div class="project-filters" role="tablist" aria-label="Project categories" data-aos="fade-up" data-aos-delay="200">
+                    <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">
+                        <i class="fas fa-layer-group"></i> All Projects
+                    </button>
+                    <button class="filter-btn" role="tab" aria-selected="false" data-filter="cloud">
+                        <i class="fas fa-cloud"></i> Cloud Migration
+                    </button>
+                    <button class="filter-btn" role="tab" aria-selected="false" data-filter="cicd">
+                        <i class="fas fa-infinity"></i> CI/CD
+                    </button>
+                    <button class="filter-btn" role="tab" aria-selected="false" data-filter="kubernetes">
+                        <i class="fas fa-dharmachakra"></i> Kubernetes
+                    </button>
+                </div>
+
+                <div class="projects-grid" data-aos="fade-up" data-aos-delay="400">
+                    <article class="project-card" data-category="cloud">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-meta">
+                                <h3>Multi-Cloud Migration</h3>
+                                <span class="project-type">Fortune 500 Company</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Led complete migration of legacy monolithic applications to cloud-native architecture across AWS and Azure, 
+                            reducing infrastructure costs by 60% and improving deployment frequency by 10x.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">60%</span>
+                                <span class="metric-label">Cost Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">10x</span>
+                                <span class="metric-label">Faster Deployments</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">99.9%</span>
+                                <span class="metric-label">Uptime</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="cicd">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-infinity" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-meta">
+                                <h3>GitOps Pipeline Platform</h3>
+                                <span class="project-type">Financial Services</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Architected enterprise GitOps platform serving 200+ microservices with automated security scanning, 
+                            compliance checks, and multi-environment promotion workflows.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">200+</span>
+                                <span class="metric-label">Microservices</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Test Coverage</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3min</span>
+                                <span class="metric-label">Deploy Time</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">ArgoCD</span>
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">SonarQube</span>
+                            <span class="tech-tag">Vault</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="kubernetes">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-dharmachakra" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-meta">
+                                <h3>Kubernetes at Scale</h3>
+                                <span class="project-type">E-commerce Platform</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Designed and implemented production-ready Kubernetes clusters handling 10M+ daily transactions 
+                            with auto-scaling, service mesh, and comprehensive observability.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">10M+</span>
+                                <span class="metric-label">Daily Transactions</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">500+</span>
+                                <span class="metric-label">Pods</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">12</span>
+                                <span class="metric-label">Clusters</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Istio</span>
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">Jaeger</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DevOps Philosophy & Approach -->
+        <section class="devops-philosophy" aria-labelledby="philosophy-title">
+            <div class="container">
+                <h2 id="philosophy-title" class="section-title" data-aos="fade-up">
+                    DevOps Philosophy
+                    <span class="title-accent">My Approach to Excellence</span>
+                </h2>
+                
+                <div class="philosophy-content" data-aos="fade-up" data-aos-delay="200">
+                    <div class="philosophy-quote">
+                        <blockquote>
+                            "DevOps is not just about tools and automation—it's about creating a culture of collaboration, 
+                            continuous improvement, and delivering value to customers with speed, reliability, and security."
+                        </blockquote>
+                        <cite>— Dileep Reddy</cite>
+                    </div>
+                    
+                    <div class="philosophy-principles">
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-infinity" aria-hidden="true"></i>
+                            </div>
+                            <h3>Continuous Everything</h3>
+                            <p>Integration, delivery, deployment, monitoring, and improvement. Every process should be automated, measured, and continuously optimized.</p>
+                        </div>
                         
-                        <div class="key-highlights">
-                            <h3>Key Highlights</h3>
-                            <ul class="highlight-list">
-                                <li><i class="fas fa-check"></i> <strong>Automated CI/CD Pipeline</strong> with Jenkins</li>
-                                <li><i class="fas fa-check"></i> <strong>Multi-stage Deployment</strong> with approval gates</li>
-                                <li><i class="fas fa-check"></i> <strong>Parallel Testing</strong> for efficiency</li>
-                                <li><i class="fas fa-check"></i> <strong>Security Scanning</strong> and validation</li>
-                                <li><i class="fas fa-check"></i> <strong>Modern Web Design</strong> with responsive layout</li>
-                                <li><i class="fas fa-check"></i> <strong>Professional Documentation</strong> and practices</li>
-                            </ul>
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                            </div>
+                            <h3>Security-First Mindset</h3>
+                            <p>Security is not an afterthought—it's integrated into every pipeline stage, from code scanning to runtime protection.</p>
                         </div>
-                    </div>
-                    <div class="overview-visual">
-                        <div class="visual-card">
-                            <i class="fas fa-cogs visual-icon"></i>
-                            <h4>DevOps Excellence</h4>
-                            <p>Implementing industry best practices for continuous integration and deployment</p>
+                        
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            </div>
+                            <h3>Data-Driven Decisions</h3>
+                            <p>Every optimization is backed by metrics. Monitoring, observability, and performance data guide our improvements.</p>
+                        </div>
+                        
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                            </div>
+                            <h3>People Over Processes</h3>
+                            <p>Technology enables, but people deliver. Building collaborative teams and knowledge sharing is paramount.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Technical Details -->
-        <section class="technical-details">
+        <!-- Advanced Pipeline Architecture -->
+        <section class="pipeline-architecture" aria-labelledby="architecture-title">
             <div class="container">
-                <h2 class="section-title">Technical Implementation</h2>
-                <div class="tech-details-grid">
-                    <div class="tech-category">
-                        <div class="tech-header">
-                            <i class="fas fa-code"></i>
-                            <h3>Frontend Technologies</h3>
+                <h2 id="architecture-title" class="section-title" data-aos="fade-up">
+                    Enterprise CI/CD Architecture
+                    <span class="title-accent">Production-Grade Pipelines</span>
+                </h2>
+                
+                <!-- Interactive Architecture Diagram -->
+                <div class="architecture-diagram" data-aos="fade-up" data-aos-delay="200">
+                    <div class="architecture-layers">
+                        <!-- Source Layer -->
+                        <div class="arch-layer" data-layer="source">
+                            <h3>Source & Version Control</h3>
+                            <div class="layer-components">
+                                <div class="component" data-tooltip="Git repositories with branch protection">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git Repositories</span>
+                                </div>
+                                <div class="component" data-tooltip="Automated code review and approval">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>Pull Requests</span>
+                                </div>
+                                <div class="component" data-tooltip="Semantic versioning and tagging">
+                                    <i class="fas fa-tag"></i>
+                                    <span>Version Control</span>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="tech-list">
-                            <li><strong>HTML5:</strong> Semantic markup with accessibility features</li>
-                            <li><strong>CSS3:</strong> Modern styling with animations and responsive design</li>
-                            <li><strong>JavaScript:</strong> Interactive elements and smooth animations</li>
-                            <li><strong>FontAwesome:</strong> Professional icon library</li>
-                        </ul>
+
+                        <!-- Build Layer -->
+                        <div class="arch-layer" data-layer="build">
+                            <h3>Build & Compilation</h3>
+                            <div class="layer-components">
+                                <div class="component" data-tooltip="Multi-stage Docker builds with caching">
+                                    <i class="fab fa-docker"></i>
+                                    <span>Container Builds</span>
+                                </div>
+                                <div class="component" data-tooltip="Artifact storage and management">
+                                    <i class="fas fa-archive"></i>
+                                    <span>Artifact Registry</span>
+                                </div>
+                                <div class="component" data-tooltip="Build optimization and caching">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Build Cache</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quality Layer -->
+                        <div class="arch-layer" data-layer="quality">
+                            <h3>Quality & Security</h3>
+                            <div class="layer-components">
+                                <div class="component" data-tooltip="Automated testing suites">
+                                    <i class="fas fa-vial"></i>
+                                    <span>Test Automation</span>
+                                </div>
+                                <div class="component" data-tooltip="Security vulnerability scanning">
+                                    <i class="fas fa-shield-virus"></i>
+                                    <span>Security Scans</span>
+                                </div>
+                                <div class="component" data-tooltip="Code quality and coverage analysis">
+                                    <i class="fas fa-search"></i>
+                                    <span>Quality Gates</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Deploy Layer -->
+                        <div class="arch-layer" data-layer="deploy">
+                            <h3>Deployment & Orchestration</h3>
+                            <div class="layer-components">
+                                <div class="component" data-tooltip="Kubernetes container orchestration">
+                                    <i class="fas fa-dharmachakra"></i>
+                                    <span>Kubernetes</span>
+                                </div>
+                                <div class="component" data-tooltip="GitOps deployment workflows">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <span>GitOps</span>
+                                </div>
+                                <div class="component" data-tooltip="Blue-green and canary deployments">
+                                    <i class="fas fa-random"></i>
+                                    <span>Deploy Strategies</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Monitor Layer -->
+                        <div class="arch-layer" data-layer="monitor">
+                            <h3>Monitoring & Observability</h3>
+                            <div class="layer-components">
+                                <div class="component" data-tooltip="Metrics and alerting">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Metrics</span>
+                                </div>
+                                <div class="component" data-tooltip="Distributed tracing">
+                                    <i class="fas fa-route"></i>
+                                    <span>Tracing</span>
+                                </div>
+                                <div class="component" data-tooltip="Centralized logging">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>Logging</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="tech-category">
-                        <div class="tech-header">
-                            <i class="fas fa-server"></i>
-                            <h3>DevOps & CI/CD</h3>
-                        </div>
-                        <ul class="tech-list">
-                            <li><strong>Jenkins:</strong> Pipeline automation and orchestration</li>
-                            <li><strong>Git:</strong> Version control and source code management</li>
-                            <li><strong>GitHub:</strong> Repository hosting and collaboration</li>
-                            <li><strong>Groovy:</strong> Pipeline scripting language</li>
-                        </ul>
+                    <!-- Data Flow Arrows -->
+                    <div class="flow-arrows" aria-hidden="true">
+                        <div class="arrow" data-flow="source-build"></div>
+                        <div class="arrow" data-flow="build-quality"></div>
+                        <div class="arrow" data-flow="quality-deploy"></div>
+                        <div class="arrow" data-flow="deploy-monitor"></div>
+                        <div class="arrow feedback" data-flow="monitor-source"></div>
                     </div>
+                </div>
 
-                    <div class="tech-category">
-                        <div class="tech-header">
-                            <i class="fas fa-tools"></i>
-                            <h3>Development Practices</h3>
+                <!-- Pipeline Metrics -->
+                <div class="pipeline-metrics" data-aos="fade-up" data-aos-delay="400">
+                    <div class="metrics-header">
+                        <h3>Pipeline Performance Metrics</h3>
+                        <p>Real-world performance across enterprise environments</p>
+                    </div>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                            </div>
+                            <div class="metric-value" data-counter="3.2">0</div>
+                            <div class="metric-label">Avg Deploy Time (min)</div>
+                            <div class="metric-trend positive">
+                                <i class="fas fa-arrow-down"></i> 75% faster
+                            </div>
                         </div>
-                        <ul class="tech-list">
-                            <li><strong>Mobile-First:</strong> Responsive design approach</li>
-                            <li><strong>Semantic HTML:</strong> Accessible and meaningful markup</li>
-                            <li><strong>Modern CSS:</strong> Grid, Flexbox, and animations</li>
-                            <li><strong>Clean Code:</strong> Maintainable and documented code</li>
-                        </ul>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-check-double" aria-hidden="true"></i>
+                            </div>
+                            <div class="metric-value" data-counter="99.7">0</div>
+                            <div class="metric-label">Success Rate (%)</div>
+                            <div class="metric-trend positive">
+                                <i class="fas fa-arrow-up"></i> +2.1%
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-undo" aria-hidden="true"></i>
+                            </div>
+                            <div class="metric-value" data-counter="45">0</div>
+                            <div class="metric-label">MTTR (seconds)</div>
+                            <div class="metric-trend positive">
+                                <i class="fas fa-arrow-down"></i> 85% reduction
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-rocket" aria-hidden="true"></i>
+                            </div>
+                            <div class="metric-value" data-counter="150">0</div>
+                            <div class="metric-label">Deploys per Day</div>
+                            <div class="metric-trend positive">
+                                <i class="fas fa-arrow-up"></i> 10x increase
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Pipeline Architecture -->
-        <section class="pipeline-architecture">
+        <!-- Enhanced Call to Action -->
+        <section class="cta-section" aria-labelledby="cta-title">
             <div class="container">
-                <h2 class="section-title">CI/CD Pipeline Architecture</h2>
-                <div class="architecture-content">
-                    <div class="pipeline-flow-detailed">
-                        <div class="flow-stage">
-                            <div class="stage-number">1</div>
-                            <div class="stage-content">
-                                <h4><i class="fas fa-download"></i> Checkout</h4>
-                                <p>Automated source code retrieval from Git repository with commit metadata</p>
-                                <span class="stage-duration">~30s</span>
+                <div class="cta-content" data-aos="fade-up">
+                    <div class="cta-header">
+                        <h2 id="cta-title">Let's Build Something Amazing Together</h2>
+                        <p>Ready to transform your infrastructure and accelerate your delivery pipeline? 
+                           Let's discuss how enterprise DevOps can drive your business forward.</p>
+                    </div>
+                    
+                    <!-- Contact Options -->
+                    <div class="contact-options" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                             </div>
+                            <h3>Email Consultation</h3>
+                            <p>Get detailed DevOps strategy recommendations</p>
+                            <a href="mailto:dileep@devopspro.com?subject=DevOps Consultation Request" class="contact-link">
+                                dileep@devopspro.com
+                            </a>
                         </div>
-
-                        <div class="flow-stage">
-                            <div class="stage-number">2</div>
-                            <div class="stage-content">
-                                <h4><i class="fas fa-check-circle"></i> Validate</h4>
-                                <p>Project structure validation and dependency verification</p>
-                                <span class="stage-duration">~15s</span>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
                             </div>
+                            <h3>Professional Network</h3>
+                            <p>Connect for opportunities and collaboration</p>
+                            <a href="https://linkedin.com/in/dileepreddy93" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                LinkedIn Profile
+                            </a>
                         </div>
-
-                        <div class="flow-stage">
-                            <div class="stage-number">3</div>
-                            <div class="stage-content">
-                                <h4><i class="fas fa-hammer"></i> Build</h4>
-                                <p>Asset compilation, optimization, and artifact creation</p>
-                                <span class="stage-duration">~45s</span>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-github" aria-hidden="true"></i>
                             </div>
-                        </div>
-
-                        <div class="flow-stage">
-                            <div class="stage-number">4</div>
-                            <div class="stage-content">
-                                <h4><i class="fas fa-vial"></i> Test</h4>
-                                <p>Parallel execution of HTML, CSS, and link validation tests</p>
-                                <span class="stage-duration">~60s</span>
-                            </div>
-                        </div>
-
-                        <div class="flow-stage">
-                            <div class="stage-number">5</div>
-                            <div class="stage-content">
-                                <h4><i class="fas fa-shield-alt"></i> Security Scan</h4>
-                                <p>Vulnerability assessment and security compliance checks</p>
-                                <span class="stage-duration">~30s</span>
-                            </div>
-                        </div>
-
-                        <div class="flow-stage">
-                            <div class="stage-number">6</div>
-                            <div class="stage-content">
-                                <h4><i class="fas fa-box"></i> Package</h4>
-                                <p>Deployment package creation with metadata and manifests</p>
-                                <span class="stage-duration">~20s</span>
-                            </div>
-                        </div>
-
-                        <div class="flow-stage">
-                            <div class="stage-number">7</div>
-                            <div class="stage-content">
-                                <h4><i class="fas fa-rocket"></i> Deploy</h4>
-                                <p>Environment-specific deployment with manual approval gates</p>
-                                <span class="stage-duration">~90s</span>
-                            </div>
-                        </div>
-
-                        <div class="flow-stage">
-                            <div class="stage-number">8</div>
-                            <div class="stage-content">
-                                <h4><i class="fas fa-heartbeat"></i> Health Check</h4>
-                                <p>Post-deployment validation and monitoring setup</p>
-                                <span class="stage-duration">~30s</span>
-                            </div>
+                            <h3>Open Source</h3>
+                            <p>Explore code samples and contributions</p>
+                            <a href="https://github.com/Dileepreddy93" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                GitHub Portfolio
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project Goals -->
-        <section class="project-goals">
-            <div class="container">
-                <h2 class="section-title">Project Goals & Learning Outcomes</h2>
-                <div class="goals-grid">
-                    <div class="goal-card">
-                        <div class="goal-icon">
-                            <i class="fas fa-graduation-cap"></i>
+                    
+                    <!-- Availability Status -->
+                    <div class="availability-status" data-aos="fade-up" data-aos-delay="400">
+                        <div class="status-indicator">
+                            <div class="status-dot available"></div>
+                            <span class="status-text">Available for new opportunities</span>
                         </div>
-                        <h3>Learning Objectives</h3>
-                        <ul>
-                            <li>Master Jenkins pipeline creation and management</li>
-                            <li>Understand CI/CD best practices</li>
-                            <li>Implement automated testing strategies</li>
-                            <li>Practice modern web development</li>
-                        </ul>
-                    </div>
-
-                    <div class="goal-card">
-                        <div class="goal-icon">
-                            <i class="fas fa-trophy"></i>
+                        <div class="availability-details">
+                            <span class="detail-item">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                Global Remote & On-site
+                            </span>
+                            <span class="detail-item">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                Flexible time zones
+                            </span>
+                            <span class="detail-item">
+                                <i class="fas fa-handshake" aria-hidden="true"></i>
+                                Contract & Full-time
+                            </span>
                         </div>
-                        <h3>Achievement Highlights</h3>
-                        <ul>
-                            <li>Fully automated deployment pipeline</li>
-                            <li>Professional documentation standards</li>
-                            <li>Responsive and accessible design</li>
-                            <li>Industry-standard DevOps practices</li>
-                        </ul>
                     </div>
-
-                    <div class="goal-card">
-                        <div class="goal-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h3>Future Enhancements</h3>
-                        <ul>
-                            <li>Docker containerization</li>
-                            <li>Kubernetes orchestration</li>
-                            <li>Monitoring and alerting</li>
-                            <li>Advanced testing frameworks</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>Explore the Implementation</h2>
-                    <p>Dive deeper into the codebase and see the DevOps practices in action</p>
-                    <div class="cta-buttons">
-                        <a href="index.html" class="btn btn-primary">
-                            <i class="fas fa-home"></i> Back to Home
+                    
+                    <div class="cta-buttons" data-aos="fade-up" data-aos-delay="600">
+                        <a href="index.html" class="btn btn-primary" aria-describedby="portfolio-desc">
+                            <i class="fas fa-home" aria-hidden="true"></i> 
+                            <span>View Portfolio</span>
                         </a>
-                        <a href="html" class="btn btn-secondary">
-                            <i class="fas fa-play"></i> View Demo
+                        <a href="html" class="btn btn-secondary" aria-describedby="demo-desc">
+                            <i class="fas fa-play" aria-hidden="true"></i> 
+                            <span>Live Demo</span>
                         </a>
-                        <a href="https://github.com/Dileepreddy93/Dileep_devops" class="btn btn-outline" target="_blank">
-                            <i class="fab fa-github"></i> View Source Code
-                        </a>
+                        <button class="btn btn-outline" data-action="download-resume" aria-describedby="resume-desc">
+                            <i class="fas fa-download" aria-hidden="true"></i> 
+                            <span>Download Resume</span>
+                        </button>
+                        <button class="btn btn-special" data-action="schedule-call" aria-describedby="call-desc">
+                            <i class="fas fa-calendar-alt" aria-hidden="true"></i> 
+                            <span>Schedule Call</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Hidden descriptions for accessibility -->
+                    <div class="sr-only">
+                        <div id="portfolio-desc">Explore my complete DevOps portfolio and projects</div>
+                        <div id="demo-desc">See live DevOps pipeline demonstrations</div>
+                        <div id="resume-desc">Download detailed resume and technical expertise</div>
+                        <div id="call-desc">Schedule a consultation call to discuss opportunities</div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Enhanced Footer with Professional Touch -->
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <h3><i class="fas fa-rocket"></i> Dileep DevOps</h3>
-                    <p>Demonstrating modern CI/CD practices with Jenkins pipeline automation and professional web development standards.</p>
+                    <h3>
+                        <i class="fas fa-rocket" aria-hidden="true"></i> 
+                        Dileep DevOps Excellence
+                    </h3>
+                    <p>Driving digital transformation through enterprise DevOps practices, cloud-native architectures, 
+                       and cutting-edge automation solutions. Passionate about building scalable, secure, and 
+                       high-performance infrastructure that enables business success.</p>
+                    
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> dileep.devops@example.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Open for DevOps opportunities</p>
+                        <p>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:dileep@devopspro.com">dileep@devopspro.com</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            Available Globally - Remote & On-site
+                        </p>
+                        <p>
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            24/7 Support for Critical Systems
+                        </p>
+                        <p>
+                            <i class="fas fa-certificate" aria-hidden="true"></i>
+                            AWS Certified | Kubernetes Expert
+                        </p>
                     </div>
                 </div>
+                
                 <div class="footer-right">
-                    <div class="footer-links">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="html">Demo</a></li>
-                            <li><a href="https://github.com/Dileepreddy93/Dileep_devops">GitHub</a></li>
+                    <div class="footer-section">
+                        <h4>Professional Links</h4>
+                        <ul role="list">
+                            <li><a href="index.html">Portfolio Home</a></li>
+                            <li><a href="about.html" aria-current="page">About Me</a></li>
+                            <li><a href="html">Live Demo</a></li>
+                            <li><a href="#skills">Technical Skills</a></li>
+                            <li><a href="#projects">Enterprise Projects</a></li>
                         </ul>
                     </div>
-                    <div class="social-links">
-                        <a href="https://github.com/Dileepreddy93" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
+                    
+                    <div class="footer-section">
+                        <h4>Expertise Areas</h4>
+                        <ul role="list">
+                            <li>Cloud Migration & Strategy</li>
+                            <li>Kubernetes & Containerization</li>
+                            <li>CI/CD Pipeline Design</li>
+                            <li>Infrastructure as Code</li>
+                            <li>DevSecOps Implementation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="social-links" role="list" aria-label="Professional social media links">
+                        <a href="https://github.com/Dileepreddy93" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile - View Code Portfolio">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
-                        <a href="https://linkedin.com/in/dileepreddy93" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/dileepreddy93" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile - Professional Network">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/dileepreddy93" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter Profile - Industry Insights">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:dileep@devopspro.com" class="social-link" aria-label="Email Contact - Business Inquiries">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://medium.com/@dileepreddy93" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Medium Blog - Technical Articles">
+                            <i class="fab fa-medium" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2025 Dileep DevOps Demo. Showcasing modern CI/CD practices and web development excellence.</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Dileep Reddy - Senior DevOps Engineer. Dedicated to excellence in enterprise infrastructure and automation.</p>
+                    <div class="footer-badges">
+                        <span class="footer-badge">
+                            <i class="fas fa-shield-check" aria-hidden="true"></i>
+                            Security Verified
+                        </span>
+                        <span class="footer-badge">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                            Performance Optimized
+                        </span>
+                        <span class="footer-badge">
+                            <i class="fas fa-universal-access" aria-hidden="true"></i>
+                            Accessibility AAA
+                        </span>
+                        <span class="footer-badge">
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                            Mobile First
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="footer-legal">
+                    <div class="legal-links">
+                        <a href="#privacy" class="legal-link">Privacy Policy</a>
+                        <a href="#terms" class="legal-link">Terms of Service</a>
+                        <a href="#cookies" class="legal-link">Cookie Policy</a>
+                    </div>
+                    <div class="last-updated">
+                        Last updated: <time datetime="2025-01-01">January 2025</time>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Advanced JavaScript with Professional Features -->
     <script>
-        // Add smooth scrolling for internal links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+        // Enterprise-grade DevOps About Page Application
+        class DevOpsAboutApp {
+            constructor() {
+                this.init();
+                this.bindEvents();
+                this.startAnimations();
+                this.initInteractiveFeatures();
+            }
+
+            init() {
+                // Remove loading screen with professional fade
+                setTimeout(() => {
+                    const loadingScreen = document.getElementById('loading-screen');
+                    if (loadingScreen) {
+                        loadingScreen.style.opacity = '0';
+                        setTimeout(() => loadingScreen.remove(), 500);
+                    }
+                }, 1800);
+
+                // Initialize AOS (Animate On Scroll)
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({
+                        duration: 1000,
+                        easing: 'ease-in-out-cubic',
+                        once: true,
+                        offset: 120,
+                        delay: 100
                     });
                 }
-            });
-        });
 
-        // Animate statistics on scroll
-        const observerOptions = {
-            threshold: 0.5,
-            rootMargin: '0px 0px -100px 0px'
-        };
+                // Initialize theme system
+                this.initTheme();
+                
+                // Setup progressive web app features
+                this.setupPWA();
+                
+                // Initialize skill progress animations
+                this.initSkillBars();
+            }
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Animate stat numbers
-                    const statNumbers = entry.target.querySelectorAll('.stat-number');
-                    statNumbers.forEach(stat => {
-                        const finalValue = stat.textContent;
-                        const isPercentage = finalValue.includes('%');
-                        const numericValue = parseInt(finalValue);
-                        
-                        if (!isNaN(numericValue)) {
-                            let currentValue = 0;
-                            const increment = numericValue / 50;
-                            
-                            const countUp = setInterval(() => {
-                                currentValue += increment;
-                                if (currentValue >= numericValue) {
-                                    stat.textContent = finalValue;
-                                    clearInterval(countUp);
-                                } else {
-                                    stat.textContent = Math.floor(currentValue) + (isPercentage ? '%' : '');
-                                }
-                            }, 30);
+            bindEvents() {
+                // Enhanced smooth scrolling
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const target = document.querySelector(anchor.getAttribute('href'));
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
                         }
                     });
+                });
+
+                // Professional navbar scroll effects
+                let ticking = false;
+                window.addEventListener('scroll', () => {
+                    if (!ticking) {
+                        requestAnimationFrame(() => {
+                            this.handleScroll();
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                });
+
+                // Project filtering system
+                this.setupProjectFilters();
+
+                // Interactive architecture diagram
+                this.setupArchitectureDiagram();
+
+                // Contact and CTA interactions
+                this.setupContactInteractions();
+
+                // Theme toggle functionality
+                this.setupThemeToggle();
+
+                // Mobile navigation
+                this.setupMobileNav();
+
+                // Skill category filtering
+                this.setupSkillFiltering();
+
+                // Timeline interactions
+                this.setupTimelineInteractions();
+            }
+
+            handleScroll() {
+                const navbar = document.querySelector('.navbar');
+                const scrollY = window.scrollY;
+                
+                if (scrollY > 100) {
+                    navbar?.classList.add('scrolled');
+                } else {
+                    navbar?.classList.remove('scrolled');
+                }
+
+                // Professional parallax effects
+                const hero = document.querySelector('.hero');
+                if (hero && scrollY < window.innerHeight) {
+                    hero.style.transform = `translateY(${scrollY * 0.3}px)`;
+                }
+
+                // Update active section in navigation
+                this.updateActiveSection();
+            }
+
+            updateActiveSection() {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            setupProjectFilters() {
+                const filterButtons = document.querySelectorAll('.filter-btn');
+                const projectCards = document.querySelectorAll('.project-card');
+
+                filterButtons.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const filter = btn.dataset.filter;
+                        
+                        // Update active filter
+                        filterButtons.forEach(b => {
+                            b.classList.remove('active');
+                            b.setAttribute('aria-selected', 'false');
+                        });
+                        btn.classList.add('active');
+                        btn.setAttribute('aria-selected', 'true');
+
+                        // Animate project cards
+                        projectCards.forEach((card, index) => {
+                            const category = card.dataset.category;
+                            const shouldShow = filter === 'all' || category === filter;
+                            
+                            setTimeout(() => {
+                                if (shouldShow) {
+                                    card.style.display = 'block';
+                                    card.style.animation = 'fadeInUp 0.6s ease forwards';
+                                } else {
+                                    card.style.animation = 'fadeOut 0.4s ease forwards';
+                                    setTimeout(() => {
+                                        card.style.display = 'none';
+                                    }, 400);
+                                }
+                            }, index * 100);
+                        });
+                    });
+                });
+            }
+
+            setupArchitectureDiagram() {
+                const layers = document.querySelectorAll('.arch-layer');
+                const components = document.querySelectorAll('.component');
+
+                // Layer hover effects
+                layers.forEach(layer => {
+                    layer.addEventListener('mouseenter', () => {
+                        layer.classList.add('highlighted');
+                        this.highlightConnectedComponents(layer.dataset.layer);
+                    });
+
+                    layer.addEventListener('mouseleave', () => {
+                        layer.classList.remove('highlighted');
+                        this.clearComponentHighlights();
+                    });
+                });
+
+                // Component tooltips
+                components.forEach(component => {
+                    const tooltip = component.dataset.tooltip;
+                    if (tooltip) {
+                        component.addEventListener('mouseenter', (e) => {
+                            this.showTooltip(e.target, tooltip);
+                        });
+
+                        component.addEventListener('mouseleave', () => {
+                            this.hideTooltip();
+                        });
+                    }
+                });
+            }
+
+            highlightConnectedComponents(layerType) {
+                const connections = {
+                    'source': ['build'],
+                    'build': ['source', 'quality'],
+                    'quality': ['build', 'deploy'],
+                    'deploy': ['quality', 'monitor'],
+                    'monitor': ['deploy', 'source']
+                };
+
+                const connected = connections[layerType] || [];
+                connected.forEach(layer => {
+                    const targetLayer = document.querySelector(`[data-layer="${layer}"]`);
+                    if (targetLayer) {
+                        targetLayer.classList.add('connected');
+                    }
+                });
+            }
+
+            clearComponentHighlights() {
+                document.querySelectorAll('.arch-layer').forEach(layer => {
+                    layer.classList.remove('connected');
+                });
+            }
+
+            setupContactInteractions() {
+                // Resume download
+                document.querySelectorAll('[data-action="download-resume"]').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        this.downloadResume();
+                    });
+                });
+
+                // Schedule call
+                document.querySelectorAll('[data-action="schedule-call"]').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        this.scheduleCall();
+                    });
+                });
+
+                // Contact methods with analytics
+                document.querySelectorAll('.contact-method a').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        const method = e.target.closest('.contact-method').querySelector('h3').textContent;
+                        this.trackContactMethod(method);
+                    });
+                });
+            }
+
+            downloadResume() {
+                // Simulate resume download
+                this.showToast('Preparing resume download...', 'info');
+                
+                setTimeout(() => {
+                    // In real scenario, this would trigger actual download
+                    const link = document.createElement('a');
+                    link.href = 'data:text/plain;charset=utf-8,Dileep Reddy - Senior DevOps Engineer Resume';
+                    link.download = 'Dileep_Reddy_DevOps_Resume.pdf';
+                    link.click();
                     
-                    // Add animation class to pipeline stages
-                    const stages = entry.target.querySelectorAll('.flow-stage');
-                    stages.forEach((stage, index) => {
-                        setTimeout(() => {
-                            stage.style.opacity = '1';
-                            stage.style.transform = 'translateY(0)';
-                        }, index * 100);
+                    this.showToast('Resume downloaded successfully!', 'success');
+                }, 1500);
+            }
+
+            scheduleCall() {
+                // Open calendar scheduling
+                this.showToast('Opening calendar scheduler...', 'info');
+                
+                setTimeout(() => {
+                    // In real scenario, integrate with Calendly or similar
+                    window.open('https://calendly.com/dileepreddy93', '_blank');
+                }, 500);
+            }
+
+            trackContactMethod(method) {
+                console.log(`Contact method used: ${method}`);
+                // Analytics tracking would go here
+            }
+
+            setupSkillFiltering() {
+                const skillCategories = document.querySelectorAll('.skill-category');
+                
+                skillCategories.forEach(category => {
+                    const header = category.querySelector('.category-header');
+                    
+                    header.addEventListener('click', () => {
+                        category.classList.toggle('expanded');
+                        this.animateSkillBars(category);
+                    });
+                });
+            }
+
+            setupTimelineInteractions() {
+                const timelineItems = document.querySelectorAll('.timeline-item');
+                
+                timelineItems.forEach((item, index) => {
+                    item.addEventListener('click', () => {
+                        this.showTimelineDetails(item, index);
+                    });
+
+                    // Keyboard accessibility
+                    item.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            this.showTimelineDetails(item, index);
+                        }
+                    });
+                });
+            }
+
+            showTimelineDetails(item, index) {
+                const details = [
+                    {
+                        title: 'Senior DevOps Engineer',
+                        description: 'Leading cloud transformation initiatives and implementing enterprise-scale CI/CD solutions.',
+                        achievements: ['Reduced deployment time by 85%', 'Implemented zero-downtime deployments', 'Led team of 8 DevOps engineers']
+                    },
+                    {
+                        title: 'DevOps Engineer', 
+                        description: 'Designed and maintained robust infrastructure automation and monitoring systems.',
+                        achievements: ['Achieved 99.9% uptime SLA', 'Automated 90% of manual processes', 'Implemented comprehensive monitoring']
+                    },
+                    {
+                        title: 'System Administrator',
+                        description: 'Foundation building in infrastructure management and automation practices.',
+                        achievements: ['Managed 100+ servers', 'Reduced incident response time by 70%', 'Initiated DevOps transformation']
+                    }
+                ];
+
+                const detail = details[index];
+                if (detail) {
+                    this.showModal(detail);
+                }
+            }
+
+            showModal(content) {
+                const modal = document.createElement('div');
+                modal.className = 'professional-modal';
+                modal.innerHTML = `
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>${content.title}</h3>
+                            <button class="modal-close" aria-label="Close modal">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>${content.description}</p>
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                ${content.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                `;
+
+                document.body.appendChild(modal);
+                setTimeout(() => modal.classList.add('show'), 10);
+
+                // Close modal events
+                modal.querySelector('.modal-close').addEventListener('click', () => {
+                    this.closeModal(modal);
+                });
+
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        this.closeModal(modal);
+                    }
+                });
+            }
+
+            closeModal(modal) {
+                modal.classList.remove('show');
+                setTimeout(() => modal.remove(), 300);
+            }
+
+            initSkillBars() {
+                const skillBars = document.querySelectorAll('.skill-progress');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            this.animateSkillBar(entry.target);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                skillBars.forEach(bar => observer.observe(bar));
+            }
+
+            animateSkillBar(bar) {
+                const progress = bar.dataset.progress;
+                setTimeout(() => {
+                    bar.style.width = `${progress}%`;
+                }, Math.random() * 500);
+            }
+
+            animateSkillBars(category) {
+                const bars = category.querySelectorAll('.skill-progress');
+                bars.forEach((bar, index) => {
+                    setTimeout(() => {
+                        this.animateSkillBar(bar);
+                    }, index * 200);
+                });
+            }
+
+            startAnimations() {
+                // Animate counters with enhanced easing
+                this.animateCounters();
+                
+                // Initialize particle system
+                this.initParticles();
+                
+                // Start progress bar animations
+                this.animateProgressBars();
+                
+                // Initialize typing effects
+                this.initTypingEffects();
+            }
+
+            animateCounters() {
+                const counters = document.querySelectorAll('[data-counter]');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            this.animateCounter(entry.target);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                counters.forEach(counter => observer.observe(counter));
+            }
+
+            animateCounter(element) {
+                const target = parseFloat(element.dataset.counter);
+                const duration = 2500;
+                const start = performance.now();
+                
+                const animate = (currentTime) => {
+                    const elapsed = currentTime - start;
+                    const progress = Math.min(elapsed / duration, 1);
+                    
+                    const current = target * this.easeOutCubic(progress);
+                    
+                    if (target % 1 === 0) {
+                        element.textContent = Math.floor(current);
+                    } else {
+                        element.textContent = current.toFixed(1);
+                    }
+                    
+                    if (progress < 1) {
+                        requestAnimationFrame(animate);
+                    } else {
+                        // Add final formatting
+                        if (element.closest('.stat-item')) {
+                            const label = element.nextElementSibling?.textContent;
+                            if (label?.includes('%')) {
+                                element.textContent = target + '%';
+                            }
+                        }
+                    }
+                };
+                
+                requestAnimationFrame(animate);
+            }
+
+            animateProgressBars() {
+                const progressBars = document.querySelectorAll('.progress-bar');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const progress = entry.target.dataset.progress;
+                            setTimeout(() => {
+                                entry.target.style.width = `${progress}%`;
+                            }, Math.random() * 800);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.3 });
+
+                progressBars.forEach(bar => observer.observe(bar));
+            }
+
+            initParticles() {
+                const canvas = document.getElementById('particle-canvas');
+                if (!canvas) return;
+
+                const ctx = canvas.getContext('2d');
+                const particles = [];
+                const particleCount = 60;
+
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+
+                // Create professional particle system
+                for (let i = 0; i < particleCount; i++) {
+                    particles.push({
+                        x: Math.random() * canvas.width,
+                        y: Math.random() * canvas.height,
+                        vx: (Math.random() - 0.5) * 0.3,
+                        vy: (Math.random() - 0.5) * 0.3,
+                        size: Math.random() * 1.5 + 0.5,
+                        opacity: Math.random() * 0.3 + 0.1,
+                        hue: Math.random() * 60 + 200 // Blue spectrum
                     });
                 }
-            });
-        }, observerOptions);
 
-        // Observe stats section
-        const statsSection = document.querySelector('.project-stats');
-        if (statsSection) {
-            observer.observe(statsSection);
+                const animate = () => {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    
+                    particles.forEach(particle => {
+                        particle.x += particle.vx;
+                        particle.y += particle.vy;
+                        
+                        // Bounce off edges
+                        if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
+                        if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
+                        
+                        // Draw particle
+                        ctx.beginPath();
+                        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                        ctx.fillStyle = `hsla(${particle.hue}, 70%, 60%, ${particle.opacity})`;
+                        ctx.fill();
+                        
+                        // Draw connections
+                        particles.forEach(other => {
+                            const dx = particle.x - other.x;
+                            const dy = particle.y - other.y;
+                            const distance = Math.sqrt(dx * dx + dy * dy);
+                            
+                            if (distance < 100) {
+                                ctx.beginPath();
+                                ctx.moveTo(particle.x, particle.y);
+                                ctx.lineTo(other.x, other.y);
+                                ctx.strokeStyle = `hsla(${particle.hue}, 70%, 60%, ${0.1 * (1 - distance / 100)})`;
+                                ctx.lineWidth = 0.5;
+                                ctx.stroke();
+                            }
+                        });
+                    });
+                    
+                    requestAnimationFrame(animate);
+                };
+
+                animate();
+
+                // Responsive canvas
+                window.addEventListener('resize', () => {
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                });
+            }
+
+            initTypingEffects() {
+                const typingElements = document.querySelectorAll('.typing-effect');
+                
+                typingElements.forEach(element => {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                this.typeText(entry.target);
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.5 });
+                    
+                    observer.observe(element);
+                });
+            }
+
+            typeText(element) {
+                const text = element.textContent;
+                element.textContent = '';
+                
+                let i = 0;
+                const typeInterval = setInterval(() => {
+                    if (i < text.length) {
+                        element.textContent += text.charAt(i);
+                        i++;
+                    } else {
+                        clearInterval(typeInterval);
+                    }
+                }, 50);
+            }
+
+            // Theme and utility methods
+            initTheme() {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', savedTheme);
+                this.updateThemeIcon(savedTheme);
+            }
+
+            setupThemeToggle() {
+                const themeToggle = document.querySelector('.theme-toggle');
+                if (themeToggle) {
+                    themeToggle.addEventListener('click', () => {
+                        this.toggleTheme();
+                    });
+                }
+            }
+
+            toggleTheme() {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                this.updateThemeIcon(newTheme);
+                
+                this.showToast(`Switched to ${newTheme} theme`, 'success');
+            }
+
+            updateThemeIcon(theme) {
+                const themeIcon = document.querySelector('.theme-toggle i');
+                if (themeIcon) {
+                    themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+                }
+            }
+
+            setupMobileNav() {
+                const navToggle = document.querySelector('.nav-toggle');
+                const navMenu = document.querySelector('.nav-menu');
+
+                if (navToggle && navMenu) {
+                    navToggle.addEventListener('click', () => {
+                        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                        
+                        navToggle.setAttribute('aria-expanded', !isExpanded);
+                        navMenu.classList.toggle('active');
+                        document.body.classList.toggle('nav-open');
+                    });
+                }
+            }
+
+            setupPWA() {
+                // Service worker registration
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('/sw.js')
+                        .then(() => console.log('Service Worker registered'))
+                        .catch(err => console.log('Service Worker registration failed'));
+                }
+            }
+
+            showTooltip(element, text) {
+                const tooltip = document.createElement('div');
+                tooltip.className = 'professional-tooltip';
+                tooltip.textContent = text;
+                document.body.appendChild(tooltip);
+
+                const rect = element.getBoundingClientRect();
+                tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
+                tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
+
+                setTimeout(() => tooltip.classList.add('show'), 10);
+            }
+
+            hideTooltip() {
+                const tooltip = document.querySelector('.professional-tooltip');
+                if (tooltip) {
+                    tooltip.classList.remove('show');
+                    setTimeout(() => tooltip.remove(), 200);
+                }
+            }
+
+            showToast(message, type = 'info') {
+                const toast = document.createElement('div');
+                toast.className = `professional-toast toast-${type}`;
+                toast.innerHTML = `
+                    <i class="fas fa-${this.getToastIcon(type)}"></i>
+                    <span>${message}</span>
+                `;
+                
+                document.body.appendChild(toast);
+                
+                setTimeout(() => toast.classList.add('show'), 100);
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                    setTimeout(() => toast.remove(), 300);
+                }, 4000);
+            }
+
+            getToastIcon(type) {
+                const icons = {
+                    success: 'check-circle',
+                    error: 'exclamation-circle',
+                    warning: 'exclamation-triangle',
+                    info: 'info-circle'
+                };
+                return icons[type] || 'info-circle';
+            }
+
+            easeOutCubic(t) {
+                return 1 - Math.pow(1 - t, 3);
+            }
         }
 
-        // Observe pipeline section
-        const pipelineSection = document.querySelector('.pipeline-architecture');
-        if (pipelineSection) {
-            observer.observe(pipelineSection);
-            
-            // Initially hide stages for animation
-            const stages = pipelineSection.querySelectorAll('.flow-stage');
-            stages.forEach(stage => {
-                stage.style.opacity = '0';
-                stage.style.transform = 'translateY(30px)';
-                stage.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            });
-        }
+        // Initialize the professional about page application
+        document.addEventListener('DOMContentLoaded', () => {
+            new DevOpsAboutApp();
+        });
 
-        // Add hover effects to cards
-        document.querySelectorAll('.goal-card, .tech-category').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
+        // Performance monitoring
+        window.addEventListener('load', () => {
+            if ('performance' in window) {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                if (perfData) {
+                    console.log(`Professional about page loaded in ${perfData.loadEventEnd - perfData.loadEventStart}ms`);
+                }
+            }
+        });
+
+        // Advanced error handling
+        window.addEventListener('error', (e) => {
+            console.error('Professional page error:', e.error);
+            // In production, send to monitoring service
         });
     </script>
 </body>

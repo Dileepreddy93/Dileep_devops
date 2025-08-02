@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="DevOps Platform">
+    <meta name="msapplication-TileColor" content="#007ACC">
+    
+    <title>🚀 Enterprise DevOps Platform | Professional CI/CD Automation</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional enterprise DevOps platform with advanced CI/CD pipelines, cloud orchestration, and modern automation solutions.">
+    <meta name="keywords" content="DevOps, CI/CD, Jenkins, Docker, Kubernetes, Automation, Cloud, Enterprise">
+    <meta name="author" content="Dileep Reddy - DevOps Engineer">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Enterprise DevOps Platform - Professional CI/CD Automation">
+    <meta property="og:description" content="Professional DevOps platform showcasing enterprise CI/CD practices">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dileepreddy93.github.io/Dileep_devops/">
+    
+    <!-- Icons and Fonts -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-rocket"></i>
+                    <span>DevOps Platform</span>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#overview" class="nav-link">Overview</a></li>
+                    <li><a href="#pipeline" class="nav-link">Pipeline</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#metrics" class="nav-link">Metrics</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+                
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Enterprise Grade • Professional • Secure</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            Enterprise DevOps Platform
+                            <span class="highlight">CI/CD Excellence</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            Professional enterprise platform showcasing advanced DevOps practices, 
+                            automated CI/CD pipelines, cloud-native architecture, and modern 
+                            development workflows. Built for scalability, designed for reliability.
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Integrations</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2.5s</span>
+                                <span class="stat-label">Deploy Time</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">AAA</span>
+                                <span class="stat-label">Security</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#pipeline" class="btn btn-primary">
+                                <i class="fas fa-play"></i>
+                                View Pipeline
+                            </a>
+                            <a href="#features" class="btn btn-outline">
+                                <i class="fas fa-star"></i>
+                                Explore Features
+                            </a>
+                            <a href="https://github.com/Dileepreddy93/Dileep_devops" class="btn btn-secondary" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="hero-image">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                    <span class="code-title">pipeline.yml</span>
+                                </div>
+                                <div class="code-content">
+                                    <div class="code-line"><span class="code-keyword">stages:</span></div>
+                                    <div class="code-line">  <span class="code-property">- checkout</span></div>
+                                    <div class="code-line">  <span class="code-property">- build</span></div>
+                                    <div class="code-line">  <span class="code-property">- test</span></div>
+                                    <div class="code-line">  <span class="code-property">- deploy</span></div>
+                                    <div class="code-line"><span class="code-keyword">success:</span> <span class="code-value">✅</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Platform Overview Section -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Platform Overview</h2>
+                    <p class="section-description">
+                        Comprehensive DevOps automation platform built for enterprise-scale operations
+                    </p>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="card-title">Enterprise Architecture</h3>
+                        <p class="card-description">
+                            Multi-tier application design with cloud-native patterns, 
+                            scalable infrastructure, and high availability features.
+                        </p>
+                        <ul class="card-features">
+                            <li>Microservices architecture</li>
+                            <li>Auto-scaling capabilities</li>
+                            <li>99.9% uptime SLA</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="card-title">Advanced CI/CD Pipeline</h3>
+                        <p class="card-description">
+                            Multi-stage automated workflow with parallel execution, 
+                            comprehensive testing, and security scanning.
+                        </p>
+                        <ul class="card-features">
+                            <li>Blue-green deployments</li>
+                            <li>Automated rollbacks</li>
+                            <li>Security scanning (SAST/DAST)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="card-title">Security & Compliance</h3>
+                        <p class="card-description">
+                            Zero-trust security model with comprehensive vulnerability 
+                            assessments and automated compliance monitoring.
+                        </p>
+                        <ul class="card-features">
+                            <li>OWASP Top 10 protection</li>
+                            <li>SSL/TLS encryption</li>
+                            <li>SOC2 compliance ready</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Monitoring & Observability</h3>
+                        <p class="card-description">
+                            Real-time metrics collection with custom dashboards, 
+                            alerting systems, and performance analytics.
+                        </p>
+                        <ul class="card-features">
+                            <li>Prometheus & Grafana</li>
+                            <li>Distributed tracing</li>
+                            <li>Custom alerts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CI/CD Pipeline Section -->
+        <section class="pipeline-section" id="pipeline">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">CI/CD Pipeline</h2>
+                    <p class="section-description">
+                        Automated deployment pipeline with comprehensive testing and security validation
+                    </p>
+                </div>
+                
+                <div class="pipeline-container">
+                    <div class="pipeline-flow">
+                        <div class="pipeline-stage active">
+                            <div class="stage-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="stage-content">
+                                <h3 class="stage-title">Checkout</h3>
+                                <p class="stage-description">Source code retrieval and Git metadata</p>
+                                <div class="stage-status">
+                                    <span class="status-indicator success"></span>
+                                    <span class="status-text">Completed (30s)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pipeline-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="pipeline-stage active">
+                            <div class="stage-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stage-content">
+                                <h3 class="stage-title">Validate</h3>
+                                <p class="stage-description">Project structure and file validation</p>
+                                <div class="stage-status">
+                                    <span class="status-indicator success"></span>
+                                    <span class="status-text">Completed (15s)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pipeline-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="pipeline-stage active">
+                            <div class="stage-icon">
+                                <i class="fas fa-hammer"></i>
+                            </div>
+                            <div class="stage-content">
+                                <h3 class="stage-title">Build</h3>
+                                <p class="stage-description">Asset compilation and artifact creation</p>
+                                <div class="stage-status">
+                                    <span class="status-indicator success"></span>
+                                    <span class="status-text">Completed (45s)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pipeline-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="pipeline-stage running">
+                            <div class="stage-icon">
+                                <i class="fas fa-vial"></i>
+                            </div>
+                            <div class="stage-content">
+                                <h3 class="stage-title">Test</h3>
+                                <p class="stage-description">Comprehensive testing suite execution</p>
+                                <div class="stage-status">
+                                    <span class="status-indicator running"></span>
+                                    <span class="status-text">Running (35s)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pipeline-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="pipeline-stage pending">
+                            <div class="stage-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="stage-content">
+                                <h3 class="stage-title">Deploy</h3>
+                                <p class="stage-description">Production deployment and health checks</p>
+                                <div class="stage-status">
+                                    <span class="status-indicator pending"></span>
+                                    <span class="status-text">Pending</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pipeline-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-info">
+                            <span class="stat-value">2m 45s</span>
+                            <span class="stat-label">Average Build Time</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-double"></i>
+                        <div class="stat-info">
+                            <span class="stat-value">99.7%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-day"></i>
+                        <div class="stat-info">
+                            <span class="stat-value">15/week</span>
+                            <span class="stat-label">Deployments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Platform Features</h2>
+                    <p class="section-description">
+                        Comprehensive DevOps tools and capabilities for modern development teams
+                    </p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <h3 class="feature-title">Container Orchestration</h3>
+                        <p class="feature-description">
+                            Docker and Kubernetes integration for scalable container management 
+                            with automated orchestration and service mesh capabilities.
+                        </p>
+                        <div class="feature-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Helm</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="feature-title">Multi-Cloud Support</h3>
+                        <p class="feature-description">
+                            Deploy across AWS, Azure, and GCP with unified management, 
+                            cost optimization, and automated failover capabilities.
+                        </p>
+                        <div class="feature-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">GCP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="feature-title">Infrastructure as Code</h3>
+                        <p class="feature-description">
+                            Terraform and Ansible automation for consistent infrastructure 
+                            provisioning, configuration management, and compliance.
+                        </p>
+                        <div class="feature-tags">
+                            <span class="tag">Terraform</span>
+                            <span class="tag">Ansible</span>
+                            <span class="tag">GitOps</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="feature-title">Advanced Monitoring</h3>
+                        <p class="feature-description">
+                            Comprehensive observability with Prometheus, Grafana, and ELK stack 
+                            for real-time insights and proactive alerting.
+                        </p>
+                        <div class="feature-tags">
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">Grafana</span>
+                            <span class="tag">ELK</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 class="feature-title">Security Automation</h3>
+                        <p class="feature-description">
+                            Automated security scanning, vulnerability assessments, and 
+                            compliance monitoring with industry-standard practices.
+                        </p>
+                        <div class="feature-tags">
+                            <span class="tag">SAST</span>
+                            <span class="tag">DAST</span>
+                            <span class="tag">SonarQube</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="feature-title">AI-Powered Insights</h3>
+                        <p class="feature-description">
+                            Machine learning algorithms for predictive analytics, intelligent 
+                            caching, and automated optimization recommendations.
+                        </p>
+                        <div class="feature-tags">
+                            <span class="tag">ML</span>
+                            <span class="tag">Analytics</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Metrics Section -->
+        <section class="metrics-section" id="metrics">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Performance Metrics</h2>
+                    <p class="section-description">
+                        Real-time platform performance indicators and DevOps maturity metrics
+                    </p>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metrics-category">
+                        <h3 class="category-title">Platform KPIs</h3>
+                        <div class="metrics-list">
+                            <div class="metric-item">
+                                <div class="metric-header">
+                                    <span class="metric-name">Build Success Rate</span>
+                                    <span class="metric-value success">99.7%</span>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="metric-progress" style="width: 99.7%"></div>
+                                </div>
+                                <span class="metric-trend up">↗️ +0.2%</span>
+                            </div>
+                            
+                            <div class="metric-item">
+                                <div class="metric-header">
+                                    <span class="metric-name">Average Build Time</span>
+                                    <span class="metric-value">2m 34s</span>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="metric-progress" style="width: 85%"></div>
+                                </div>
+                                <span class="metric-trend down">↘️ -15%</span>
+                            </div>
+                            
+                            <div class="metric-item">
+                                <div class="metric-header">
+                                    <span class="metric-name">System Uptime</span>
+                                    <span class="metric-value success">99.9%</span>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="metric-progress" style="width: 99.9%"></div>
+                                </div>
+                                <span class="metric-trend stable">→ Stable</span>
+                            </div>
+                            
+                            <div class="metric-item">
+                                <div class="metric-header">
+                                    <span class="metric-name">Security Score</span>
+                                    <span class="metric-value success">98.7%</span>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="metric-progress" style="width: 98.7%"></div>
+                                </div>
+                                <span class="metric-trend up">↗️ +2.1%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="metrics-category">
+                        <h3 class="category-title">DevOps Maturity</h3>
+                        <div class="maturity-grid">
+                            <div class="maturity-item">
+                                <div class="maturity-score">95%</div>
+                                <div class="maturity-label">CI/CD Automation</div>
+                                <div class="maturity-level elite">Elite</div>
+                            </div>
+                            <div class="maturity-item">
+                                <div class="maturity-score">92%</div>
+                                <div class="maturity-label">Cloud Native</div>
+                                <div class="maturity-level advanced">Advanced</div>
+                            </div>
+                            <div class="maturity-item">
+                                <div class="maturity-score">94%</div>
+                                <div class="maturity-label">Security</div>
+                                <div class="maturity-level elite">Elite</div>
+                            </div>
+                            <div class="maturity-item">
+                                <div class="maturity-score">89%</div>
+                                <div class="maturity-label">Monitoring</div>
+                                <div class="maturity-level advanced">Advanced</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🥇</div>
+                        <div class="achievement-text">
+                            <span class="achievement-title">Zero-Downtime Deployments</span>
+                            <span class="achievement-desc">150+ consecutive successful deployments</span>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🛡️</div>
+                        <div class="achievement-text">
+                            <span class="achievement-title">Security Excellence</span>
+                            <span class="achievement-desc">No critical vulnerabilities in 6 months</span>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">⚡</div>
+                        <div class="achievement-text">
+                            <span class="achievement-title">Performance Leader</span>
+                            <span class="achievement-desc">Top 5% build time optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-rocket"></i>
+                        <span>DevOps Platform</span>
+                    </div>
+                    <p class="footer-description">
+                        Enterprise-grade DevOps automation platform built for modern development teams.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#pipeline">Pipeline</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#metrics">Metrics</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="https://github.com/Dileepreddy93/Dileep_devops" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/dileepreddy93" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Dileepreddy93" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/dileepreddy93" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dileep Reddy. Enterprise DevOps Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="quantum.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 220 18% 6%;
+		--foreground: 210 40% 96%;
+		--muted: 220 14% 20%;
+		--muted-foreground: 220 10% 65%;
+		--card: 220 16% 10%;
+		--card-foreground: 210 40% 96%;
+		--primary: 262 83% 62%;
+		--primary-foreground: 0 0% 100%;
+		--accent: 192 95% 68%;
+		--accent-foreground: 222 47% 11%;
+		--border: 215 27% 16%;
+		--input: 215 27% 16%;
+		--ring: 262 83% 62%;
+	}
+
+	.dark {
+		--background: 222 47% 4%;
+		--foreground: 210 40% 96%;
+		--muted: 217 33% 12%;
+		--muted-foreground: 217 20% 65%;
+		--card: 222 47% 6%;
+		--card-foreground: 210 40% 96%;
+		--primary: 262 83% 66%;
+		--primary-foreground: 0 0% 100%;
+		--accent: 199 89% 48%;
+		--accent-foreground: 222 47% 11%;
+		--border: 217 33% 14%;
+		--input: 217 33% 14%;
+		--ring: 262 83% 66%;
+	}
+
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply bg-background text-foreground antialiased;
+	}
+}
+
+@layer utilities {
+	.glass {
+		@apply bg-white/5 dark:bg-white/5 backdrop-blur-lg border border-white/10 shadow-glass;
+	}
+	.neo {
+		@apply shadow-neo rounded-xl;
+	}
+	.card-gradient {
+		background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+	}
+}

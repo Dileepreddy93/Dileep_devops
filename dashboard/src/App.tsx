@@ -33,7 +33,7 @@ export default function App() {
 
 	return (
 		<div className={rootClass}>
-			<div className="min-h-screen bg-[radial-gradient(80%_80%_at_50%_0%,rgba(124,58,237,0.15),rgba(0,0,0,0))]">
+			<div className="min-h-screen aurora-bg">
 				{/* Top Nav */}
 				<header className="sticky top-0 z-30 glass">
 					<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -45,21 +45,21 @@ export default function App() {
 								<span className="text-lg font-semibold tracking-tight">NovaDash</span>
 							</div>
 
-							<div className="hidden md:flex items-center gap-2 glass rounded-xl px-3 py-2 w-96">
+							<div className="hidden md:flex items-center gap-2 surface rounded-xl px-3 py-2 w-96">
 								<Search className="h-4 w-4 text-muted-foreground" />
 								<input placeholder="Search projects, tasks..." className="w-full bg-transparent outline-none placeholder:text-muted-foreground text-sm" />
 							</div>
 
 							<div className="flex items-center gap-2">
-								<button className="relative h-10 w-10 rounded-lg hover:bg-white/10 inline-flex items-center justify-center transition" aria-label="Notifications">
+								<button className="relative h-10 w-10 rounded-lg hover:bg-muted inline-flex items-center justify-center transition" aria-label="Notifications">
 									<Bell className="h-5 w-5" />
 									<span className="absolute -right-0 -top-0 h-2.5 w-2.5 rounded-full bg-primary"></span>
 								</button>
-								<button className="h-10 w-10 rounded-lg hover:bg-white/10 inline-flex items-center justify-center" onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')} aria-label="Toggle theme">
+								<button className="h-10 w-10 rounded-lg hover:bg-muted inline-flex items-center justify-center" onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')} aria-label="Toggle theme">
 									{theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
 								</button>
 								<div className="relative">
-									<button className="glass rounded-xl px-2 py-1.5 inline-flex items-center gap-2">
+									<button className="surface rounded-xl px-2 py-1.5 inline-flex items-center gap-2">
 										<div className="h-7 w-7 rounded-full bg-gradient-to-br from-primary to-accent" />
 										<span className="text-sm">Alex</span>
 									</button>
@@ -78,7 +78,7 @@ export default function App() {
 								animate={{ x: 0, opacity: 1 }}
 								exit={{ x: -20, opacity: 0 }}
 								transition={{ type: 'spring', stiffness: 260, damping: 24 }}
-								className="glass rounded-2xl p-4 h-fit md:sticky md:top-20"
+								className="surface rounded-2xl p-4 h-fit md:sticky md:top-20"
 							>
 								<nav className="space-y-1" aria-label="Sidebar">
 									<SidebarLink icon={<Home className="h-4 w-4" />} label="Overview" active />
@@ -86,9 +86,9 @@ export default function App() {
 									<SidebarLink icon={<Activity className="h-4 w-4" />} label="Activity" />
 									<SidebarLink icon={<ListTodo className="h-4 w-4" />} label="Tasks" />
 								</nav>
-								<div className="mt-6 rounded-xl p-4 card-gradient border border-white/10">
+								<div className="mt-6 rounded-xl p-4 surface">
 									<p className="text-sm text-muted-foreground">Storage</p>
-									<div className="mt-2 h-2 w-full rounded-full bg-white/10">
+									<div className="mt-2 h-2 w-full rounded-full bg-muted">
 										<div className="h-2 rounded-full bg-gradient-to-r from-primary to-accent" style={{ width: '62%' }} />
 									</div>
 									<p className="mt-2 text-xs text-muted-foreground">62% used</p>
@@ -106,16 +106,16 @@ export default function App() {
 										<h2 className="text-lg font-semibold">Traffic Overview</h2>
 										<div className="flex items-center gap-2">
 											<SelectPill label="Last 12 months" />
-											<button className="h-9 px-3 rounded-lg bg-white/10 hover:bg-white/15 transition text-sm">Export</button>
+											<button className="h-9 px-3 rounded-lg bg-muted hover:bg-muted transition text-sm">Export</button>
 										</div>
 									</div>
 									<div className="mt-4 h-72">
 										<ResponsiveContainer width="100%" height="100%">
 											<LineChart data={analyticsData}>
-												<CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
-												<XAxis dataKey="month" stroke="rgba(255,255,255,0.4)" />
-												<YAxis stroke="rgba(255,255,255,0.4)" />
-												<ReTooltip contentStyle={{ background: 'rgba(20,20,20,0.85)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12 }} />
+												<CartesianGrid strokeDasharray="3 3" stroke="rgba(2,6,23,0.06)" />
+												<XAxis dataKey="month" stroke="rgba(2,6,23,0.45)" />
+												<YAxis stroke="rgba(2,6,23,0.45)" />
+												<ReTooltip contentStyle={{ background: 'rgba(255,255,255,0.98)', color: 'rgba(2,6,23,0.9)', border: '1px solid rgba(2,6,23,0.06)', borderRadius: 12 }} />
 												<Line type="monotone" dataKey="visits" stroke="hsl(var(--accent))" strokeWidth={2} dot={false} />
 												<Line type="monotone" dataKey="conversions" stroke="hsl(var(--primary))" strokeWidth={2} dot={false} />
 											</LineChart>
@@ -128,10 +128,10 @@ export default function App() {
 									<div className="mt-4 h-64">
 										<ResponsiveContainer width="100%" height="100%">
 											<BarChart data={analyticsData}>
-												<CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
-												<XAxis dataKey="month" stroke="rgba(255,255,255,0.4)" />
-												<YAxis stroke="rgba(255,255,255,0.4)" />
-												<ReTooltip contentStyle={{ background: 'rgba(20,20,20,0.85)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12 }} />
+												<CartesianGrid strokeDasharray="3 3" stroke="rgba(2,6,23,0.06)" />
+												<XAxis dataKey="month" stroke="rgba(2,6,23,0.45)" />
+												<YAxis stroke="rgba(2,6,23,0.45)" />
+												<ReTooltip contentStyle={{ background: 'rgba(255,255,255,0.98)', color: 'rgba(2,6,23,0.9)', border: '1px solid rgba(2,6,23,0.06)', borderRadius: 12 }} />
 												<Bar dataKey="conversions" fill="hsl(var(--primary))" radius={[8,8,0,0]} />
 											</BarChart>
 										</ResponsiveContainer>
@@ -187,7 +187,7 @@ function GlassCard({ children }: { children: React.ReactNode }) {
 			whileInView={{ y: 0, opacity: 1 }}
 			viewport={{ once: true, amount: 0.2 }}
 			transition={{ duration: 0.5, ease: 'easeOut' }}
-			className="glass rounded-2xl p-5"
+			className="surface rounded-2xl p-5"
 		>
 			{children}
 		</motion.section>
@@ -196,8 +196,8 @@ function GlassCard({ children }: { children: React.ReactNode }) {
 
 function SidebarLink({ icon, label, active = false }: { icon: React.ReactNode; label: string; active?: boolean }) {
 	return (
-		<button className={`w-full flex items-center gap-3 rounded-xl px-3 py-2 transition ${active ? 'bg-white/10' : 'hover:bg-white/10'}`}>
-			<span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-white/10">
+		<button className={`w-full flex items-center gap-3 rounded-xl px-3 py-2 transition ${active ? 'bg-muted' : 'hover:bg-muted/80'}`}>
+			<span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-muted">
 				{icon}
 			</span>
 			<span className="text-sm">{label}</span>
@@ -207,7 +207,7 @@ function SidebarLink({ icon, label, active = false }: { icon: React.ReactNode; l
 
 function SelectPill({ label }: { label: string }) {
 	return (
-		<button className="inline-flex items-center gap-2 rounded-full bg-white/10 hover:bg-white/15 transition px-3 py-1.5 text-sm">
+		<button className="inline-flex items-center gap-2 rounded-full bg-muted hover:bg-muted/80 transition px-3 py-1.5 text-sm">
 			<span className="h-2 w-2 rounded-full bg-primary" />
 			{label}
 		</button>

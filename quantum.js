@@ -106,12 +106,15 @@ class NavigationManager {
             openLogin.addEventListener('click', () => {
                 overlay.classList.add('active');
                 overlay.setAttribute('aria-hidden', 'false');
+                this.trapFocus(overlay);
+                this.lastFocused = openLogin;
             });
         }
         if (closeLogin && overlay) {
             closeLogin.addEventListener('click', () => {
                 overlay.classList.remove('active');
                 overlay.setAttribute('aria-hidden', 'true');
+                if (this.lastFocused) this.lastFocused.focus();
             });
         }
         if (overlay) {
@@ -119,9 +122,25 @@ class NavigationManager {
                 if (e.target === overlay) {
                     overlay.classList.remove('active');
                     overlay.setAttribute('aria-hidden', 'true');
+                    if (this.lastFocused) this.lastFocused.focus();
                 }
             });
         }
+    }
+
+    // Basic focus trap inside modal for accessibility
+    trapFocus(container) {
+        const focusable = container.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        first.focus();
+        function handle(e) {
+            if (e.key !== 'Tab') return;
+            if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+            else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+        container.addEventListener('keydown', handle, { once: false });
     }
     
     toggleMobileMenu() {

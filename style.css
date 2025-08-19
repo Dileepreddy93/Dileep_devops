@@ -478,7 +478,11 @@ a:hover {
     border: 1px solid var(--border-primary);
     box-shadow: 0 40px 120px rgba(2,6,23,0.25), 0 10px 30px rgba(2,6,23,0.1);
     overflow: hidden;
+    transform: translateY(12px);
+    opacity: 0;
+    transition: transform .35s cubic-bezier(.2,.8,.2,1), opacity .35s ease;
 }
+.login-overlay.active .login-dialog { transform: translateY(0); opacity: 1; }
 .login-orbs .orb { position: absolute; filter: blur(40px); opacity: 0.5; }
 .orb-1 { width: 220px; height: 220px; border-radius: 50%; background: #60a5fa; top: -60px; right: -60px; }
 .orb-2 { width: 180px; height: 180px; border-radius: 50%; background: #a78bfa; bottom: -50px; left: -50px; }

@@ -131,7 +131,9 @@ body {
     font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--text-primary);
-    background-color: var(--bg-primary);
+    background: radial-gradient(1200px 600px at 100% -10%, rgba(99,102,241,0.12) 0%, rgba(99,102,241,0) 60%),
+                radial-gradient(1000px 500px at -10% 110%, rgba(56,189,248,0.12) 0%, rgba(56,189,248,0) 60%),
+                linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     overflow-x: hidden;
     transition: var(--transition);
 }
@@ -293,7 +295,9 @@ a:hover {
 /* Hero Section */
 .hero-section {
     padding: var(--spacing-3xl) 0;
-    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    background: radial-gradient(800px 400px at 0% 0%, rgba(139,92,246,0.18) 0%, rgba(139,92,246,0) 60%),
+                radial-gradient(600px 300px at 100% 50%, rgba(34,197,94,0.12) 0%, rgba(34,197,94,0) 65%),
+                linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
 
 .hero-content {
@@ -436,15 +440,15 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: var(--primary);
+    background: radial-gradient(120% 120% at 10% 10%, rgba(255,255,255,0.2), rgba(255,255,255,0)),
+                linear-gradient(180deg, var(--primary) 0%, var(--primary-hover) 100%);
     color: var(--text-inverse);
+    box-shadow: 0 10px 20px rgba(59,130,246,0.3), 0 4px 10px rgba(59,130,246,0.2);
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-hover);
-    color: var(--text-inverse);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(59,130,246,0.35), 0 6px 14px rgba(59,130,246,0.25);
 }
 
 .btn-outline {
@@ -504,16 +508,18 @@ section {
 }
 
 .overview-card {
-    background-color: var(--bg-primary);
+    background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.5));
     border: 1px solid var(--border-primary);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xl);
     padding: var(--spacing-xl);
-    transition: var(--transition);
+    transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1);
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.08), 0 1px 0 rgba(2,6,23,0.04) inset;
 }
 
 .overview-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px) rotateX(1deg) rotateY(-1deg);
+    box-shadow: 0 24px 60px rgba(2,6,23,0.18), 0 8px 20px rgba(2,6,23,0.08);
 }
 
 .card-icon {
@@ -577,12 +583,14 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 200px;
-    background-color: var(--bg-primary);
-    border: 2px solid var(--border-primary);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-lg);
-    transition: var(--transition);
+    min-width: 220px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.55));
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-xl);
+    transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1), background .3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.08), 0 1px 0 rgba(2,6,23,0.04) inset;
 }
 
 .pipeline-stage.active {
@@ -598,6 +606,11 @@ section {
 .pipeline-stage.pending {
     border-color: var(--border-secondary);
     opacity: 0.6;
+}
+
+.pipeline-stage:hover {
+    transform: translateY(-6px) rotateX(1deg) rotateY(1deg);
+    box-shadow: 0 24px 60px rgba(2,6,23,0.18), 0 8px 20px rgba(2,6,23,0.08);
 }
 
 .stage-icon {
@@ -675,10 +688,17 @@ section {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
-    background-color: var(--bg-primary);
+    background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.5));
     border: 1px solid var(--border-primary);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xl);
     padding: var(--spacing-lg);
+    transform-style: preserve-3d;
+    transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1);
+    box-shadow: 0 10px 30px rgba(2,6,23,0.08), 0 1px 0 rgba(2,6,23,0.04) inset;
+}
+.stat-card:hover {
+    transform: translateY(-6px) rotateX(1deg) rotateY(-1deg);
+    box-shadow: 0 24px 60px rgba(2,6,23,0.18), 0 8px 20px rgba(2,6,23,0.08);
 }
 
 .stat-card i {
@@ -710,18 +730,20 @@ section {
 }
 
 .feature-card {
-    background-color: var(--bg-primary);
+    background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.45));
     border: 1px solid var(--border-primary);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xl);
     padding: var(--spacing-xl);
-    transition: var(--transition);
+    transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1);
     position: relative;
     overflow: hidden;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.08), 0 1px 0 rgba(2,6,23,0.04) inset;
 }
 
 .feature-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px) rotateX(1deg) rotateY(1deg);
+    box-shadow: 0 24px 60px rgba(2,6,23,0.18), 0 8px 20px rgba(2,6,23,0.08);
 }
 
 .feature-icon {

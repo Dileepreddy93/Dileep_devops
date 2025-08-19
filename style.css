@@ -457,6 +457,53 @@ a:hover {
     white-space: nowrap;
 }
 
+/* Ultra Login Modal */
+.login-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(12px) saturate(140%);
+    background: rgba(2,6,23,0.35);
+    z-index: 2000;
+}
+.login-overlay.active { display: flex; }
+.login-dialog {
+    position: relative;
+    width: min(520px, 92vw);
+    border-radius: var(--radius-2xl);
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.55));
+    border: 1px solid var(--border-primary);
+    box-shadow: 0 40px 120px rgba(2,6,23,0.25), 0 10px 30px rgba(2,6,23,0.1);
+    overflow: hidden;
+}
+.login-orbs .orb { position: absolute; filter: blur(40px); opacity: 0.5; }
+.orb-1 { width: 220px; height: 220px; border-radius: 50%; background: #60a5fa; top: -60px; right: -60px; }
+.orb-2 { width: 180px; height: 180px; border-radius: 50%; background: #a78bfa; bottom: -50px; left: -50px; }
+.orb-3 { width: 140px; height: 140px; border-radius: 50%; background: #34d399; top: 40%; left: -30px; }
+.login-close {
+    position: absolute; top: 12px; right: 12px; border: 1px solid var(--border-primary);
+    background: rgba(255,255,255,0.7); border-radius: var(--radius-md); width: 36px; height: 36px;
+    display: inline-flex; align-items: center; justify-content: center; cursor: pointer;
+}
+.login-card { position: relative; z-index: 1; }
+.login-title { margin-bottom: var(--spacing-sm); }
+.login-subtitle { color: var(--text-secondary); margin-bottom: var(--spacing-xl); }
+.login-form { display: grid; gap: var(--spacing-md); }
+.login-label { font-size: 0.9rem; color: var(--text-secondary); }
+.login-input {
+    width: 100%; padding: 0.8rem 1rem; border-radius: var(--radius-lg);
+    border: 1px solid var(--border-primary); background: rgba(255,255,255,0.9);
+}
+.login-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 4px var(--primary-light); }
+.login-actions { display: flex; gap: var(--spacing-md); margin-top: var(--spacing-sm); flex-wrap: wrap; }
+.login-secondary { background: rgba(2,6,23,0.04); border: 1px solid var(--border-primary); }
+.login-footer { margin-top: var(--spacing-lg); color: var(--text-tertiary); font-size: 0.9rem; }
+.login-link { color: var(--primary); }
+.login-link:hover { text-decoration: underline; }
+
 .btn-primary {
     background: radial-gradient(120% 120% at 10% 10%, rgba(255,255,255,0.2), rgba(255,255,255,0)),
                 linear-gradient(180deg, var(--primary) 0%, var(--primary-hover) 100%);

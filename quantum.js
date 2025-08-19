@@ -97,6 +97,31 @@ class NavigationManager {
                 this.closeMobileMenu();
             }
         });
+
+        // Login modal open/close
+        const openLogin = document.getElementById('openLogin') || document.getElementById('openLogin2');
+        const overlay = document.getElementById('loginOverlay');
+        const closeLogin = document.getElementById('closeLogin');
+        if (openLogin && overlay) {
+            openLogin.addEventListener('click', () => {
+                overlay.classList.add('active');
+                overlay.setAttribute('aria-hidden', 'false');
+            });
+        }
+        if (closeLogin && overlay) {
+            closeLogin.addEventListener('click', () => {
+                overlay.classList.remove('active');
+                overlay.setAttribute('aria-hidden', 'true');
+            });
+        }
+        if (overlay) {
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) {
+                    overlay.classList.remove('active');
+                    overlay.setAttribute('aria-hidden', 'true');
+                }
+            });
+        }
     }
     
     toggleMobileMenu() {

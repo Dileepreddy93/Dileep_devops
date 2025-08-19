@@ -66,6 +66,10 @@
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                         <i class="fas fa-moon"></i>
                     </button>
+                    <button class="btn btn-primary" id="openLogin" aria-label="Open login" style="padding:0.5rem 0.9rem;">
+                        <i class="fas fa-user"></i>
+                        <span style="margin-left:6px;">Sign in</span>
+                    </button>
                     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                         <span></span>
                         <span></span>
@@ -693,5 +697,42 @@
     
     <!-- JavaScript -->
     <script src="quantum.js"></script>
+    <div id="loginOverlay" class="login-overlay" aria-hidden="true">
+        <div class="login-dialog" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+            <button class="login-close" id="closeLogin" aria-label="Close login">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="login-orbs">
+                <span class="orb orb-1"></span>
+                <span class="orb orb-2"></span>
+                <span class="orb orb-3"></span>
+            </div>
+            <div class="login-card">
+                <h2 id="loginTitle" class="login-title">Welcome back</h2>
+                <p class="login-subtitle">Sign in to continue to your dashboard</p>
+                <form class="login-form" action="#" method="post" onsubmit="return false;">
+                    <label class="login-label" for="email">Email</label>
+                    <input class="login-input" id="email" type="email" placeholder="you@example.com" autocomplete="username" required>
+                    <label class="login-label" for="password">Password</label>
+                    <input class="login-input" id="password" type="password" placeholder="••••••••" autocomplete="current-password" required>
+                    <div class="login-actions">
+                        <button class="btn btn-primary login-submit" type="submit">
+                            <i class="fas fa-arrow-right"></i>
+                            <span style="margin-left:8px;">Sign in</span>
+                        </button>
+                        <button class="btn login-secondary" type="button" onclick="window.location.href='nova-dashboard/index.html'">
+                            <i class="fas fa-gauge-high"></i>
+                            <span style="margin-left:8px;">Open Dashboard</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="login-footer">
+                    <a href="#" class="login-link">Forgot password?</a>
+                    <span class="divider">•</span>
+                    <a href="#" class="login-link">Create account</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

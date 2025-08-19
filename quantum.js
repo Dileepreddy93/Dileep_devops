@@ -6,8 +6,8 @@
 // Theme Management
 class ThemeManager {
     constructor() {
-        this.currentTheme = localStorage.getItem('theme') || 'light';
-        this.themeToggle = document.getElementById('themeToggle');
+        this.currentTheme = 'light';
+        this.themeToggle = null;
         this.init();
     }
     
@@ -17,11 +17,7 @@ class ThemeManager {
     }
     
     setupEventListeners() {
-        if (this.themeToggle) {
-            this.themeToggle.addEventListener('click', () => {
-                this.toggleTheme();
-            });
-        }
+        // Dark mode disabled: no toggle listeners
     }
     
     setTheme(theme) {
@@ -32,17 +28,12 @@ class ThemeManager {
     }
     
     toggleTheme() {
-        const newTheme = this.currentTheme === 'light' ? 'dark' : 'light';
-        this.setTheme(newTheme);
+        // Dark mode disabled
+        this.setTheme('light');
     }
     
     updateThemeIcon() {
-        if (this.themeToggle) {
-            const icon = this.themeToggle.querySelector('i');
-            if (icon) {
-                icon.className = this.currentTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
-            }
-        }
+        // No-op when toggle is removed
     }
 }
 

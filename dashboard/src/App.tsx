@@ -2,9 +2,9 @@ import './App.css'
 import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as ReTooltip, ResponsiveContainer } from 'recharts'
-import { Bell, Search, Menu, Home, BarChart as BarChartIcon, ListTodo, Activity, Sun, Moon } from 'lucide-react'
+import { Bell, Search, Menu, Home, BarChart as BarChartIcon, ListTodo, Activity } from 'lucide-react'
 
-type Theme = 'light' | 'dark'
+type Theme = 'light'
 
 const analyticsData = Array.from({ length: 12 }, (_, i) => ({
 	month: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][i],
@@ -26,10 +26,10 @@ const tasks = [
 ]
 
 export default function App() {
-	const [theme, setTheme] = useState<Theme>('dark')
+	const [theme] = useState<Theme>('light')
 	const [sidebarOpen, setSidebarOpen] = useState(false)
 
-	const rootClass = useMemo(() => (theme === 'dark' ? 'dark' : ''), [theme])
+	const rootClass = useMemo(() => (''), [])
 
 	return (
 		<div className={rootClass}>
@@ -55,9 +55,7 @@ export default function App() {
 									<Bell className="h-5 w-5" />
 									<span className="absolute -right-0 -top-0 h-2.5 w-2.5 rounded-full bg-primary"></span>
 								</button>
-								<button className="h-10 w-10 rounded-lg hover:bg-muted inline-flex items-center justify-center" onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')} aria-label="Toggle theme">
-									{theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-								</button>
+								{/* Theme toggle removed for light-only mode */}
 								<div className="relative">
 									<button className="surface rounded-xl px-2 py-1.5 inline-flex items-center gap-2">
 										<div className="h-7 w-7 rounded-full bg-gradient-to-br from-primary to-accent" />

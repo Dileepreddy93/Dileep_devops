@@ -45,41 +45,41 @@
 
 /* Light Theme (Default) */
 [data-theme="light"] {
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
-    --bg-tertiary: #f1f5f9;
-    --bg-accent: #e2e8f0;
+    --bg-primary: #fbfcfe;
+    --bg-secondary: #f6f7fb;
+    --bg-tertiary: #eef1f6;
+    --bg-accent: #e7ecf4;
     
-    --text-primary: #1e293b;
-    --text-secondary: #475569;
-    --text-tertiary: #64748b;
+    --text-primary: #22324a;
+    --text-secondary: #4a5b70;
+    --text-tertiary: #6b7a8e;
     --text-inverse: #ffffff;
     
-    --border-primary: #e2e8f0;
-    --border-secondary: #cbd5e1;
+    --border-primary: #e6eaf1;
+    --border-secondary: #d7deea;
     
-    --primary: #3b82f6;
-    --primary-hover: #2563eb;
-    --primary-light: #dbeafe;
+    --primary: #4f8cff;
+    --primary-hover: #3a78f0;
+    --primary-light: #e6efff;
     
-    --success: #10b981;
-    --success-light: #d1fae5;
+    --success: #11b69c;
+    --success-light: #d9f4ef;
     
-    --warning: #f59e0b;
-    --warning-light: #fef3c7;
+    --warning: #f0b429;
+    --warning-light: #fdf0d0;
     
-    --error: #ef4444;
-    --error-light: #fee2e2;
+    --error: #eb5757;
+    --error-light: #fde2e2;
     
-    --accent: #8b5cf6;
-    --accent-light: #ede9fe;
+    --accent: #7c6cff;
+    --accent-light: #eceaff;
     
     /* Code block colors */
-    --code-bg: #f8fafc;
-    --code-border: #e2e8f0;
-    --code-keyword: #7c3aed;
-    --code-property: #059669;
-    --code-value: #dc2626;
+    --code-bg: #f6f8fb;
+    --code-border: #e6eaf1;
+    --code-keyword: #6d5ef7;
+    --code-property: #0ea882;
+    --code-value: #e15555;
 }
 
 /* Dark Theme */

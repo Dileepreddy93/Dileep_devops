@@ -56,8 +56,9 @@ This **Ultra Pro Enterprise Platform** revolutionizes DevOps practices through c
 - High availability design with 99.9% uptime SLA
 
 🎨 **Advanced User Interface**
-- Modern glassmorphism design with dynamic themes
-- Real-time pipeline visualization with interactive components
+- Aurora light theme with premium 3D cards and depth shadows
+- Glass + surface hybrid (glassmorphism feel with soft surfaces)
+- Real-time pipeline visualization with 3D hover micro-interactions
 - Progressive Web App (PWA) features with offline capabilities
 - Advanced animations using CSS3 and JavaScript
 - Particle system backgrounds and professional loading screens
@@ -136,6 +137,20 @@ This **Ultra Pro Enterprise Platform** revolutionizes DevOps practices through c
 - **Accessibility (A11Y)** with WCAG AAA compliance
 - **SEO Optimization** with structured data and meta tags
 - **Analytics Integration** with performance tracking
+
+### 🧭 NovaDash React Dashboard
+
+- Tech: React + Vite + TypeScript, TailwindCSS (Aurora theme), Framer Motion, Recharts
+- Location: `dashboard/` (source) and built output in `nova-dashboard/`
+- Open from site nav: Dashboard link opens `nova-dashboard/index.html`
+
+Update NovaDash build:
+```bash
+cd dashboard
+npm run build
+rm -rf ../nova-dashboard && cp -r dist/* ../nova-dashboard/
+git add nova-dashboard && git commit -m "chore: update NovaDash build" && git push
+```
 
 ## 🏗️ CI/CD Pipeline Architecture
 
@@ -246,6 +261,7 @@ Dileep_devops/
 ├── 📄 index.html                    # Main platform homepage with enterprise features
 ├── 📄 index_new.html                # Enhanced modern version with design system
 ├── 📄 index_ultra_pro.html          # 🚀 ULTRA PRO: Revolutionary AI-powered interface
+├── 📁 nova-dashboard/               # Built React dashboard (NovaDash) static assets
 ├── 📄 about html                    # Professional DevOps engineer portfolio page  
 ├── 🎨 style.css                     # Production stylesheet with enterprise features
 ├── 🎨 style_new.css                 # Modern CSS framework (1,181+ lines)

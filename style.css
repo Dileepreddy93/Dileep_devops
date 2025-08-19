@@ -182,7 +182,7 @@ a:hover {
 
 /* Header and Navigation */
 .header {
-    background-color: var(--bg-primary);
+    background-color: rgba(255, 255, 255, 0.7);
     border-bottom: 1px solid var(--border-primary);
     position: fixed;
     top: 0;
@@ -192,6 +192,7 @@ a:hover {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(2,6,23,0.06);
 }
 
 .navbar {
@@ -222,6 +223,10 @@ a:hover {
 .nav-brand i {
     color: var(--primary);
     font-size: 1.5rem;
+    background: radial-gradient(120% 120% at 10% 10%, rgba(255,255,255,0.25), rgba(255,255,255,0)),
+                linear-gradient(180deg, var(--primary) 0%, var(--primary-hover) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-menu {
@@ -244,6 +249,7 @@ a:hover {
 .nav-menu a.active {
     color: var(--primary);
     background-color: var(--primary-light);
+    box-shadow: 0 10px 20px rgba(59,130,246,0.15), 0 4px 10px rgba(59,130,246,0.08);
 }
 
 .nav-controls {
@@ -345,6 +351,13 @@ a:hover {
 
 .stat-item {
     text-align: center;
+    background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.5));
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-lg);
+    transform-style: preserve-3d;
+    transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1);
+    box-shadow: 0 10px 30px rgba(2,6,23,0.08), 0 1px 0 rgba(2,6,23,0.04) inset;
 }
 
 .stat-number {
@@ -365,6 +378,11 @@ a:hover {
     display: flex;
     gap: var(--spacing-md);
     flex-wrap: wrap;
+}
+
+.stat-item:hover {
+    transform: translateY(-6px) rotateX(1deg) rotateY(-1deg);
+    box-shadow: 0 24px 60px rgba(2,6,23,0.18), 0 8px 20px rgba(2,6,23,0.08);
 }
 
 .hero-visual {

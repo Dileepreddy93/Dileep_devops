@@ -391,7 +391,7 @@ class MetricsManager {
 // Card Interaction Manager
 class CardManager {
     constructor() {
-        this.cards = document.querySelectorAll('.feature-card, .overview-card');
+        this.cards = document.querySelectorAll('.feature-card, .overview-card, .stat-card, .pipeline-stage');
         this.init();
     }
     
@@ -400,23 +400,28 @@ class CardManager {
     }
     
     setupCardEffects() {
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         this.cards.forEach(card => {
-            // Add subtle hover effect
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-4px)';
-            });
-            
-            card.addEventListener('mouseleave', () => {
+            if (reduceMotion) return;
+            let rafId;
+            function tilt(e) {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const rotateX = (0.5 - y) * 8; // up/down
+                const rotateY = (x - 0.5) * 8; // left/right
+                cancelAnimationFrame(rafId);
+                rafId = requestAnimationFrame(() => {
+                    card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+                });
+            }
+            function reset() {
+                cancelAnimationFrame(rafId);
                 card.style.transform = '';
-            });
-            
-            // Add click effect
-            card.addEventListener('click', () => {
-                card.style.transform = 'scale(0.98)';
-                setTimeout(() => {
-                    card.style.transform = '';
-                }, 150);
-            });
+            }
+            card.addEventListener('mousemove', tilt);
+            card.addEventListener('mouseleave', reset);
+            card.addEventListener('blur', reset);
         });
     }
 }

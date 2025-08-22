@@ -63,6 +63,7 @@ This **Ultra Pro Enterprise Platform** revolutionizes DevOps practices through c
 - Advanced animations using CSS3 and JavaScript
 - Particle system backgrounds and professional loading screens
 - Responsive design supporting all device types
+- **NovaDash Dashboard**: Modern React dashboard with theme switching and skeleton loading
 
 🔄 **Enterprise CI/CD Pipeline**
 - Multi-stage automated workflow with parallel execution
@@ -140,11 +141,17 @@ This **Ultra Pro Enterprise Platform** revolutionizes DevOps practices through c
 
 ### 🧭 NovaDash React Dashboard
 
-- Tech: React + Vite + TypeScript, TailwindCSS (Aurora theme), Framer Motion, Recharts
-- Location: `dashboard/` (source) and built output in `nova-dashboard/`
-- Open from site nav: Dashboard link opens `nova-dashboard/index.html`
+- **Tech Stack**: React + Vite + TypeScript, TailwindCSS (Aurora theme), Framer Motion, Recharts
+- **Location**: `dashboard/` (source) and built output in `nova-dashboard/`
+- **Access**: Dashboard link in site navigation opens `nova-dashboard/index.html`
+- **Features**: 
+  - Theme switching (light/dark mode)
+  - Skeleton loading for premium UX
+  - Responsive analytics charts
+  - Glass/surface hybrid design
+  - Micro-interactions and animations
 
-Update NovaDash build:
+**Update NovaDash build:**
 ```bash
 cd dashboard
 npm run build

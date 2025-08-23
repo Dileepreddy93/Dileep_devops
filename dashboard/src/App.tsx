@@ -1,10 +1,10 @@
 import './App.css'
-import { useState, useMemo } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as ReTooltip, ResponsiveContainer } from 'recharts'
-import { Bell, Search, Menu, Home, BarChart as BarChartIcon, ListTodo, Activity } from 'lucide-react'
+import { Bell, Search, Menu, Home, BarChart as BarChartIcon, ListTodo, Activity, Sun, Moon } from 'lucide-react'
 
-type Theme = 'light'
+type Theme = 'light' | 'dark'
 
 const analyticsData = Array.from({ length: 12 }, (_, i) => ({
 	month: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][i],
@@ -26,10 +26,16 @@ const tasks = [
 ]
 
 export default function App() {
-	const [theme] = useState<Theme>('light')
+	const [theme, setTheme] = useState<Theme>('light')
 	const [sidebarOpen, setSidebarOpen] = useState(false)
+	const [loadingCharts, setLoadingCharts] = useState(true)
 
-	const rootClass = useMemo(() => (''), [])
+	const rootClass = useMemo(() => (theme === 'dark' ? 'dark' : ''), [theme])
+
+	useEffect(() => {
+		const t = setTimeout(() => setLoadingCharts(false), 600)
+		return () => clearTimeout(t)
+	}, [])
 
 	return (
 		<div className={rootClass}>
@@ -55,7 +61,9 @@ export default function App() {
 									<Bell className="h-5 w-5" />
 									<span className="absolute -right-0 -top-0 h-2.5 w-2.5 rounded-full bg-primary"></span>
 								</button>
-								{/* Theme toggle removed for light-only mode */}
+								<button className="h-10 w-10 rounded-lg hover:bg-muted inline-flex items-center justify-center" onClick={() => setTheme(t => (t === 'dark' ? 'light' : 'dark'))} aria-label="Toggle theme">
+									{theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+								</button>
 								<div className="relative">
 									<button className="surface rounded-xl px-2 py-1.5 inline-flex items-center gap-2">
 										<div className="h-7 w-7 rounded-full bg-gradient-to-br from-primary to-accent" />
@@ -108,31 +116,39 @@ export default function App() {
 										</div>
 									</div>
 									<div className="mt-4 h-72">
-										<ResponsiveContainer width="100%" height="100%">
-											<LineChart data={analyticsData}>
-												<CartesianGrid strokeDasharray="3 3" stroke="rgba(2,6,23,0.06)" />
-												<XAxis dataKey="month" stroke="rgba(2,6,23,0.45)" />
-												<YAxis stroke="rgba(2,6,23,0.45)" />
-												<ReTooltip contentStyle={{ background: 'rgba(255,255,255,0.98)', color: 'rgba(2,6,23,0.9)', border: '1px solid rgba(2,6,23,0.06)', borderRadius: 12 }} />
-												<Line type="monotone" dataKey="visits" stroke="hsl(var(--accent))" strokeWidth={2} dot={false} />
-												<Line type="monotone" dataKey="conversions" stroke="hsl(var(--primary))" strokeWidth={2} dot={false} />
-											</LineChart>
-										</ResponsiveContainer>
+										{loadingCharts ? (
+											<SkeletonChart />
+										) : (
+											<ResponsiveContainer width="100%" height="100%">
+												<LineChart data={analyticsData}>
+													<CartesianGrid strokeDasharray="3 3" stroke={theme === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(2,6,23,0.06)'} />
+													<XAxis dataKey="month" stroke={theme === 'dark' ? 'rgba(255,255,255,0.55)' : 'rgba(2,6,23,0.45)'} />
+													<YAxis stroke={theme === 'dark' ? 'rgba(255,255,255,0.55)' : 'rgba(2,6,23,0.45)'} />
+													<ReTooltip contentStyle={{ background: theme === 'dark' ? 'rgba(20,20,28,0.95)' : 'rgba(255,255,255,0.98)', color: theme === 'dark' ? 'rgba(240,240,255,0.9)' : 'rgba(2,6,23,0.9)', border: theme === 'dark' ? '1px solid rgba(255,255,255,0.08)' : '1px solid rgba(2,6,23,0.06)', borderRadius: 12 }} />
+													<Line type="monotone" dataKey="visits" stroke="hsl(var(--accent))" strokeWidth={2} dot={false} />
+													<Line type="monotone" dataKey="conversions" stroke="hsl(var(--primary))" strokeWidth={2} dot={false} />
+												</LineChart>
+											</ResponsiveContainer>
+										)}
 									</div>
 								</GlassCard>
 
 								<GlassCard>
 									<h2 className="text-lg font-semibold">Conversions by Month</h2>
 									<div className="mt-4 h-64">
-										<ResponsiveContainer width="100%" height="100%">
-											<BarChart data={analyticsData}>
-												<CartesianGrid strokeDasharray="3 3" stroke="rgba(2,6,23,0.06)" />
-												<XAxis dataKey="month" stroke="rgba(2,6,23,0.45)" />
-												<YAxis stroke="rgba(2,6,23,0.45)" />
-												<ReTooltip contentStyle={{ background: 'rgba(255,255,255,0.98)', color: 'rgba(2,6,23,0.9)', border: '1px solid rgba(2,6,23,0.06)', borderRadius: 12 }} />
-												<Bar dataKey="conversions" fill="hsl(var(--primary))" radius={[8,8,0,0]} />
-											</BarChart>
-										</ResponsiveContainer>
+										{loadingCharts ? (
+											<SkeletonChart />
+										) : (
+											<ResponsiveContainer width="100%" height="100%">
+												<BarChart data={analyticsData}>
+													<CartesianGrid strokeDasharray="3 3" stroke={theme === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(2,6,23,0.06)'} />
+													<XAxis dataKey="month" stroke={theme === 'dark' ? 'rgba(255,255,255,0.55)' : 'rgba(2,6,23,0.45)'} />
+													<YAxis stroke={theme === 'dark' ? 'rgba(255,255,255,0.55)' : 'rgba(2,6,23,0.45)'} />
+													<ReTooltip contentStyle={{ background: theme === 'dark' ? 'rgba(20,20,28,0.95)' : 'rgba(255,255,255,0.98)', color: theme === 'dark' ? 'rgba(240,240,255,0.9)' : 'rgba(2,6,23,0.9)', border: theme === 'dark' ? '1px solid rgba(255,255,255,0.08)' : '1px solid rgba(2,6,23,0.06)', borderRadius: 12 }} />
+													<Bar dataKey="conversions" fill="hsl(var(--primary))" radius={[8,8,0,0]} />
+												</BarChart>
+											</ResponsiveContainer>
+										)}
 									</div>
 								</GlassCard>
 							</div>
@@ -209,5 +225,13 @@ function SelectPill({ label }: { label: string }) {
 			<span className="h-2 w-2 rounded-full bg-primary" />
 			{label}
 		</button>
+	)
+}
+
+function SkeletonChart() {
+	return (
+		<div className="w-full h-full animate-pulse">
+			<div className="h-full w-full rounded-xl bg-muted" />
+		</div>
 	)
 }
